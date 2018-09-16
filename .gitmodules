@@ -4,3 +4,6 @@
 [submodule "zlib"]
 	path = zlib
 	url = https://github.com/madler/zlib.git
+[submodule "polyglot"]
+	path = polyglot
+	url = git@github.com:DanielUranga/polyglot.git
