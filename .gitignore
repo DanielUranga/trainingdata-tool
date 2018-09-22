@@ -30,3 +30,11 @@
 \.vs/
 
 CMakeSettings\.json
+
+CMakeFiles/
+
+build/
+
+*.vcxproj
+
+*.filters
