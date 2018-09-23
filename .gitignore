@@ -38,3 +38,5 @@ build/
 *.vcxproj
 
 *.filters
+
+cmake_install\.cmake

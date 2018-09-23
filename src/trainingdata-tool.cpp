@@ -73,7 +73,9 @@ lczero::V3TrainingData get_v3_training_data(
 void write_one_game_training_data(pgn_t* pgn, int game_id) {
   std::vector<lczero::V3TrainingData> training_data;
   lczero::ChessBoard starting_board;
-  starting_board.SetFromFen(lczero::ChessBoard::kStartingFen, nullptr, nullptr);
+  const std::string starting_fen =
+      std::strlen(pgn->fen) > 0 ? pgn->fen : lczero::ChessBoard::kStartingFen;
+  starting_board.SetFromFen(starting_fen, nullptr, nullptr);
   lczero::PositionHistory position_history;
   position_history.Reset(starting_board, 0, 0);
   board_t board[1];
