@@ -26,14 +26,14 @@ lczero::V3TrainingData get_v3_training_data(
     lczero::Move played_move) {
 
   lczero::V3TrainingData result;
-  memset(&result, 0, sizeof(lczero::V3TrainingData));
 
   // Set version.
   result.version = 3;
 
   // Populate probabilities, for supervised learning simply assign 1.0 to the
   // move that was effectively played
-  result.probabilities[played_move.as_nn_index()];
+  std::memset(result.probabilities, 0, sizeof(result.probabilities));
+  result.probabilities[played_move.as_nn_index()] = 1.0f;
 
   // Populate planes.
   lczero::InputPlanes planes = EncodePositionForNN(history, 8);
