@@ -12,6 +12,7 @@
 #include "square.h"
 #include "util.h"
 
+#include <cstring>
 #include <iostream>
 
 uint64_t resever_bits_in_bytes(uint64_t v) {
