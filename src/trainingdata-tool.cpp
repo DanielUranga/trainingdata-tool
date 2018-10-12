@@ -22,10 +22,27 @@ uint64_t resever_bits_in_bytes(uint64_t v) {
   return v;
 }
 
-lczero::Move poly_move_to_lc0_move(move_t move) {
+lczero::Move poly_move_to_lc0_move(move_t move, board_t * board) {
     lczero::BoardSquare from(square_rank(move_from(move)), square_file(move_from(move)));
     lczero::BoardSquare to(square_rank(move_to(move)), square_file(move_to(move)));
     lczero::Move m(from, to);
+
+    if (move_is_promote(move)) {
+        lczero::Move::Promotion lookup[5] = {
+            lczero::Move::Promotion::None,
+            lczero::Move::Promotion::Knight,
+            lczero::Move::Promotion::Bishop,
+            lczero::Move::Promotion::Rook,
+            lczero::Move::Promotion::Queen,
+        };
+        auto prom = lookup[move >> 12];
+        m.SetPromotion(prom);
+    }
+
+    if (colour_is_black(board->turn)) {
+        m.Mirror();
+    }
+
     return m;
 }
 
@@ -111,10 +128,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
 
     // Convert move to lc0 format
     if (!move_to_can(move, board, str, 256)) ASSERT(false);
-    lczero::Move lc0_move = poly_move_to_lc0_move(move);
-    if (colour_is_black(board->turn)) {
-        lc0_move.Mirror();
-    }
+    lczero::Move lc0_move = poly_move_to_lc0_move(move, board);
 
     // Generate training data
     lczero::V3TrainingData chunk =
