@@ -22,6 +22,13 @@ uint64_t resever_bits_in_bytes(uint64_t v) {
   return v;
 }
 
+lczero::Move poly_move_to_lc0_move(move_t move) {
+    lczero::BoardSquare from(square_rank(move_from(move)), square_file(move_from(move)));
+    lczero::BoardSquare to(square_rank(move_to(move)), square_file(move_to(move)));
+    lczero::Move m(from, to);
+    return m;
+}
+
 lczero::V3TrainingData get_v3_training_data(
     lczero::GameResult game_result, const lczero::PositionHistory& history,
     lczero::Move played_move) {
@@ -104,7 +111,10 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
 
     // Convert move to lc0 format
     if (!move_to_can(move, board, str, 256)) ASSERT(false);
-    lczero::Move lc0_move(str, colour_is_black(board->turn));
+    lczero::Move lc0_move = poly_move_to_lc0_move(move);
+    if (colour_is_black(board->turn)) {
+        lc0_move.Mirror();
+    }
 
     // Generate training data
     lczero::V3TrainingData chunk =
