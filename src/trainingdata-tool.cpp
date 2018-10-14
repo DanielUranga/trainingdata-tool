@@ -37,6 +37,12 @@ lczero::Move poly_move_to_lc0_move(move_t move, board_t* board) {
     };
     auto prom = lookup[move >> 12];
     m.SetPromotion(prom);
+  } else if (move_is_castle(move, board)) {
+    bool is_short_castle =
+        square_file(move_from(move)) < square_file(move_to(move));
+    int file_to = is_short_castle ? 6 : 2;
+    m.SetTo(lczero::BoardSquare(square_rank(move_to(move)), file_to));
+    m.SetCastling();
   }
 
   if (colour_is_black(board->turn)) {
@@ -126,8 +132,23 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
     }
 
     // Convert move to lc0 format
-    if (!move_to_can(move, board, str, 256)) ASSERT(false);
     lczero::Move lc0_move = poly_move_to_lc0_move(move, board);
+    
+    // Uncomment this block if you want to check if you want to check if
+    // "poly_move_to_lc0_move" works ok:
+    /*
+    bool found = false;
+    for (auto legal : position_history.Last().GetBoard().GenerateLegalMoves()) {
+      if (legal == lc0_move && legal.castling() == lc0_move.castling()) {
+        found = true;
+        break;
+      }
+    }
+    if (!found) {
+      std::cout << "Move not found: " << str << " " << game_id << " "
+                << square_file(move_to(move)) << std::endl;
+    }
+    */
 
     // Generate training data
     lczero::V3TrainingData chunk =
