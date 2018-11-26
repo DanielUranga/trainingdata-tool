@@ -22,17 +22,17 @@ else (WIN32)
     set (lc0_filesystem "lc0/src/utils/filesystem.posix.cc")
 endif (WIN32)
 
-AUX_SOURCE_DIRECTORY(polyglot/src polyglot)
+AUX_SOURCE_DIRECTORY(pgnlib pgnlib)
 AUX_SOURCE_DIRECTORY(zlib zlib)
 
 # Add source to this project's executable.
-add_executable(trainingdata-tool ${sources} ${lc0} ${lc0_filesystem} ${polyglot} ${zlib})
+add_executable(trainingdata-tool ${sources} ${lc0} ${lc0_filesystem} ${pgnlib} ${zlib})
 
 include_directories(
     "lc0/src"
     "lc0/src/chess"
     "lc0/src/neural"
-    "polyglot/src"
+    "pgnlib"
     "zlib"
 )
 

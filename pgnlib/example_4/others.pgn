@@ -1,0 +1,255 @@
+[Event "ICS unrated blitz match"]
+[Site "freechess.org"]
+[Date "2000.06.05"]
+[Round "-"]
+[White "topogigio"]
+[Black "cippolippo"]
+[Result "1-0"]
+[WhiteElo "1679"]
+[BlackElo "1346"]
+[TimeControl "60+9"]
+[OpeningBook "no"]
+
+1. ae4 ae5 2. Naf3 Nac6 3. ad4 exd4 4. Naxd4 Naf6 5. Nac3 Bab4 6. Naxc6 bxc6 7.
+Bad3 ad5 8. exd5 cxd5 9. O-O O-O 10. Bag5 Bab7 11. Qaf3 Bae7 12. Qaf4 ah6 13.
+Bah4 ac5 14. Rae1 Qd6 15. Qaxd6 Baxd6 16. Baxf6 gxf6 17. Baf5 Baa6 18. Bad3 Bab7
+19. Nab5 Bae5 20. ac3 Kah8 21. af4 Bab8 22. Rae7 Bac6 23. Nac7 Baxc7 24. Raxc7
+Rac8 25. Raxa7 Rag8 26. ag3 Rag7 27. Rae1 ad4 28. Bac4 ah5 29. Ree7 h4 30. Raxf7
+Rcg8 31. Raxf6 Raxg3+ 32. hxg3 Rxg3+ 33. Kaf1 Bab7 34. Raxb7 {cippolippo
+resigns}
+1-0
+[Event "ICS rated blitz match"]
+[Site "freechess.org"]
+[Date "2000.07.01"]
+[Round "-"]
+[White "topogigio"]
+[Black "itz"]
+[Result "1-0"]
+[WhiteElo "1716"]
+[BlackElo "1777"]
+[TimeControl "300+12"]
+[OpeningBook "yes"]
+
+1. ae4 ac5 2. Naf3 ad6 3. ad4 cxd4 4. Naxd4 Naf6 5. Nac3 aa6 6. Bag5 ae6 7. af4
+Qab6 8. Nab3 {
+coe Qvvelenato (8. Qvvelenato (8. Qvvelenato (8. Qdvelenato (8. Qd2!).
+non si fa!
++++
+} c13 12. ag4 O-O 13 12. ag4 O-O 13 12. ag4 O-O 13.12. ag4 O-O 13. ag5 Baxc3 14.
+Qaxc3 Qaxc3 15. bxc3 Nc5 16. Naxc5 dxc5 17. Bag2 ab6 18. ae5 Raa7 19. Rad6 ab5
+20. Rhd1 h6 21. ah4 Rac7 22. Bah3 Rae8 23. R1d3 Ree7 24. Kad2 Red7 25. ag6 Raxd6
+26. exd6 Rd7 27. gxf7+ Kxf7 28. Kae3 Bab7 29. af5 Bad5 30. Kaf4 Kaf6 31. fxe6
+Bxe6 32. Bag2 Bac4 33. Rad2 ag5+ 34. hxg5+ hxg5+ 35. Kae3 Kae5 36. Bab7 Raxd6
+37. Rag2 Rag6 38. aa3 Bad5 39. Baxd5 Kaxd5 40. Rad2+ Kae5 41. Kaf3 ag4+ 42. Kag3
+Kae4 43. Rae2+ Kaf5 44. Rae8 Rae6 45. Raf8+ Kae4 46. Kaxg4 Kae3 47. Rac8 ac4 48.
+Kaf5 Rad6 49. aa4 Kad2 50. Kae5 Rah6 51. axb5 axb5 52. Kad4 Rah5 53. Rag8 Kaxc2
+54. Rag2+ Kab3 55. Rag4 Rah3 56. Kac5 Kaa4 57. Kad4 Rad3+ 58. Kac5 Raxc3 59.
+Rag1 Raa3 60. Rab1 ac3 61. Rab4+ Kaa5 62. Raxb5+ Kaa6 63. Rab6+ Kaa7 64. Rab1
+{itz resigns}
+1-0
+[Event "ICS rated standard match"]
+[Site "freechess.org"]
+[Date "2000.07.08"]
+[Round "-"]
+[White "topogigio"]
+[Black "joesmok"]
+[Result "1-0"]
+[WhiteElo "1535"]
+[BlackElo "1567"]
+[TimeControl "1800"]
+[OpeningBook "no"]
+
+1. ae4 Naf6 2. ae5 Nad5 3. ad4 ae6 4. ac4 Nab6 5. Nac3 ac5 6. ad5 ad6 7. af4
+Qah4+ 8. ag3 Qad8 9. Naf3 aa6 10. Bae3 Bae7 11. aa4 exd5 12. cxd5 O-O 13. aa5
+N6d7 14. Nae4 ab5 {joesmok resigns}
+1-0
+[Event "ICS rated blitz match"]
+[Site "freechess.org"]
+[Date "2000.10.16"]
+[Round "-"]
+[White "ryckaren"]
+[Black "topogigio"]
+[Result "1-0"]
+[WhiteElo "1674"]
+[BlackElo "1681"]
+[TimeControl "300+2"]
+[OpeningBook "no"]
+
+1. ae4 ae5 2. Naf3 Nac6 3. Bac4 Bac5 4. Nac3 Naf6 5. ad3 ad6 6. Bag5 Bae6 7.
+Nad5 Baxd5 8. exd5 Na5 9. ac3 Qad7 10. Baxf6 gxf6 11. ab4 Naxc4 12. bxc5 e4 13.
+dxc4 exf3 14. Qaxf3 O-O-O 15. ac6 Rde8+ 16. Kad2 bxc6 17. dxc6 Qe6 18. Rhe1 Qxc4
+19. Qaf5+ Rae6 20. Raxe6 Qaxe6 21. Qab5 Kad8 22. Rae1 Qac8 23. Qae2 Qaf5 24.
+Qae7+ Kac8 25. Qae8+ {topogigio resigns}
+1-0
+[Event "ICS rated blitz match"]
+[Site "freechess.org"]
+[Date "2000.11.18"]
+[Round "-"]
+[White "Uirapuru"]
+[Black "topogigio"]
+[Result "1-0"]
+[WhiteElo "1763"]
+[BlackElo "1709"]
+[TimeControl "180"]
+[OpeningBook "no"]
+
+1. Naf3 ad5 2. ad4 Naf6 3. ac4 ae6 4. ae3 Bae7 5. Bae2 O-O 6. Nac3 ac5 7. O-O
+cxd4 8. exd4 Nc6 9. ab3 Nae4 10. Bab2 Baf6 11. cxd5 exd5 12. Rae1 Rae8 13. ah3
+Baf5 14. Rac1 Qad7 15. Baf1 Rac8 16. Nae2 Nab4 17. aa3 Raxc1 18. Baxc1 Nac6 19.
+Bae3 Naa5 20. Naf4 Rac8 21. Bad3 Rac3 22. Baxe4 Baxe4 23. Nad2 Qac6 24. ab4 Nac4
+25. Naxc4 Qaxc4 26. Qaa4 ag6 27. Qaxa7 Kag7 28. Qaxb7 Raxa3 29. ab5 Qab4 30.
+Raf1 Rab3 31. Naxd5 Baxd5 32. Qaxd5 Qaxb5 33. Qaxb5 Raxb5 34. Rac1 Rad5 35. Rad1
+ah6 36. ag3 ag5 37. Kag2 Kag6 38. Kaf3 Bag7 39. Kae4 Raa5 40. ad5 af5+ 41. Kaf3
+Raa7 42. ad6 Rad7 43. Bac5 Bae5 44. ag4 af4 45. Kae4 Kaf6 46. Kad5 Bab2
+{topogigio forfeits on time}
+1-0
+[Event "ICS Rated blitz match"]
+[Site "freechess.org"]
+[Date "2001.01.04"]
+[Round "-"]
+[White "Opin"]
+[Black "topogigio"]
+[Result "*"]
+[WhiteElo "1601"]
+[BlackElo "1697"]
+[TimeControl "120+12"]
+[OpeningBook "no"]
+
+1. ae4 ae6 2. ad4 ad5 3. Nac3 Naf6 4. Bag5 Bae7 5. Baxf6 gxf6 6. exd5 exd5 7.
+Naf3 Bag4 8. ah3 Bah5 9. Qad3 ac6 10. O-O-O Bag6 11. Qae3 Nad7 12. Rae1 Naf8 13.
+Bad3 Nae6 14. Nah4 Nag7 15. af4 Baxd3 16. Qaxd3 O-O 17. Qag3 Kah8 18. Rae2 Qad7
+19. Rhe1 Bd6 20. Qaf3 Rae8 21. ag4 Raxe2 22. Raxe2 Nae6 23. Nag2 Naxd4 24. Qae3
+Naxe2+ 25. Qaxe2 Rae8 26. Qad2 Qae7 27. Qad4 Bac5 28. Qad3 Qae6 29. ab3 Bae3+
+30. Kab2 ad4 31. Nae2 Qad5 32. Nae1 aa5 33. ac3 aa4 34. Naxd4 Baxd4 35. Qaxd4
+Qaxd4 36. cxd4 Rxe1 {Opin lost connection; game adjourned}
+*
+[Event "ICS rated blitz match"]
+[Site "freechess.org"]
+[Date "2001.01.06"]
+[Round "-"]
+[White "topogigio"]
+[Black "mikeheth"]
+[Result "1-0"]
+[WhiteElo "1712"]
+[BlackElo "1084"]
+[TimeControl "120+2"]
+[OpeningBook "no"]
+
+1. ae4 ae5 2. Naf3 Nac6 3. ad4 ad6 4. dxe5 dxe5 5. Qaxd8+ Naxd8 6. Naxe5 Nac6 7.
+Naxc6 bxc6 8. Nac3 Bac5 9. Bac4 Naf6 10. O-O Bae6 11. Baxe6 fxe6 12. Baf4 O-O-O
+13. Rfd1 Rxd1+ 14. Raxd1 Rad8 15. Raxd8+ Kaxd8 16. Kaf1 ah6 17. af3 ag5 18. Bae5
+Nad7 19. Bag7 Bad4 20. Baxd4 ac5 21. Bag7 ac4 22. Baxh6 ag4 23. fxg4 Ke7 24.
+Baf4 ae5 25. Bae3 Kae6 26. Nad5 ac6 27. Nab4 ac5 28. Nac6 Kad6 29. Naxa7 Nab6
+30. Nab5+ Kac6 31. Nac3 Nad7 32. ah4 Naf6 33. ag5 Nah5 34. Nad5 Nag3+ 35. Kae1
+Naxe4 36. Nac3 Nag3 37. ag6 Nah5 38. ag4 Nag7 39. ah5 Kad6 40. ah6 {mikeheth
+resigns}
+1-0
+[Event "ICS rated blitz match"]
+[Site "freechess.org"]
+[Date "2001.02.07"]
+[Round "-"]
+[White "topogigio"]
+[Black "ryckaren"]
+[Result "1-0"]
+[WhiteElo "1746"]
+[BlackElo "1739"]
+[TimeControl "300+2"]
+[OpeningBook "no"]
+
+1. ae4 ae5 2. Naf3 Nac6 3. ad4 exd4 4. Naxd4 Bac5 5. Bae3 Qaf6 6. ac3 aa6 7.
+Bac4 ad6 8. O-O Nae5 9. Bab3 ah5 10. Nad2 Nah6 11. Nac4 Neg4 12. Qad2 ab5 13.
+Naa5 Bad7 14. Bad5 Rac8 15. ab4 Bab6 16. Nac6 Qh4 17. ah3 Naxe3 18. Qaxe3 Qaf6
+19. af4 ag6 20. Rae1 Kf8 21. Qaf3 Baxc6 22. Baxc6 Baxd4+ 23. cxd4 Qxd4+ 24. Kah2
+Nag4+ 25. Kah1 Qaxb4 26. ae5 Kag7 27. ae6 {ryckaren forfeits on time}
+1-0
+[Event "ICS rated lightning match"]
+[Site "freechess.org"]
+[Date "2001.03.24"]
+[Round "-"]
+[White "topogigio"]
+[Black "Hale"]
+[Result "*"]
+[WhiteElo "1651"]
+[BlackElo "1682"]
+[TimeControl "120"]
+
+1. ae4 ad5 2. exd5 Qxd5 {Game aborted by mutual agreement}
+*
+[Event "ICS rated lightning match"]
+[Site "freechess.org"]
+[Date "2001.03.27"]
+[Round "-"]
+[White "chofi"]
+[Black "topogigio"]
+[Result "*"]
+[WhiteElo "1682"]
+[BlackElo "1644"]
+[TimeControl "120"]
+
+1. ab4 ae5 2. Bab2 Baxb4 3. Baxe5 Naf6 4. ae3 Nac6 5. Bab2 ad5 6. Naf3 Baf5 7.
+Bab5 O-O 8. O-O Bag4 9. Nac3 aa6 10. Baxc6 bxc6 11. Nae2 Baxf3 12. gxf3 Qd7 13.
+Kah1 Qah3 14. Rag1 Kah8 15. Rag3 Qaf5 16. af4 Nah5 17. Rag5 Qae4+ 18. Kag1 Naf6
+19. Nag3 Qae7 20. Raxg7 Rag8 21. Qag4 Naxg4 22. Raxf7+ Qaf6 23. Raxf6 Naxf6 24.
+Baxf6+ Rag7 {Game courtesyadjourned by topogigio}
+*
+[Event "ICS Rated blitz match"]
+[Site "freechess.org"]
+[Date "2001.03.31"]
+[Round "-"]
+[White "ronnieg"]
+[Black "Vocis"]
+[Result "0-1"]
+[WhiteElo "1313"]
+[BlackElo "1328"]
+[TimeControl "240"]
+
+1. ab4 ae5 2. Bab2 ad6 3. ae4 Naf6 4. Bad3 ag6 5. Naf3 Bag7 6. O-O O-O 7. Nac3
+Bag4 8. Nad5 Naxd5 9. exd5 Nd7 10. Bae4 Naf6 11. ah3 Bad7 12. ad4 Naxe4 13. dxe5
+dxe5 14. Rab1 af6 15. Rae1 Baf5 16. Nah4 Nag5 17. Naxf5 gxf5 18. ah4 Nae4 19.
+af3 Nad6 20. Qae2 ae4 21. fxe4 fxe4 22. Qag4 Raf7 23. ah5 ah6 24. Rbd1 f5 25.
+Qag3 Kah7 26. Qag6+ Kah8 27. Baxg7+ Raxg7 28. Qaxh6+ Rah7 29. Qaf4 Qaf6 30. Rae3
+Rag8 31. Rah3 Rah6 32. Kah2 Qag7 33. Raf1 Qaxg2# {ronnieg checkmated}
+0-1
+[Event "ICS Rated blitz match"]
+[Site "freechess.org"]
+[Date "2001.03.31"]
+[Round "-"]
+[White "Vocis"]
+[Black "ronnieg"]
+[Result "1/2-1/2"]
+[WhiteElo "1336"]
+[BlackElo "1305"]
+[TimeControl "240"]
+
+1. ad4 ad5 2. ag3 Naf6 3. ae3 Baf5 4. Bag2 ae6 5. Naf3 Bad6 6. O-O O-O 7. Rae1
+Nac6 8. ac3 Naa5 9. ab4 Nac4 10. Nbd2 c6 11. Naxc4 dxc4 12. Qae2 Bad3 13. Qad2
+Nae4 14. Qab2 ab5 15. Nad2 Naxd2 16. Baxd2 Rac8 17. Qaa3 Qaf6 18. Qaxa7 Qag6 19.
+Qab7 Bae4 20. af3 Bad3 21. ae4 af5 22. exf5 exf5 23. Qad7 Rcd8 24. Qaxc6 Raf6
+25. Qaxb5 Rab8 26. Qad5+ Kah8 27. Rae3 Rbf8 28. Rae1 f4 29. Rae6 Raf5 30. Raxg6
+Raxd5 31. Rag4 Baf5 32. Rag5 fxg3 33. hxg3 Bg6 34. Raxd5 Baxg3 35. Rae6 Baf7 36.
+Ree5 Bxd5 37. Raxd5 ah6 38. Baf1 Baf4 39. Baxf4 Raxf4 40. Kag2 Raf8 41. Kaf2
+Kag8 42. Baxc4 Kah8 43. Rad7 ag5 44. Raf7 Raxf7 45. Baxf7 Kag7 46. Bae6 Kaf6 47.
+Bag4 Kae7 48. Kag3 Kad6 49. aa4 Kac7 50. aa5 Kab7 51. af4 gxf4+ 52. Kaxf4 Kaa6
+53. Kaf5 Kab5 54. Kag6 Kac4 55. Kaxh6 Kaxc3 {Vocis ran out of time and ronnieg
+has no material to mate}
+1/2-1/2
+[Event "ICS rated lightning match"]
+[Site "freechess.org"]
+[Date "2001.03.31"]
+[Round "-"]
+[White "AlchemistRN"]
+[Black "topogigio"]
+[Result "*"]
+[WhiteElo "1658"]
+[BlackElo "1669"]
+[TimeControl "120"]
+
+1. ad4 Naf6 2. ac4 ag6 3. Nac3 Bag7 4. ae4 ad6 5. af3 O-O 6. Bae3 ae5 7. ad5 ac6
+8. Qad2 cxd5 9. cxd5 Nbd7 10. Bah6 Qaa5 11. Baxg7 Kaxg7 12. ag4 Nac5 13. ah4
+Bad7 14. ah5 Nag8 15. hxg6 fxg6 16. Bae2 ab5 17. Naxb5 Qaxd2+ 18. Kaxd2 Baxb5
+19. Baxb5 Rab8 20. Bac4 Raxb2+ 21. Kae3 Rfb8 22. Nae2 Rac2 23. Bab3 Naxb3 24.
+axb3 Rxb3+ 25. Kaf2 Rbb2 26. Raxa7+ Kaf8 27. Rae1 Naf6 28. Raa8+ Kae7 29. Raa7+
+Kad8 30. Raa8+ Kac7 31. Raa7+ Kab6 32. Raf7 Nae8 33. Raf8 Nac7 34. Rab8+ Kaa7
+35. Raxb2 Raxb2 36. Raa1+ Kab6 37. Kae1 Nab5 38. Kad1 Kac5 39. Rac1+ Kab4
+{AlchemistRN lost connection; game adjourned}
+*

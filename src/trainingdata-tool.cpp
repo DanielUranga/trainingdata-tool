@@ -1,18 +1,12 @@
 ﻿#include "chess/position.h"
-#include "move.h"
-#include "move_do.h"
-#include "move_gen.h"
-#include "move_legal.h"
 #include "neural/encoder.h"
 #include "neural/network.h"
 #include "neural/writer.h"
-#include "pgn.h"
-#include "polyglot_lib.h"
-#include "san.h"
-#include "square.h"
-#include "util.h"
+
+#include <PGNGameCollection.h>
 
 #include <cstring>
+#include <fstream>
 #include <iostream>
 
 uint64_t resever_bits_in_bytes(uint64_t v) {
@@ -22,34 +16,79 @@ uint64_t resever_bits_in_bytes(uint64_t v) {
   return v;
 }
 
-lczero::Move poly_move_to_lc0_move(move_t move, board_t* board) {
-  lczero::BoardSquare from(square_rank(move_from(move)),
-                           square_file(move_from(move)));
-  lczero::BoardSquare to(square_rank(move_to(move)),
-                         square_file(move_to(move)));
-  lczero::Move m(from, to);
-
-  if (move_is_promote(move)) {
-    lczero::Move::Promotion lookup[5] = {
-        lczero::Move::Promotion::None,   lczero::Move::Promotion::Knight,
-        lczero::Move::Promotion::Bishop, lczero::Move::Promotion::Rook,
-        lczero::Move::Promotion::Queen,
-    };
-    auto prom = lookup[move >> 12];
-    m.SetPromotion(prom);
-  } else if (move_is_castle(move, board)) {
-    bool is_short_castle =
-        square_file(move_from(move)) < square_file(move_to(move));
-    int file_to = is_short_castle ? 6 : 2;
-    m.SetTo(lczero::BoardSquare(square_rank(move_to(move)), file_to));
+lczero::Move ply_to_lc0_move(pgn::Ply& ply, const lczero::ChessBoard& board,
+                             bool mirror) {
+  if (ply.isShortCastle() || ply.isLongCastle()) {
+    lczero::Move m;
+    int file_to = ply.isShortCastle() ? 6 : 2;
+    unsigned int rowIndex = 0;
+    m.SetFrom(lczero::BoardSquare(rowIndex, 4));
+    m.SetTo(lczero::BoardSquare(rowIndex, file_to));
     m.SetCastling();
-  }
+    return m;
+  } else {
+    for (auto legal_move : board.GenerateLegalMoves()) {
+      const bool knight_move = board.our_knights().get(legal_move.from());
+      const bool bishop_move = board.bishops().get(legal_move.from());
+      const bool rook_move = board.rooks().get(legal_move.from());
+      const bool queen_move = board.queens().get(legal_move.from());
+      const bool king_move = board.our_king().get(legal_move.from());
+      const bool pawn_move = board.pawns().get(legal_move.from());
 
-  if (colour_is_black(board->turn)) {
-    m.Mirror();
-  }
+      if (mirror) {
+        legal_move.Mirror();
+      }
 
-  return m;
+      if (legal_move.to().row() == ply.toSquare().rowIndex() &&
+          legal_move.to().col() == ply.toSquare().colIndex()) {
+        auto piece = ply.piece();
+        if (piece == pgn::Piece::Knight() && !knight_move ||
+            piece == pgn::Piece::Bishop() && !bishop_move ||
+            piece == pgn::Piece::Rook() && !rook_move ||
+            piece == pgn::Piece::Queen() && !queen_move ||
+            piece == pgn::Piece::King() && !king_move ||
+            piece == pgn::Piece::Pawn() && !pawn_move) {
+          continue;
+        }
+
+        int colIndex = ply.fromSquare().colIndex();
+        if (colIndex >= 0 && legal_move.from().col() != colIndex) {
+          continue;
+        }
+
+        int rowIndex = ply.fromSquare().rowIndex();
+        if (rowIndex >= 0 && legal_move.from().row() != rowIndex) {
+          continue;
+        }
+
+        if (ply.promotion()) {
+          switch (ply.promoted().letter()) {
+            case 'Q':
+              legal_move.SetPromotion(lczero::Move::Promotion::Queen);
+              break;
+            case 'R':
+              legal_move.SetPromotion(lczero::Move::Promotion::Rook);
+              break;
+            case 'B':
+              legal_move.SetPromotion(lczero::Move::Promotion::Bishop);
+              break;
+            case 'N':
+              legal_move.SetPromotion(lczero::Move::Promotion::Knight);
+            default:
+              assert(false);
+          }
+        }
+
+        if (mirror) {
+          legal_move.Mirror();
+        }
+
+        return legal_move;
+      }
+    }
+  }
+  assert(false);
+  return {};
 }
 
 lczero::V3TrainingData get_v3_training_data(
@@ -100,80 +139,73 @@ lczero::V3TrainingData get_v3_training_data(
   return result;
 }
 
-void write_one_game_training_data(pgn_t* pgn, int game_id) {
+void write_one_game_training_data(pgn::Game& pgn, int game_id) {
   std::vector<lczero::V3TrainingData> training_data;
   lczero::ChessBoard starting_board;
-  const std::string starting_fen =
-      std::strlen(pgn->fen) > 0 ? pgn->fen : lczero::ChessBoard::kStartingFen;
+  const std::string starting_fen = lczero::ChessBoard::kStartingFen;
   starting_board.SetFromFen(starting_fen, nullptr, nullptr);
   lczero::PositionHistory position_history;
   position_history.Reset(starting_board, 0, 0);
-  board_t board[1];
-  board_start(board);
-  char str[256];
   lczero::TrainingDataWriter writer(game_id);
 
   lczero::GameResult game_result;
-  if (my_string_equal(pgn->result, "1-0")) {
+  if (pgn.result().isWhiteWin()) {
     game_result = lczero::GameResult::WHITE_WON;
-  } else if (my_string_equal(pgn->result, "0-1")) {
+  } else if (pgn.result().isBlackWin()) {
     game_result = lczero::GameResult::BLACK_WON;
   } else {
     game_result = lczero::GameResult::DRAW;
   }
 
-  while (pgn_next_move(pgn, str, 256)) {
-    // Extract move from pgn
-    int move = move_from_san(str, board);
-    if (move == MoveNone || !move_is_legal(move, board)) {
-      std::cout << "illegal move \"" << str << "\" at line " << pgn->move_line
-                << ", column " << pgn->move_column;
-      break;
-    }
-
-    // Convert move to lc0 format
-    lczero::Move lc0_move = poly_move_to_lc0_move(move, board);
-    
-    // Uncomment this block if you want to check if you want to check if
-    // "poly_move_to_lc0_move" works ok:
-    /*
-    bool found = false;
-    for (auto legal : position_history.Last().GetBoard().GenerateLegalMoves()) {
-      if (legal == lc0_move && legal.castling() == lc0_move.castling()) {
-        found = true;
+  for (auto& move : pgn.moves()) {
+    for (bool white : {true, false}) {
+      auto& ply = white ? move.white() : move.black();
+      if (!ply.valid()) {
         break;
       }
+      // Convert move to lc0 format
+      lczero::Move lc0_move =
+          ply_to_lc0_move(ply, position_history.Last().GetBoard(), !white);
+
+      bool found = false;
+      for (auto legal :
+           position_history.Last().GetBoard().GenerateLegalMoves()) {
+        if (legal == lc0_move && legal.castling() == lc0_move.castling()) {
+          found = true;
+          break;
+        }
+      }
+
+      if (!found) {
+        std::cout << position_history.Last().DebugString() << std::endl;
+        std::cout << "Move not found: " << ply << " " << lc0_move.as_string()
+                  << " " << game_id << " " << std::endl;
+        return;
+      }
+
+      // Generate training data
+      lczero::V3TrainingData chunk =
+          get_v3_training_data(game_result, position_history, lc0_move);
+
+      // Execute move
+      position_history.Append(lc0_move);
+
+      writer.WriteChunk(chunk);
     }
-    if (!found) {
-      std::cout << "Move not found: " << str << " " << game_id << " "
-                << square_file(move_to(move)) << std::endl;
-    }
-    */
-
-    // Generate training data
-    lczero::V3TrainingData chunk =
-        get_v3_training_data(game_result, position_history, lc0_move);
-
-    // Execute move
-    position_history.Append(lc0_move);
-    move_do(board, move);
-
-    writer.WriteChunk(chunk);
   }
 
   writer.Finalize();
 }
 
 int main(int argc, char* argv[]) {
-  polyglot_init();
   int game_id = 0;
   while (*++argv) {
-    printf("%s\n", *argv);
-    pgn_t pgn[1];
-    pgn_open(pgn, *argv);
-    while (pgn_next_game(pgn)) {
-      write_one_game_training_data(pgn, game_id++);
+    std::cout << *argv << std::endl;
+    std::ifstream pgnfile(*argv);
+    pgn::GameCollection games;
+    pgnfile >> games;
+    for (auto& game : games) {
+      write_one_game_training_data(game, game_id++);
     }
-    pgn_close(pgn);
   }
 }

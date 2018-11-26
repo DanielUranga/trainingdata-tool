@@ -1,0 +1,34 @@
+[Event "ICS rated blitz match"]
+[Site "freechess.org"]
+[Date "2000.06.07"]
+[Round "-"]
+[White "egrojarieiv"]
+[Black "topogigio"]
+[Result "0-1"]
+[WhiteElo "879"]
+[BlackElo "1678"]
+[TimeControl "120+12"]
+[OpeningBook "no"]
+
+1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Bd3 Nxd4 7. Bg5
+Ne6 8. e5 Nxg5 9. exf6 Qxf6 10. a3 Bxc3+ 11. bxc3 Qxc3+ 12. Kf1 Ne6 13. Bf5
+O-O
+{egrojarieiv resigns} 0-1
+
+[Event "ICS rated blitz match"]
+[Site "freechess.org"]
+[Date "2000.06.16"]
+[Round "-"]
+[White "DaSa"]
+[Black "topogigio"]
+[Result "0-1"]
+[WhiteElo "1089"]
+[BlackElo "1680"]
+[TimeControl "120+12"]
+[OpeningBook "no"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. d3 Nf6 5. Ng5 O-O 6. Nxf7 Rxf7 7. Bxf7+
+Kxf7 8. O-O d5 9. exd5 Qxd5 10. Nc3 Qd4 11. Be3 Qd6 12. Bxc5 Qxc5 13. Qf3
+Nd4 14. Qh3 Bxh3
+{DaSa resigns} 0-1
+

@@ -1,0 +1,73 @@
+                             pgnlib ver. 0.0.0
+
+          Andrea Vinzoni  <vinzoni@users.sourceforge.net> (author)
+
+ 1. What's pgnlib?
+ ---------------------
+
+ pgnlib is a c++ class library for linux intending to provide a simple 
+ programming interface to PGN chess games collections.
+
+ 2. Supported Systems
+ --------------------
+
+ For the time being I have tested pgnlib only on my own machine, a 
+ red-hat linux 7.1 (kernel 2.4.2-2).
+
+ pgnlib source code should be standard enough, so I'm confident it
+ should work also on your system. 
+
+ Let me know!
+
+
+ 3. Installation
+ ---------------
+
+ $ ./configure
+ $ make
+ $ su
+ # make install
+
+
+ 4. Usage
+ --------
+
+ Unfortunately there isn't yet any documentation available on pgnlib.
+ No man page, no texinfo, no manual, nothing.
+ I hope to write down something as soon as possible.
+
+ In the meanwhile you can rely on four sample programs showing basic 
+ usage of pgnlib.
+ Look for './example_X/" dirs, cd into them and look at the example_X.cpp
+ file.
+
+ If you want to build the examples you have to install pgnlib first (see
+ previous 'Installation' section) and then
+ $ cd ./example_1
+ $ make
+ 
+ 
+ 5. Reports and questions
+ ------------------------
+
+ Please send comments, questions and bug reports to
+ vinzoni@users.sourceforge.net
+
+ 5. Copyright
+ ------------------------
+
+ pgnlib is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2, or (at your option)
+ any later version.
+
+ pgnlib is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with autoconf; see the file COPYING.  If not, write to
+ the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ Boston, MA 02111-1307, USA.
+ 

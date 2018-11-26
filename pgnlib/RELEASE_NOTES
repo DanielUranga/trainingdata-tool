@@ -1,0 +1,40 @@
+Release notes for pgnlib-0.2.5
+
+- complete support for fen notation in Position class.
+
+Release notes for pgnlib-0.2.4
+
+- castle rights support in fen string and Position class
+
+Release notes for pgnlib-0.2.3
+
+- bug fix in Ply and Square classes.
+
+Release notes for pgnlib-0.2.2
+
+- bug fix in pgn::Game::operator<< affecting empty games (no move list, only tags)
+- removed deprecated public methods in GameCollection class (insert(tag) and others)
+- GameCollection::operator[] no more virtual.
+- method GameCollection::insert(Game) renamed push_back(Game) 
+- new methods GameCollection::insert/erase (more STL-like).
+- improved STL compliance for iterators in classes MoveList,TagList,Position,GameCollection.
+
+Release notes for pgnlib-0.2.1
+
+- bug fixes in pgn::Position.
+- three new usage examples.
+
+Release notes for pgnlib-0.2.0
+
+- new class pgn::Position (supporting FEN notation).
+- new enumerate type Color (header: PGNPiece.h).
+- member function pgn::Piece:id() renamed letter().
+- added a "null" Piece constant object. 
+- added Color attribute in Piece class.
+- Square class now aware of which piece stands on it.
+- method pgn::Ply::fromSquare() returns a Square object instead of a char.
+- added methods pgn::Ply:setFromSquare(), pgn::Ply::setToSquare().
+- added operator >> to MoveList class.
+- bug fix in parsing moves in pgn text stream.
+- added method str() to Square class.
+- removed methods colIndex() and rowIndex() from Square class. 

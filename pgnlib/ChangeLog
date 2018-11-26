@@ -1,0 +1,30 @@
+06.29.2002 - Initial Release
+
+01.09.2007 - Back on developing. Heavy software refactoring with parsing
+code completely rewritten. Pgn parsing improved in many respects:
+correctness, error-handling, performance, but still working on it.
+Library still functional incomplete (no variations, no glyphs, ...) and not
+usable for pratical purposes.
+
+09.06.2011 - Compilation problems fixed (mainly by Arnaud Quirin, thank you!). 
+
+07.08.2011 - Bug fixes and Makefile improvement by JMM (thanks!). Pgn parsing
+improved in supporting variations and glyphs (still no access methods for such
+objects are provided). 
+
+09.06.2013 - Several extensions: new class Position with FEN support. 
+Now possibile to get the full starting square in a Ply object. 
+New Color type for pieces and Square objects are now aware of the Pieces 
+standing on them. More minor changes and bug-fixes.
+
+09.14.2013 - Just a couple of bug-fix found in Position class and three new code
+samples. 
+
+10.20.2013 - Improved 'stl-compliance' for container classes (GameCollection,
+MoveList,...). Iterators should now work a little better with stl algorithms.
+
+10.23.2016 - Fixed two nasty bugs in Ply and Square class.
+
+11.03.2016 - Improved support for fen string and Position (castle rights)
+
+10.01.2017 - Full support for fen notation in class Position.
