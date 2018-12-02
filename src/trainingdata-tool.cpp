@@ -52,21 +52,27 @@ lczero::Move poly_move_to_lc0_move(move_t move, board_t* board) {
   return m;
 }
 
-lczero::V3TrainingData get_v3_training_data(
+lczero::V4TrainingData get_v4_training_data(
     lczero::GameResult game_result, const lczero::PositionHistory& history,
-    lczero::Move played_move) {
-  lczero::V3TrainingData result;
+    lczero::Move played_move, lczero::MoveList legal_moves) {
+  lczero::V4TrainingData result;
 
   // Set version.
-  result.version = 3;
+  result.version = 4;
 
-  // Populate probabilities, for supervised learning simply assign 1.0 to the
-  // move that was effectively played
-  std::memset(result.probabilities, 0, sizeof(result.probabilities));
+  // Illegal moves will have "-1" probability
+  std::memset(result.probabilities, -1.0f, sizeof(result.probabilities));
+
+  // Populate legal moves with probability "0"
+  for (lczero::Move move : legal_moves) {
+    result.probabilities[move.as_nn_index()] = 0;
+  }
+
+  // Assign "1" (100%) to the move that was actually played
   result.probabilities[played_move.as_nn_index()] = 1.0f;
 
   // Populate planes.
-  lczero::InputPlanes planes = EncodePositionForNN(history, 8);
+  lczero::InputPlanes planes = EncodePositionForNN(history, 8, lczero::FillEmptyHistory::NO);
   int plane_idx = 0;
   for (auto& plane : result.planes) {
     plane = resever_bits_in_bytes(planes[plane_idx++].mask);
@@ -91,21 +97,24 @@ lczero::V3TrainingData get_v3_training_data(
   // Game result.
   if (game_result == lczero::GameResult::WHITE_WON) {
     result.result = position.IsBlackToMove() ? -1 : 1;
+    result.best_q = position.IsBlackToMove() ? -1.0f : 1.0f;
   } else if (game_result == lczero::GameResult::BLACK_WON) {
     result.result = position.IsBlackToMove() ? 1 : -1;
+    result.best_q = position.IsBlackToMove() ? 1.0f : -1.0f;
   } else {
     result.result = 0;
+    result.best_q = 0.0f;
   }
 
   return result;
 }
 
 void write_one_game_training_data(pgn_t* pgn, int game_id) {
-  std::vector<lczero::V3TrainingData> training_data;
+  std::vector<lczero::V4TrainingData> training_data;
   lczero::ChessBoard starting_board;
   const std::string starting_fen =
-      std::strlen(pgn->fen) > 0 ? pgn->fen : lczero::ChessBoard::kStartingFen;
-  starting_board.SetFromFen(starting_fen, nullptr, nullptr);
+      std::strlen(pgn->fen) > 0 ? pgn->fen : lczero::ChessBoard::kStartposFen;
+  starting_board.SetFromFen(starting_fen);
   lczero::PositionHistory position_history;
   position_history.Reset(starting_board, 0, 0);
   board_t board[1];
@@ -134,11 +143,9 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
     // Convert move to lc0 format
     lczero::Move lc0_move = poly_move_to_lc0_move(move, board);
     
-    // Uncomment this block if you want to check if you want to check if
-    // "poly_move_to_lc0_move" works ok:
-    /*
     bool found = false;
-    for (auto legal : position_history.Last().GetBoard().GenerateLegalMoves()) {
+    auto legal_moves = position_history.Last().GetBoard().GenerateLegalMoves();
+    for (auto legal : legal_moves) {
       if (legal == lc0_move && legal.castling() == lc0_move.castling()) {
         found = true;
         break;
@@ -148,11 +155,10 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
       std::cout << "Move not found: " << str << " " << game_id << " "
                 << square_file(move_to(move)) << std::endl;
     }
-    */
 
     // Generate training data
-    lczero::V3TrainingData chunk =
-        get_v3_training_data(game_result, position_history, lc0_move);
+    lczero::V4TrainingData chunk = get_v4_training_data(
+        game_result, position_history, lc0_move, legal_moves);
 
     // Execute move
     position_history.Append(lc0_move);

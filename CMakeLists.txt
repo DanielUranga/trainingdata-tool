@@ -13,6 +13,7 @@ set (
     "lc0/src/neural/encoder.cc"
     "lc0/src/neural/writer.cc"
     "lc0/src/utils/commandline.cc"
+    "lc0/src/utils/logging.cc"
     "lc0/src/utils/random.cc"
 )
 
