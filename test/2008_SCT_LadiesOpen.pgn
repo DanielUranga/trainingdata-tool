@@ -15,7 +15,7 @@
 [EventCountry "SWE"]
 [SourceDate "2008.01.01"]
 
-1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 Qb6 8.
+1. e4 {test test test} c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 Qb6 8.
 Nb3 Be7 9. O-O-O O-O 10. f3 a6 11. g4 Rd8 12. Be3 Qc7 13. Qf2 Nd7 14. g5 b5 15.
 f4 b4 16. Na4 Rb8 17. Bh3 Qb7 18. Nd2 Qb5 19. b3 d5 20. exd5 exd5 21. Nf3 Bf8
 22. Bf1 Qa5 23. g6 hxg6 24. Ng5 Ne7 25. h4 Nf5 26. h5 gxh5 27. Rxh5 Nf6 28. Rh1
@@ -5581,7 +5581,7 @@ Bc1 a3 47. h5 Be8 48. Ke2 Bf7 49. Bc6 Bc5 0-1
 1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 d5 5. cxd5 Nxd5 6. e4 Nb6 7. Ne2 Nc6 8. d5
 Na5 9. Nbc3 c6 10. O-O cxd5 11. exd5 Nac4 12. b3 Nd6 13. a4 O-O 14. h3 Bd7 15.
 Ba3 Re8 16. Re1 h5 17. Rc1 Nbc8 18. Nd4 Rb8 19. Nc6 bxc6 20. dxc6 Bh6 21. cxd7
-Qxd7 22. Rb1 Rd8 23. Nd5 Bg7 24. Rc1 Nf5 25. g4 hxg4 26. hxg4 Nh6 27. Bf3 e6
+Qxd7 22. Rb1 Rd8 23. Nd5 {a comment} Bg7 24. Rc1 Nf5 25. g4 hxg4 26. hxg4 Nh6 27. Bf3 e6
 28. Rxc8 Rbxc8 29. Ne7+ Qxe7 30. Bxe7 Rxd1 31. Rxd1 f5 32. gxf5 Nxf5 33. Rd8+
 Rxd8 34. Bxd8 Bc3 35. Be2 Kf7 36. Bc4 Ke8 37. Bc7 Kd7 38. Bb8 a5 39. Kg2 Nd6
 40. Bd3 Bd4 41. Bxg6 Bc5 42. Bxd6 1/2-1/2
@@ -5629,5 +5629,5 @@ Rh2 47. Bf7 f4 48. Rd7 f3 49. Bxd5 Rh1# 0-1
 [EventCountry "SWE"]
 [SourceDate "2008.01.01"]
 
-1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 1/2-1/2
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 {comment in last move} 1/2-1/2
 

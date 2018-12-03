@@ -1,4 +1,4 @@
-﻿#include "chess/position.h"
+#include "chess/position.h"
 #include "move.h"
 #include "move_do.h"
 #include "move_gen.h"
@@ -138,6 +138,10 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
       std::cout << "illegal move \"" << str << "\" at line " << pgn->move_line
                 << ", column " << pgn->move_column;
       break;
+    }
+
+    if (pgn->last_read_comment[0]) {
+      std::cout << "pgn comment: " << pgn->last_read_comment << std::endl;
     }
 
     // Convert move to lc0 format
