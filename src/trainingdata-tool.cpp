@@ -178,12 +178,13 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
       std::cout << str << " pgn comment: " << pgn->last_read_comment << std::endl;
     }
 
+    bool bad_move = false;
     if (pgn->last_read_nag[0]) {
       // If the move is bad or dubious, skip it.
       // See https://en.wikipedia.org/wiki/Numeric_Annotation_Glyphs for PGN NAGs
       if (pgn->last_read_nag[0] == '2' || pgn->last_read_nag[0] == '4' ||
           pgn->last_read_nag[0] == '5' || pgn->last_read_nag[0] == '6') {
-        break;
+        bad_move = true;
       }
     }
 
@@ -203,15 +204,16 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
                 << square_file(move_to(move)) << std::endl;
     }
 
-    // Generate training data
-    lczero::V4TrainingData chunk = get_v4_training_data(
-        game_result, position_history, lc0_move, legal_moves);
+    if (!bad_move) {
+      // Generate training data
+      lczero::V4TrainingData chunk = get_v4_training_data(
+          game_result, position_history, lc0_move, legal_moves);
+      writer.WriteChunk(chunk);
+    }
 
     // Execute move
     position_history.Append(lc0_move);
     move_do(board, move);
-
-    writer.WriteChunk(chunk);
   }
 
   if (verbose) {
