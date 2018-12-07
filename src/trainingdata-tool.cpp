@@ -14,12 +14,28 @@
 
 #include <cstring>
 #include <iostream>
+#include <regex>
 
 uint64_t resever_bits_in_bytes(uint64_t v) {
   v = ((v >> 1) & 0x5555555555555555ull) | ((v & 0x5555555555555555ull) << 1);
   v = ((v >> 2) & 0x3333333333333333ull) | ((v & 0x3333333333333333ull) << 2);
   v = ((v >> 4) & 0x0F0F0F0F0F0F0F0Full) | ((v & 0x0F0F0F0F0F0F0F0Full) << 4);
   return v;
+}
+
+bool extract_lichess_comment_score(const char* comment, float& Q) {
+  std::string s(comment);
+  std::regex rgx("\\[%eval (-?\\d+\\.\\d+)\\]");
+  std::smatch matches;
+  if (std::regex_search(s, matches, rgx)) {
+    Q = std::stof(matches[1].str());
+    return true;
+  }
+  return false;
+}
+
+float convert_sf_score_to_win_probability(float score) {
+  return 2 / (1 + exp(-0.4 * score)) - 1;
 }
 
 lczero::Move poly_move_to_lc0_move(move_t move, board_t* board) {
@@ -54,7 +70,7 @@ lczero::Move poly_move_to_lc0_move(move_t move, board_t* board) {
 
 lczero::V4TrainingData get_v4_training_data(
     lczero::GameResult game_result, const lczero::PositionHistory& history,
-    lczero::Move played_move, lczero::MoveList legal_moves) {
+    lczero::Move played_move, lczero::MoveList legal_moves, float Q) {
   lczero::V4TrainingData result;
 
   // Set version.
@@ -72,7 +88,8 @@ lczero::V4TrainingData get_v4_training_data(
   result.probabilities[played_move.as_nn_index()] = 1.0f;
 
   // Populate planes.
-  lczero::InputPlanes planes = EncodePositionForNN(history, 8, lczero::FillEmptyHistory::NO);
+  lczero::InputPlanes planes =
+      EncodePositionForNN(history, 8, lczero::FillEmptyHistory::NO);
   int plane_idx = 0;
   for (auto& plane : result.planes) {
     plane = resever_bits_in_bytes(planes[plane_idx++].mask);
@@ -97,19 +114,19 @@ lczero::V4TrainingData get_v4_training_data(
   // Game result.
   if (game_result == lczero::GameResult::WHITE_WON) {
     result.result = position.IsBlackToMove() ? -1 : 1;
-    result.best_q = position.IsBlackToMove() ? -1.0f : 1.0f;
   } else if (game_result == lczero::GameResult::BLACK_WON) {
     result.result = position.IsBlackToMove() ? 1 : -1;
-    result.best_q = position.IsBlackToMove() ? 1.0f : -1.0f;
   } else {
     result.result = 0;
-    result.best_q = 0.0f;
   }
+
+  // Q for Q+Z training
+  result.best_q = position.IsBlackToMove() ? -Q : Q;
 
   return result;
 }
 
-void write_one_game_training_data(pgn_t* pgn, int game_id) {
+void write_one_game_training_data(pgn_t* pgn, int& game_id) {
   std::vector<lczero::V4TrainingData> training_data;
   lczero::ChessBoard starting_board;
   const std::string starting_fen =
@@ -120,7 +137,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
   board_t board[1];
   board_start(board);
   char str[256];
-  lczero::TrainingDataWriter writer(game_id);
+  lczero::TrainingDataWriter* writer = nullptr;
 
   lczero::GameResult game_result;
   if (my_string_equal(pgn->result, "1-0")) {
@@ -136,27 +153,44 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
     int move = move_from_san(str, board);
     if (move == MoveNone || !move_is_legal(move, board)) {
       std::cout << "illegal move \"" << str << "\" at line " << pgn->move_line
-                << ", column " << pgn->move_column;
+                << ", column " << pgn->move_column << std::endl;
       break;
-    }
-
-    if (pgn->last_read_comment[0]) {
-      std::cout << str << " pgn comment: " << pgn->last_read_comment << std::endl;
     }
 
     bool bad_move = false;
     if (pgn->last_read_nag[0]) {
       // If the move is bad or dubious, skip it.
-      // See https://en.wikipedia.org/wiki/Numeric_Annotation_Glyphs for PGN NAGs
+      // See https://en.wikipedia.org/wiki/Numeric_Annotation_Glyphs for PGN
+      // NAGs
       if (pgn->last_read_nag[0] == '2' || pgn->last_read_nag[0] == '4' ||
           pgn->last_read_nag[0] == '5' || pgn->last_read_nag[0] == '6') {
         bad_move = true;
       }
     }
 
+    // Extract SF scores and convert to win probability
+    float Q = 0.0f;
+    if (pgn->last_read_comment[0]) {
+      float lichess_score;
+      bool success =
+          extract_lichess_comment_score(pgn->last_read_comment, lichess_score);
+      if (!success) {
+        break; // Comment contained no "%eval"
+      }
+      Q = convert_sf_score_to_win_probability(lichess_score);
+
+      // Since there is at least one move to write, initialize the writer
+      if (!writer) {
+        writer = new lczero::TrainingDataWriter(game_id++);
+      }
+    } else {
+      // This game has no comments, skip it.
+      break;
+    }
+
     // Convert move to lc0 format
     lczero::Move lc0_move = poly_move_to_lc0_move(move, board);
-    
+
     bool found = false;
     auto legal_moves = position_history.Last().GetBoard().GenerateLegalMoves();
     for (auto legal : legal_moves) {
@@ -173,8 +207,8 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
     if (!bad_move) {
       // Generate training data
       lczero::V4TrainingData chunk = get_v4_training_data(
-          game_result, position_history, lc0_move, legal_moves);
-      writer.WriteChunk(chunk);
+          game_result, position_history, lc0_move, legal_moves, Q);
+      writer->WriteChunk(chunk);
     }
 
     // Execute move
@@ -182,7 +216,13 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
     move_do(board, move);
   }
 
-  writer.Finalize();
+  // Fast-forward any remaining move
+  while (pgn_next_move(pgn, str, 256));
+
+  if (writer) {
+    writer->Finalize();
+    delete writer;
+  }
 }
 
 int main(int argc, char* argv[]) {
@@ -193,7 +233,7 @@ int main(int argc, char* argv[]) {
     pgn_t pgn[1];
     pgn_open(pgn, *argv);
     while (pgn_next_game(pgn)) {
-      write_one_game_training_data(pgn, game_id++);
+      write_one_game_training_data(pgn, game_id);
     }
     pgn_close(pgn);
   }
