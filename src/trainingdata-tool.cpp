@@ -183,8 +183,6 @@ void write_one_game_training_data(pgn_t* pgn, int& game_id) {
 
       // Since there is at least one move to write, initialize the writer
       if (!writer) {
-        std::cout << game_id << " " << game_id / max_games_per_directory
-                  << std::endl;
         writer = new lczero::TrainingDataWriter(
             game_id,
             "supervised-" + std::to_string(game_id / max_games_per_directory));
