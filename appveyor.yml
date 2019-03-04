@@ -31,3 +31,6 @@ build:
   project: c:\projects\trainingdatatool\build\Project.sln
   verbosity: minimal
   parallel: true
+artifacts:
+  - path: C:\projects\trainingdatatool\build\Release\trainingdata-tool.exe
+    name: TrainingdataTool
