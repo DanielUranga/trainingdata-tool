@@ -6,4 +6,4 @@
 	url = https://github.com/madler/zlib.git
 [submodule "polyglot"]
 	path = polyglot
-	url = git@github.com:DanielUranga/polyglot.git
+	url = https://github.com/DanielUranga/polyglot.git

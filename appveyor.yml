@@ -1,0 +1,33 @@
+version: '{build}'
+branches:
+  only:
+  - master
+clone_folder: c:\projects\trainingdatatool
+image:
+- Visual Studio 2017
+configuration:
+- Release
+platform:
+- x64
+environment:
+  matrix:
+  - arch: Win64
+init:
+- set arch=
+- if "%arch%"=="Win64" ( set arch= Win64)
+- echo %arch%
+- echo %APPVEYOR_BUILD_WORKER_IMAGE%
+- if "%APPVEYOR_BUILD_WORKER_IMAGE%"=="Visual Studio 2017" ( set generator="Visual Studio 15 2017%arch%" )
+- echo %generator%
+before_build:
+- cmd: |-
+    git submodule update --init --recursive
+    mkdir build
+    cd build
+    cmake --version
+    cmake .. -G %generator%
+    dir c:\projects\trainingdatatool\build
+build:
+  project: c:\projects\trainingdatatool\build\Project.sln
+  verbosity: minimal
+  parallel: true
