@@ -168,6 +168,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
 }
 
 int main(int argc, char* argv[]) {
+  lczero::InitializeMagicBitboards();
   polyglot_init();
   int game_id = 0;
   while (*++argv) {
