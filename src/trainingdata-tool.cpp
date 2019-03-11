@@ -14,6 +14,7 @@
 
 #include <cstring>
 #include <iostream>
+#include <sstream>
 
 uint64_t resever_bits_in_bytes(uint64_t v) {
   v = ((v >> 1) & 0x5555555555555555ull) | ((v & 0x5555555555555555ull) << 1);
@@ -72,7 +73,8 @@ lczero::V4TrainingData get_v4_training_data(
   result.probabilities[played_move.as_nn_index()] = 1.0f;
 
   // Populate planes.
-  lczero::InputPlanes planes = EncodePositionForNN(history, 8, lczero::FillEmptyHistory::FEN_ONLY);
+  lczero::InputPlanes planes =
+      EncodePositionForNN(history, 8, lczero::FillEmptyHistory::FEN_ONLY);
   int plane_idx = 0;
   for (auto& plane : result.planes) {
     plane = resever_bits_in_bytes(planes[plane_idx++].mask);
@@ -109,13 +111,29 @@ lczero::V4TrainingData get_v4_training_data(
 void write_one_game_training_data(pgn_t* pgn, int game_id) {
   std::vector<lczero::V4TrainingData> training_data;
   lczero::ChessBoard starting_board;
-  const std::string starting_fen =
+  std::string starting_fen =
       std::strlen(pgn->fen) > 0 ? pgn->fen : lczero::ChessBoard::kStartposFen;
+
+  {
+    std::istringstream fen_str(starting_fen);
+    std::string board;
+    std::string who_to_move;
+    std::string castlings;
+    std::string en_passant;
+    int no_capture_halfmoves;
+    int total_moves;
+    fen_str >> board >> who_to_move >> castlings >> en_passant;
+    if (fen_str.eof()) {
+      starting_fen.append(" 0 0");
+    }
+  }
+
   starting_board.SetFromFen(starting_fen, nullptr, nullptr);
+
   lczero::PositionHistory position_history;
   position_history.Reset(starting_board, 0, 0);
   board_t board[1];
-  board_start(board);
+  board_from_fen(board, starting_fen.c_str());
   char str[256];
   lczero::TrainingDataWriter writer(game_id);
 
@@ -139,7 +157,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
 
     // Convert move to lc0 format
     lczero::Move lc0_move = poly_move_to_lc0_move(move, board);
-    
+
     bool found = false;
     auto legal_moves = position_history.Last().GetBoard().GenerateLegalMoves();
     for (auto legal : legal_moves) {
@@ -154,8 +172,8 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
     }
 
     // Generate training data
-    lczero::V4TrainingData chunk =
-        get_v4_training_data(game_result, position_history, lc0_move, legal_moves);
+    lczero::V4TrainingData chunk = get_v4_training_data(
+        game_result, position_history, lc0_move, legal_moves);
 
     // Execute move
     position_history.Append(lc0_move);
