@@ -1,4 +1,4 @@
-﻿#include "chess/position.h"
+#include "chess/position.h"
 #include "move.h"
 #include "move_do.h"
 #include "move_gen.h"
@@ -13,8 +13,14 @@
 #include "util.h"
 
 #include <cstring>
+#include <fstream>
 #include <iostream>
 #include <sstream>
+
+inline bool file_exists(const std::string& name) {
+  std::ifstream f(name.c_str());
+  return f.good();
+}
 
 uint64_t resever_bits_in_bytes(uint64_t v) {
   v = ((v >> 1) & 0x5555555555555555ull) | ((v & 0x5555555555555555ull) << 1);
@@ -108,7 +114,7 @@ lczero::V4TrainingData get_v4_training_data(
   return result;
 }
 
-void write_one_game_training_data(pgn_t* pgn, int game_id) {
+void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
   std::vector<lczero::V4TrainingData> training_data;
   lczero::ChessBoard starting_board;
   std::string starting_fen =
@@ -155,6 +161,11 @@ void write_one_game_training_data(pgn_t* pgn, int game_id) {
       break;
     }
 
+    if (verbose) {
+      move_to_san(move, board, str, 256);
+      std::cout << "Read move: " << str << std::endl;
+    }
+
     // Convert move to lc0 format
     lczero::Move lc0_move = poly_move_to_lc0_move(move, board);
 
@@ -189,12 +200,22 @@ int main(int argc, char* argv[]) {
   lczero::InitializeMagicBitboards();
   polyglot_init();
   int game_id = 0;
-  while (*++argv) {
-    printf("%s\n", *argv);
+  bool verbose = false;
+  for (size_t idx = 0; idx < argc; ++idx) {
+    if (0 == static_cast<std::string>("-v").compare(argv[idx])) {
+      std::cout << "Verbose mode ON" << std::endl;
+      verbose = true;
+    }
+  }
+  for (size_t idx = 1; idx < argc; ++idx) {
+    if (!file_exists(argv[idx])) continue;
     pgn_t pgn[1];
-    pgn_open(pgn, *argv);
+    if (verbose) {
+      std::cout << "Opening \'" << argv[idx] << "\'" << std::endl;
+    }
+    pgn_open(pgn, argv[idx]);
     while (pgn_next_game(pgn)) {
-      write_one_game_training_data(pgn, game_id++);
+      write_one_game_training_data(pgn, game_id++, verbose);
     }
     pgn_close(pgn);
   }
