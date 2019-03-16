@@ -134,6 +134,11 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
     }
   }
 
+  if (verbose) {
+    std::cout << "Started new game, starting FEN: \'" << starting_fen << "\'"
+              << std::endl;
+  }
+
   starting_board.SetFromFen(starting_fen, nullptr, nullptr);
 
   lczero::PositionHistory position_history;
@@ -144,6 +149,9 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
   lczero::TrainingDataWriter writer(game_id);
 
   lczero::GameResult game_result;
+  if (verbose) {
+    std::cout << "Game result: " << pgn->result << std::endl;
+  }
   if (my_string_equal(pgn->result, "1-0")) {
     game_result = lczero::GameResult::WHITE_WON;
   } else if (my_string_equal(pgn->result, "0-1")) {
@@ -157,7 +165,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
     int move = move_from_san(str, board);
     if (move == MoveNone || !move_is_legal(move, board)) {
       std::cout << "illegal move \"" << str << "\" at line " << pgn->move_line
-                << ", column " << pgn->move_column;
+                << ", column " << pgn->move_column << std::endl;
       break;
     }
 
@@ -191,6 +199,10 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
     move_do(board, move);
 
     writer.WriteChunk(chunk);
+  }
+
+  if (verbose) {
+    std::cout << "Game end." << std::endl;
   }
 
   writer.Finalize();
