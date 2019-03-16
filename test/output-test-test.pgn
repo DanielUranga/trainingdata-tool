@@ -1,0 +1,3820 @@
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... c1=Q 2. Ka5 f5 3. Ka4 f4 4. Kb3 f3 5. Ka2 f2 6. Kb3 f1=Q 7. Ka2 Qfc4# 0-1
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Kd5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Ke5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Kf5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Kd6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Kf6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Kd7
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Ke7
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Bg1
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Bg3
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Bf4
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Be5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Bd6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Bc7
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... Bb8
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... c1=Q
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... c1=N
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... c1=R
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... c1=B
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... f5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1 0 1"]
+[Result "0-1"]
+
+1... f6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=Q 2. Ka5 f5 3. Ka4 f4 4. Kb3 f3 5. Ka2 f2 6. Kb3 f1=Q 7. Ka2 Qfc4# 0-1
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ke5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd7
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ke7
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bg1
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bg3
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bf4
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Be5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bd6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bc7
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bb8
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=Q
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=N
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=R
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=B
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... f5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... f6
+
+[FEN "8/5p2/6p1/4k3/2Kpp3/8/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kb3 d3 2. Ka2 d2 3. Ka1 d1=Q+ 4. Ka2 e3 5. Kb2 e2 6. Ka2 e1=Q 7. Kb2 g5 8. Ka2 g4 9. Kb2 g3 10. Ka2 g2 11. Kb2 g1=Q 12. Ka2 f5 13. Kb2 f4 14. Ka2 f3 15. Kb2 f2 16. Ka2 f1=Q 17. Kb2 Qb3+ 18. Kxb3 Qa1 19. Kc2 Qf1d1# 0-1
+
+[FEN "8/8/6p1/4qpk1/2K5/8/8/7Q w - - 0 1"]
+[Result "0-1"]
+
+1. Qg1+ Kf6 2. Qb6+ Qe6+ 3. Kc3 Qxb6 4. Kc2 f4 5. Kc1 f3 6. Kd1 f2 7. Kc1 f1=Q+ 8. Kc2 g5 9. Kd2 g4 10. Kc2 g3 11. Kd2 g2 12. Kc2 g1=Q 13. Kd2 Qb2# 0-1
+
+[FEN "4Q3/8/3Q4/8/8/8/P3k2p/7K b - - 0 1"]
+[Result "1-0"]
+
+1... Kf1 2. Kxh2 Kf2 3. Qf4# 1-0
+
+[FEN "4Q3/8/3Q4/8/8/8/P3k2p/7K b - - 0 1"]
+[Result "1-0"]
+
+1... Kf1
+
+[FEN "4Q3/8/3Q4/8/8/8/P3k2p/7K b - - 0 1"]
+[Result "1-0"]
+
+1... Kf2
+
+[FEN "4Q3/8/3Q4/8/8/8/P3k2p/7K b - - 0 1"]
+[Result "1-0"]
+
+1... Kf3
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kxe5 2. Ka3 a5 3. Ka2 a4 4. Ka1 a3 5. Kb1 a2+ 6. Ka1 g5 7. Kb2 a1=Q+ 8. Kc2 g4 9. Kd2 g3 10. Kc2 g2 11. Kd2 g1=Q 12. Kd3 Qa1b1+ 13. Kd2 Qge1# 0-1
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kxe5
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc6
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ke6
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... a5
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... g5
+
+[FEN "8/8/6K1/4kP2/6P1/8/5r2/b7 w - - 0 1"]
+[Result "0-1"]
+
+1. Kg5 Rg2 2. Kh4 Kf4 3. Kh3 Rxg4 4. Kh2 Kxf5 5. Kh1 Kg5 6. Kh2 Be5+ 7. Kh1 Bh2 8. Kxh2 Kh4 9. Kh1 Kg3 10. Kg1 Rf4 11. Kh1 Rf1# 0-1
+
+[FEN "8/1PB3p1/8/5q2/7k/8/5K2/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ke1 Qb1+ 2. Kd2 Qxb7 3. Kc1 Qxc7+ 4. Kb1 g5 5. Ka1 g4 6. Kb1 g3 7. Ka1 g2 8. Kb1 g1=Q+ 9. Ka2 Qa1+ 10. Kb3 Q7c3# 0-1
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf8 2. f6 Ke8 3. f7+ Kd7 4. g7 Kc7 5. f8=Q Kb6 6. g8=Q Kb5 7. Qxh7 Ka4 8. Qb4# 1-0
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf8
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... h5
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... hxg6
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... h6
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... f4 2. Kg2 Rh3 3. Kg1 Kf3 4. Kf1 Rh1# 0-1
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg3
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh3
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf4
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh4
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg5
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh5
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Rg3
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Rh3
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... f4
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Rf2
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Rf4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb6+ 2. Kxb6 Kf7 3. Ka5 Rc5+ 4. Ka4 Rxg5 5. Ka3 Rg1 6. Ka2 g5 7. Kb2 g4 8. Ka2 g3 9. Kb2 g2 10. Ka2 Ra1+ 11. Kb2 g1=Q 12. Kc2 Qe3 13. Kb2 Qb3+ 14. Kxa1 Qb4 15. Ka2 Ke6 16. Ka1 Kd5 17. Ka2 Kc4 18. Ka1 Kb3 19. Kb1 Qe1# 0-1
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb1
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd1
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa2
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb2
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc2
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd5
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb6
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe6
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc1
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc2
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc5
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc6
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ra8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rb8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Re8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rf8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rg8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rh8
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=Q 2. Ka5 f5 3. Ka4 f4 4. Kb3 f3 5. Ka2 f2 6. Kb3 f1=Q 7. Ka2 Qfc4# 0-1
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ke5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd7
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ke7
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bg1
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bg3
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bf4
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Be5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bd6
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bc7
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Bb8
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=Q
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=N
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=R
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... c1=B
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... f5
+
+[FEN "8/5p2/K3k3/8/8/8/2p4b/8 b - - 0 1"]
+[Result "0-1"]
+
+1... f6
+
+[FEN "8/5p2/6p1/4k3/2Kpp3/8/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kb3 d3 2. Ka2 d2 3. Ka1 d1=Q+ 4. Ka2 e3 5. Kb2 e2 6. Ka2 e1=Q 7. Kb2 g5 8. Ka2 g4 9. Kb2 g3 10. Ka2 g2 11. Kb2 g1=Q 12. Ka2 f5 13. Kb2 f4 14. Ka2 f3 15. Kb2 f2 16. Ka2 f1=Q 17. Kb2 Qb3+ 18. Kxb3 Qa1 19. Kc2 Qf1d1# 0-1
+
+[FEN "8/8/6p1/4qpk1/2K5/8/8/7Q w - - 0 1"]
+[Result "0-1"]
+
+1. Qg1+ Kf6 2. Qb6+ Qe6+ 3. Kc3 Qxb6 4. Kc2 f4 5. Kc1 f3 6. Kd1 f2 7. Kc1 f1=Q+ 8. Kc2 g5 9. Kd2 g4 10. Kc2 g3 11. Kd2 g2 12. Kc2 g1=Q 13. Kd2 Qb2# 0-1
+
+[FEN "4Q3/8/3Q4/8/8/8/P3k2p/7K b - - 0 1"]
+[Result "1-0"]
+
+1... Kf1 2. Kxh2 Kf2 3. Qf4# 1-0
+
+[FEN "4Q3/8/3Q4/8/8/8/P3k2p/7K b - - 0 1"]
+[Result "1-0"]
+
+1... Kf1
+
+[FEN "4Q3/8/3Q4/8/8/8/P3k2p/7K b - - 0 1"]
+[Result "1-0"]
+
+1... Kf2
+
+[FEN "4Q3/8/3Q4/8/8/8/P3k2p/7K b - - 0 1"]
+[Result "1-0"]
+
+1... Kf3
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kxe5 2. Ka3 a5 3. Ka2 a4 4. Ka1 a3 5. Kb1 a2+ 6. Ka1 g5 7. Kb2 a1=Q+ 8. Kc2 g4 9. Kd2 g3 10. Kc2 g2 11. Kd2 g1=Q 12. Kd3 Qa1b1+ 13. Kd2 Qge1# 0-1
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kxe5
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc6
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ke6
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... a5
+
+[FEN "8/8/p5p1/3kP3/1K6/7P/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... g5
+
+[FEN "8/8/6K1/4kP2/6P1/8/5r2/b7 w - - 0 1"]
+[Result "0-1"]
+
+1. Kg5 Rg2 2. Kh4 Kf4 3. Kh3 Rxg4 4. Kh2 Kxf5 5. Kh1 Kg5 6. Kh2 Be5+ 7. Kh1 Bh2 8. Kxh2 Kh4 9. Kh1 Kg3 10. Kg1 Rf4 11. Kh1 Rf1# 0-1
+
+[FEN "8/1PB3p1/8/5q2/7k/8/5K2/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ke1 Qb1+ 2. Kd2 Qxb7 3. Kc1 Qxc7+ 4. Kb1 g5 5. Ka1 g4 6. Kb1 g3 7. Ka1 g2 8. Kb1 g1=Q+ 9. Ka2 Qa1+ 10. Kb3 Q7c3# 0-1
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf8 2. f6 Ke8 3. f7+ Kd7 4. g7 Kc7 5. f8=Q Kb6 6. g8=Q Kb5 7. Qxh7 Ka4 8. Qb4# 1-0
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf8
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... h5
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... hxg6
+
+[FEN "6k1/7p/6P1/3K1P2/8/2B5/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... h6
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... f4 2. Kg2 Rh3 3. Kg1 Kf3 4. Kf1 Rh1# 0-1
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg3
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh3
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf4
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh4
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg5
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh5
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Rg3
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... Rh3
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "0-1"]
+
+1... f4
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Rf2
+
+[FEN "8/8/8/5p2/6k1/4pr2/4R3/6K1 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Rf4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb6+ 2. Kxb6 Kf7 3. Ka5 Rc5+ 4. Ka4 Rxg5 5. Ka3 Rg1 6. Ka2 g5 7. Kb2 g4 8. Ka2 g3 9. Kb2 g2 10. Ka2 Ra1+ 11. Kb2 g1=Q 12. Kc2 Qe3 13. Kb2 Qb3+ 14. Kxa1 Qb4 15. Ka2 Ke6 16. Ka1 Kd5 17. Ka2 Kc4 18. Ka1 Kb3 19. Kb1 Qe1# 0-1
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb1
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd1
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa2
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb2
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc2
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd5
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb6
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe6
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc1
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc2
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc3
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc4
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc5
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc6
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc7
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ra8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rb8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Re8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rf8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rg8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rh8
+
+[FEN "2r5/K5k1/6p1/6P1/8/1q6/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Qb5
+
+[FEN "8/8/5Kp1/7p/4Q1kP/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg3 2. Kxg6 Kf2 3. Kxh5 Kf1 4. Kg4 Kg1 5. h5 Kf1 6. h6 Kg1 7. h7 Kf1 8. h8=Q Kf2 9. Kh3 Kf1 10. Qe1+ Kxe1 11. Qb2 Kd1 12. Kg3 Ke1 13. Qc2 Kf1 14. Qd1# 1-0
+
+[FEN "8/8/5Kp1/7p/4Q1kP/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg3
+
+[FEN "8/8/5Kp1/7p/4Q1kP/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kh3
+
+[FEN "8/8/8/pQ4K1/8/P7/1P6/k7 w - - 0 1"]
+[Result "1-0"]
+
+1. Qxa5 Kb1 2. b3 Ka1 3. a4 Kb1 4. b4 Ka1 5. b5 Kb1 6. b6 Ka1 7. b7 Kb1 8. b8=Q+ Ka1 9. Qb1+ Kxb1 10. Qe1+ Ka2 11. a5 Kb2 12. a6 Ka2 13. a7 Kb2 14. a8=Q Kc2 15. Kf4 Kb2 16. Qa2+ Kxa2 17. Ke3 Kb2 18. Kd3 Ka3 19. Kc3 Ka2 20. Kc2 Ka3 21. Qa5# 1-0
+
+[FEN "5r2/8/8/7k/R7/6P1/3B1K2/8 w - - 0 1"]
+[Result "1-0"]
+
+1. Kg1 Rg8 2. Rh4+ Kg6 3. g4 Rd8 4. Rh2 Kf6 5. g5+ Kg7 6. Kf1 Kf7 7. Ke2 Rd4 8. Rf2+ Kg6 9. Rf6+ Kg7 10. Rb6 Re4+ 11. Kf2 Rd4 12. Bc3 Kf7 13. Bxd4 Ke7 14. g6 Kd7 15. g7 Kc7 16. g8=Q Kd7 17. Qd8+ Kxd8 18. Ke3 Kc7 19. Ke4 Kd7 20. Kd5 Ke7 21. Rb7+ Kd8 22. Kc6 Kc8 23. Rd7 Kb8 24. Rd8# 1-0
+
+[FEN "6r1/7k/R7/6PK/8/8/8/2B5 w - - 0 1"]
+[Result "1-0"]
+
+1. g6+ Kg7 2. Ra7+ Kf6 3. g7 Ke5 4. Kg6 Kd4 5. Kf7 Kc3 6. Kxg8 Kc2 7. Kf7 Kb1 8. g8=Q Kc2 9. Qg3 Kb1 10. Qf2 Kxc1 11. Ra1# 1-0
+
+[FEN "6r1/7k/R7/6PK/8/8/8/2B5 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg6
+
+[FEN "6r1/7k/R7/6PK/8/8/8/2B5 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Ra8
+
+[FEN "5k2/8/8/8/8/P1K1P3/2P5/3n4 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Kd3 Ke7 2. Kc4 Ke8 3. Kb3 Kd7 4. Kb4 Kd8 5. Kb3 Kc7 6. Kb4 Kc8 7. Kb3 Kb7 8. Kb4 Kb8 9. Kb3 Ka7 10. Kb4 Kb8 11. Kb3 Ka7 12. Kb4 Kb8 13. Kb3 Ka7 14. Kb4 Kb8 15. Kb3 Ka7 16. Kb4 Kb8 17. Kb3 Ka7 18. Kb4 Kb8 19. Kb3 Ka7 20. Kb4 Kb8 21. Kb3 Ka7 22. Kb4 Kb8 23. Kb3 Ka7 24. Kb4 Kb8 25. Kb3 Ka7 26. Kb4 Kb8 27. Kb3 Ka7 28. Kb4 Kb8 29. Kb3 Ka7 30. Kb4 Kb8 31. Kb3 Ka7 32. Kb4 Kb8 33. Kb3 Ka7 34. Kb4 Kb8 35. Kb3 Ka7 36. Kb4 Kb8 37. Kb3 Ka7 38. Kb4 Kb8 39. Kb3 Ka7 40. Kb4 Kb8 41. Kb3 Ka7 42. Kb4 Kb8 43. Kb3 Ka7 44. Kb4 Kb8 45. Kb3 Ka7 46. Kb4 Kb8 47. Kb3 Ka7 48. Kb4 Kb8 49. Kb3 Ka7 50. Kb4 Kb8 1/2-1/2
+
+[FEN "8/8/3k4/4R1P1/4P1K1/8/8/5r2 b - - 0 1"]
+[Result "0-1"]
+
+1... Kxe5 2. Kg3 Kxe4 3. Kh3 Kf3 4. Kh2 Ra1 5. Kh3 Rh1# 0-1
+
+[FEN "8/8/3k4/4R1P1/4P1K1/8/8/5r2 b - - 0 1"]
+[Result "0-1"]
+
+1... Kxe5
+
+[FEN "8/8/3k4/4R1P1/4P1K1/8/8/5r2 b - - 0 1"]
+[Result "0-1"]
+
+1... Rg1
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rc1 2. Ra7 Kc8 3. Ra8# 1-0
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke8
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rc1
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ra2
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rb2
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rd2
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Re2
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rf2
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rg2
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh2
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rc3
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rc4
+
+[FEN "3k4/2R5/2KP4/2P5/8/8/2r5/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rxc5
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Re3+ 2. Kd2 Re4 3. Rf1+ Kg4 4. Rf2 c1=R 5. e8=Q Rxe8 6. Kxc1 Rd8 7. Kb2 Re8 8. Rd2 Re1 9. Rd4+ Kg5 10. Rd5+ Kg6 11. Rc5 Re3 12. Rb5 Rh3 13. Re5 Rh4 14. Re3 Ra4 15. Rd3 Re4 16. Ra3 Rb4+ 17. Kc3 Re4 18. Ra7 Rh4 19. Rb7 Rh7 20. Rxh7 Kxh7 21. Kb2 Kg6 22. Ka1 Kf5 23. Kb1 Ke4 24. Ka1 Kd3 25. Kb1 Kd2 26. Ka1 Kc1 27. Ka2 Kd1 28. Ka1 Kc1 29. Ka2 Kd1 30. Ka1 Kc1 31. Ka2 Kd1 32. Ka1 Kc1 33. Ka2 Kd1 34. Ka1 Kc1 35. Ka2 Kd1 36. Ka1 Kc1 37. Ka2 Kd1 38. Ka1 Kc1 39. Ka2 Kd1 40. Ka1 Kc1 41. Ka2 Kd1 42. Ka1 Kc1 43. Ka2 Kd1 44. Ka1 Kc1 45. Ka2 Kd1 46. Ka1 Kc1 47. Ka2 Kd1 48. Ka1 Kc1 49. Ka2 Kd1 50. Ka1 Kc1 51. Ka2 Kd1 52. Ka1 Kc1 53. Ka2 Kd1 54. Ka1 Kc1 55. Ka2 Kd1 56. Ka1 Kc1 57. Ka2 Kd1 58. Ka1 Kc1 59. Ka2 Kd1 60. Ka1 Kc1 61. Ka2 Kd1 62. Ka1 Kc1 63. Ka2 Kd1 64. Ka1 Kc1 65. Ka2 Kd1 66. Ka1 Kc1 67. Ka2 Kd1 68. Ka1 Kc1 69. Ka2 Kd1 70. Ka1 Kc1 1/2-1/2
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg3
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke4
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg4
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke5
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf5
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg5
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Rf1
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Rf2
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Ra3
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Rb3
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Rc3
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Rd3
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Rg3
+
+[FEN "8/4P3/8/8/5k2/5r2/2p1K3/2R5 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh3
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... b5 2. Ka3 a5 3. Kb3 Nc5+ 4. Kb2 a4 5. Ka3 Kb6 6. Kb2 a3+ 7. Kc3 Ka5 8. Kc2 b4 9. Kb1 b3 10. Ka1 bxa2 11. Kxa2 Ka4 12. Kb1 Kb3 13. Ka1 Nd3 14. Kb1 Ne1 15. Ka1 Nc2+ 16. Kb1 a2+ 17. Kc1 a1=Q+ 18. Kd2 Qe1+ 19. Kd3 Qe3# 0-1
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd5
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kb6
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd6
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc7
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd7
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Nb2
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Nc3
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Nc5
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Nb6
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "0-1"]
+
+1... b5
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... a5
+
+[FEN "8/1p6/p1k5/8/nK6/8/P7/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... b6
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... c1=Q 2. Kd5 a5 3. Kd4 a4 4. Kd3 a3 5. Ke2 a2 6. Kd3 a1=Q 7. Ke2 h5 8. Kd3 h4 9. Ke2 h3 10. Kd3 h2 11. Ke4 Qa2 12. Kd3 Q2c4# 0-1
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... Kb7
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... Kc7
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... Kb8
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... Kd8
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... Nf2
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... Ng3
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... c1=Q
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... c1=N
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... c1=R
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... c1=B
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... a5
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... h5
+
+[FEN "2k5/7p/p3K3/8/8/8/2p5/7n b - - 0 1"]
+[Result "0-1"]
+
+1... h6
+
+[FEN "8/8/2R1p3/5k2/5P2/6K1/3r4/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Rd4 2. Rc1 Rb4 3. Kh3 Rb8 4. Re1 Kg6 5. Rf1 Ra8 6. Re1 Rb8 7. Rf1 Ra8 8. Re1 Rb8 9. Rf1 Ra8 10. Re1 Rb8 11. Rf1 Ra8 12. Re1 Rb8 13. Rf1 Ra8 14. Re1 Rb8 15. Rf1 Ra8 16. Re1 Rb8 17. Rf1 Ra8 18. Re1 Rb8 19. Rf1 Ra8 20. Re1 Rb8 21. Rf1 Ra8 22. Re1 Rb8 23. Rf1 Ra8 24. Re1 Rb8 25. Rf1 Ra8 26. Re1 Rb8 27. Rf1 Ra8 28. Re1 Rb8 29. Rf1 Ra8 30. Re1 Rb8 31. Rf1 Ra8 32. Re1 Rb8 33. Rf1 Ra8 34. Re1 Rb8 35. Rf1 Ra8 36. Re1 Rb8 37. Rf1 Ra8 38. Re1 Rb8 39. Rf1 Ra8 40. Re1 Rb8 41. Rf1 Ra8 42. Re1 Rb8 43. Rf1 Ra8 44. Re1 Rb8 45. Rf1 Ra8 46. Re1 Rb8 47. Rf1 Ra8 48. Re1 Rb8 49. Rf1 Ra8 50. Re1 Rb8 51. Rf1 1/2-1/2
+
+[FEN "8/8/2R1p3/5k2/5P2/6K1/3r4/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rc2
+
+[FEN "8/8/2R1p3/5k2/5P2/6K1/3r4/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rf2
+
+[FEN "8/8/2R1p3/5k2/5P2/6K1/3r4/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rg2
+
+[FEN "8/8/2R1p3/5k2/5P2/6K1/3r4/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh2
+
+[FEN "8/8/2R1p3/5k2/5P2/6K1/3r4/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rd6
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "1-0"]
+
+1. Qxb2 Kg5 2. Qxf6+ Kg4 3. Qb2 Kf3 4. Qxb7+ Ke2 5. Kd5 Kd3 6. Qb3+ Ke2 7. Ke4 Kf2 8. Kf4 Ke1 9. Ke3 Kf1 10. Qg8 Ke1 11. Qg1# 1-0
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Qf2
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Qe3
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Qd4
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Qd6
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Qc7
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Qd8
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Qa5
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Qc5
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Qa6
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Qc6
+
+[FEN "8/1p6/1Q2Kpk1/8/8/8/1p6/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Qa7
+
+[FEN "8/8/4n3/2P5/7p/6k1/5N2/6K1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Nh1+ Kf4 2. Kg2 Ng7 3. Kh2 Ne6 4. Kg2 Ng7 5. Kh2 Ne6 6. Kg2 Ng7 7. Kh2 Ne6 8. Kg2 Ng7 9. Kh2 Ne6 10. Kg2 Ng7 11. Kh2 Ne6 12. Kg2 Ng7 13. Kh2 Ne6 14. Kg2 Ng7 15. Kh2 Ne6 16. Kg2 Ng7 17. Kh2 Ne6 18. Kg2 Ng7 19. Kh2 Ne6 20. Kg2 Ng7 21. Kh2 Ne6 22. Kg2 Ng7 23. Kh2 Ne6 24. Kg2 Ng7 25. Kh2 Ne6 26. Kg2 Ng7 27. Kh2 Ne6 28. Kg2 Ng7 29. Kh2 Ne6 30. Kg2 Ng7 31. Kh2 Ne6 32. Kg2 Ng7 33. Kh2 Ne6 34. Kg2 Ng7 35. Kh2 Ne6 36. Kg2 Ng7 37. Kh2 Ne6 38. Kg2 Ng7 39. Kh2 Ne6 40. Kg2 Ng7 41. Kh2 Ne6 42. Kg2 Ng7 43. Kh2 Ne6 44. Kg2 Ng7 45. Kh2 Ne6 46. Kg2 Ng7 47. Kh2 Ne6 48. Kg2 Ng7 49. Kh2 Ne6 50. Kg2 Ng7 1/2-1/2
+
+[FEN "8/8/4n3/2P5/7p/6k1/5N2/6K1 w - - 0 1"]
+[Result "0-1"]
+
+1. Nh3
+
+[FEN "8/8/4n3/2P5/7p/6k1/5N2/6K1 w - - 0 1"]
+[Result "0-1"]
+
+1. Ng4
+
+[FEN "8/8/8/6k1/8/4PK2/r4P1R/8 w - - 0 1"]
+[Result "1-0"]
+
+1. e4 Ra3+ 2. Kg2 Kg4 3. Rh1 Kf4 4. Rh4+ Kg5 5. Rh3 Ra2 6. Kg3 Kf6 7. f3 Ra3 8. Kg4 Ra4 9. Rh1 Ke6 10. Re1 Ke5 11. f4+ Kd4 12. e5 Kc3 13. e6 Kb2 14. e7 Ka2 15. e8=Q Rb4 16. Kg5 Kb2 17. f5 Ka2 18. f6 Kb2 19. f7 Ka2 20. f8=Q Rb5+ 21. Qe5 Kb3 22. Qxb5+ Kc2 23. Qb1+ Kd2 24. Q8b4# 1-0
+
+[FEN "8/8/8/6k1/8/4PK2/r4P1R/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rh4
+
+[FEN "8/8/8/6k1/8/4PK2/r4P1R/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rh5
+
+[FEN "8/8/8/6k1/8/4PK2/r4P1R/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rh6
+
+[FEN "6r1/8/8/4k3/1R6/4PP2/5K2/8 w - - 0 1"]
+[Result "1-0"]
+
+1. e4 Kf4 2. Rb5 Rf8 3. Rh5 Rf6 4. Rh4+ Ke5 5. Ke3 Kd6 6. f4 Kc5 7. e5 Kb4 8. f5+ Ka3 9. e6 Ka2 10. e7 Ka1 11. e8=Q Kb1 12. Qe5 Kc1 13. Qxf6 Kd1 14. Qa1+ Kc2 15. f6 Kb3 16. f7 Kc2 17. f8=Q Kb3 18. Qb2+ Kxb2 19. Qf2+ Ka1 20. Rh1# 1-0
+
+[FEN "6r1/8/8/4k3/1R6/4PP2/5K2/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rb8
+
+[FEN "5k2/1R6/8/4KP2/4P3/8/8/4r3 w - - 0 1"]
+[Result "1-0"]
+
+1. f6 Ke8 2. f7+ Kf8 3. Kd5 Rd1+ 4. Ke6 Kg7 5. e5 Rf1 6. Kd6 Rd1+ 7. Ke7 Kg6 8. e6 Kf5 9. f8=Q+ Ke4 10. Ke8 Kd3 11. e7 Kc2 12. Qf1 Rd2 13. Kf7 Kc3 14. e8=Q Kc2 15. Qc6# 1-0
+
+[FEN "5k2/1R6/8/4KP2/4P3/8/8/4r3 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Kd6
+
+[FEN "5k2/1R6/8/4KP2/4P3/8/8/4r3 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Ke6
+
+[FEN "5k2/1R6/8/4KP2/4P3/8/8/4r3 w - - 0 1"]
+[Result "0-1"]
+
+1. Rb1
+
+[FEN "5k2/1R6/8/4KP2/4P3/8/8/4r3 w - - 0 1"]
+[Result "0-1"]
+
+1. Re7
+
+[FEN "5k2/1R6/8/4KP2/4P3/8/8/4r3 w - - 0 1"]
+[Result "0-1"]
+
+1. Rf7
+
+[FEN "5k2/1R6/8/4KP2/4P3/8/8/4r3 w - - 0 1"]
+[Result "0-1"]
+
+1. Rg7
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1-0"]
+
+1. Rxg3 Ke8 2. Rxh3 Kd7 3. f5 Kc6 4. Ke5 Kb5 5. f6 Ka4 6. f7 Kb4 7. f8=Q+ Ka5 8. Qb4+ Ka6 9. Ra3# 1-0
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg4
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg5
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg6
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Ra7
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rb7
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rc7
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rd7
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Re7
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rf7
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. f5
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ke5
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kf5
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kg5
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ke6
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kg6
+
+[FEN "5k2/6R1/5K2/8/5P2/6pp/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rg8
+
+[FEN "8/2P5/8/P2R4/8/3K4/7P/3k4 w - - 0 1"]
+[Result "1-0"]
+
+1. h3 Kc1 2. h4 Kb1 3. h5 Ka1 4. a6 Kb1 5. h6 Ka1 6. a7 Kb1 7. h7 Ka1 8. a8=Q+ Kb1 9. c8=Q Kb2 10. Qc2# 1-0
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... a4 2. Kc5 a3 3. Kd4 a2 4. Ke4 a1=Q 5. Kf4 g5+ 6. Ke4 g4 7. Kf4 g3 8. Ke4 g2 9. Kf4 g1=Q 10. Ke4 Qg4# 0-1
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ke7
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf7
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ke8
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg8
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb1
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd1
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa2
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb2
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc2
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa3
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc3
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd3
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe3
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf3
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg3
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh3
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa4
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb4
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc4
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb5
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd5
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb6
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe6
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb7
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf7
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb8
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg8
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... a4
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... g5
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... g6
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... h5
+
+[FEN "5k2/6pp/2K5/p7/8/1q6/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... h6
+
+[FEN "8/7k/R7/7P/6r1/pK6/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Rd4 2. Rb6 Rd8 3. Rb5 Kg8 4. Rb7 Ra8 5. Ka2 Ra6 6. Kb1 Kh8 7. Ka2 Rd6 8. Rb4 Rd5 9. Re4 Rd7 10. Kxa3 Rc7 11. Kb2 Kh7 12. Kb1 Kg7 13. Ka2 Rb7 14. Re8 Kh7 15. Ra8 Rc7 16. Ka3 Kg7 17. Kb2 Kh7 18. Kb1 Rc4 19. Ra1 Rh4 20. Kc1 Rxh5 21. Kc2 Rd5 22. Rg1 Rd7 23. Rg4 Rd5 24. Rc4 Rh5 25. Rb4 Rd5 26. Rb7+ Kg8 27. Ra7 Rd4 28. Rb7 Ra4 29. Re7 Rh4 30. Re3 Rh7 31. Ra3 Rg7 32. Ra2 Rf7 33. Ra4 Rh7 34. Ra3 Rg7 35. Ra2 Rf7 36. Ra4 Rh7 37. Ra3 Rg7 38. Ra2 Rf7 39. Ra4 Rh7 40. Ra3 Rg7 41. Ra2 Rf7 42. Ra4 Rh7 43. Ra3 Rg7 44. Ra2 Rf7 45. Ra4 Rh7 46. Ra3 Rg7 47. Ra2 Rf7 48. Ra4 Rh7 49. Ra3 Rg7 50. Ra2 Rf7 51. Ra4 Rh7 52. Ra3 Rg7 53. Ra2 Rf7 54. Ra4 Rh7 55. Ra3 Rg7 56. Ra2 Rf7 57. Ra4 Rh7 58. Ra3 Rg7 59. Ra2 Rf7 60. Ra4 Rh7 61. Ra3 Rg7 62. Ra2 Rf7 63. Ra4 Rh7 64. Ra3 Rg7 65. Ra2 Rf7 66. Ra4 Rh7 67. Ra3 Rg7 68. Ra2 Rf7 69. Ra4 Rh7 70. Ra3 Rg7 1/2-1/2
+
+[FEN "8/7k/R7/7P/6r1/pK6/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ra4
+
+[FEN "8/7k/R7/7P/6r1/pK6/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rb4
+
+[FEN "8/7k/R7/7P/6r1/pK6/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rc4
+
+[FEN "8/7k/R7/7P/6r1/pK6/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rg6
+
+[FEN "8/Q3R3/k1P5/8/1B6/8/7K/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kb5 2. c7 Kc4 3. c8=Q+ Kb3 4. Qa3# 1-0
+
+[FEN "8/Q3R3/k1P5/8/1B6/8/7K/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kb5
+
+[FEN "1k6/1P6/P1P5/1K6/4P3/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ka7 2. e5 Kb8 3. e6 Ka7 4. e7 Kb8 5. a7+ Kc7 6. a8=Q Kd6 7. c7 Kd5 8. b8=Q+ Kd4 9. c8=Q Kd3 10. e8=Q Kd2 11. Qd5# 1-0
+
+[FEN "1k6/1P6/P1P5/1K6/4P3/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ka7
+
+[FEN "1k6/1P6/P1P5/1K6/4P3/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kc7
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... a2 2. Kd2 a1=Q 3. Ke2 h5 4. Kd2 h4 5. Ke2 h3 6. Kd2 h2 7. Ke2 Qa3 8. Kd2 Qd3+ 9. Kxd3 Rh1d1+ 10. Ke2 h1=Q 11. Kf2 Qf3+ 12. Kxf3 Rc2 13. Ke3 Rd4 14. Kf3 Rf2+ 15. Ke3 Kf7 16. Kxf2 Ke6 17. Ke2 Kf5 18. Ke3 Rd5 19. Kf2 Kf4 20. Ke2 Rd4 21. Kf2 Rd2+ 22. Ke1 Ke3 23. Kf1 Kf3 24. Kg1 Rd1+ 25. Kh2 Ra1 26. Kh3 Rh1# 0-1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Kf7
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Kg7
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Kf8
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Kh8
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Ra1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rb1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc1d1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc1e1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc1f1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc1g1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc2
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc3
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc4
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc5
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc6
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc7
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc8
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh1d1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh1e1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh1f1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh1g1
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh2
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh3
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh4
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh5
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh6
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... a2
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... h5
+
+[FEN "6k1/7p/8/8/8/p3K3/8/2r4r b - - 0 1"]
+[Result "0-1"]
+
+1... h6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc8# 0-1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Kg7
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Kh8
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qb1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qb2
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qb3
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qb4
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qb5
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qa6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qb6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qa7
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qc7
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qd7
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qe7
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qg7
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qa8
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qb8
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Qc8
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Ra1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rb1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... R1c1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rd1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rf1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rg1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh2
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh3
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh4
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rh5
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... R1h6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... R6c1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc2
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc3
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc4
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc5
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Ra6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rb6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rd6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rf6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rg6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... R6h6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc7
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... Rc8
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... h5
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "0-1"]
+
+1... h6
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Kf7
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Kf8
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Qf7
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Re1
+
+[FEN "3K2k1/1q5p/2r5/8/8/8/8/7r b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Re6
+
+[FEN "1b6/8/1PK5/2B5/5p2/8/6k1/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. b7 Kg3 2. Bb4 Kh3 3. Bc5 Kg4 4. Bd6 Ba7 5. Kd7 f3 6. Bf8 Kg3 7. Bg7 Kh3 8. Bh6 Kg4 9. b8=R Kh4 10. Rh8 Kg3 11. Rc8 Kf2 12. Rh8 Be3 13. Bxe3+ Kxe3 14. Rh3 Ke2 15. Kc8 Ke3 16. Kd7 Ke2 17. Kc8 Ke3 18. Kd7 Ke2 19. Kc8 Ke3 20. Kd7 Ke2 21. Kc8 Ke3 22. Kd7 Ke2 23. Kc8 Ke3 24. Kd7 Ke2 25. Kc8 Ke3 26. Kd7 Ke2 27. Kc8 Ke3 28. Kd7 Ke2 29. Kc8 Ke3 30. Kd7 Ke2 31. Kc8 Ke3 32. Kd7 Ke2 33. Kc8 Ke3 34. Kd7 Ke2 35. Kc8 Ke3 36. Kd7 Ke2 37. Kc8 Ke3 38. Kd7 Ke2 39. Kc8 Ke3 40. Kd7 Ke2 41. Kc8 Ke3 42. Kd7 Ke2 43. Kc8 Ke3 44. Kd7 Ke2 45. Kc8 Ke3 46. Kd7 Ke2 47. Kc8 Ke3 48. Kd7 Ke2 49. Kc8 Ke3 50. Kd7 Ke2 51. Kc8 Ke3 52. Kd7 Ke2 53. Kc8 Ke3 54. Kd7 Ke2 55. Kc8 Ke3 56. Kd7 Ke2 57. Kc8 Ke3 58. Kd7 Ke2 59. Kc8 Ke3 60. Kd7 Ke2 61. Kc8 Ke3 62. Kd7 Ke2 63. Kc8 Ke3 1/2-1/2
+
+[FEN "1b6/8/1PK5/2B5/5p2/8/6k1/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Bg1
+
+[FEN "1b6/8/1PK5/2B5/5p2/8/6k1/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Bf2
+
+[FEN "1b6/8/1PK5/2B5/5p2/8/6k1/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Be3
+
+[FEN "8/6Pk/1b6/8/8/4p3/P3K3/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kd1 Kxg7 2. Kc1 Kf6 3. Kd1 Ke5 4. Ke1 Kd4 5. Ke2 Kc3 6. Kd1 Kb2 7. Ke1 Kxa2 8. Kd1 Kb1 9. Ke1 Kc1 10. Ke2 Kc2 11. Ke1 Kd3 12. Kd1 e2+ 13. Kc1 e1=Q+ 14. Kb2 Qd2+ 15. Ka1 Kc2 16. Ka2 Qa5# 0-1
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... c3 2. Kg5 c2 3. Kf5 c1=Q 4. Ke6 Qe3+ 5. Kf5 Qg4+ 6. Kxg4 Ng7 7. h5 Nxh5 8. Kf5 Ka3 9. Kg6 Qf4 10. Kh7 Qg3 11. Kh6 Qg7+ 12. Kxh5 Kb2 13. Kh4 Kc1 14. Kh3 Kd1 15. Kh2 Ke2 16. Kh1 Kf1 17. Kh2 Qg2# 0-1
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Ka3
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Kb3
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc3
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Ka4
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Ka5
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Kb5
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc5
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa1
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb1
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc1
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe1
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf1
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg1
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh1
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc2
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd2
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe2
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb3
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd3
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf3
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa4
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd4
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg4
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd5
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd6
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd7
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd8
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Ng3
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Nf4
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Nf6
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... Ng7
+
+[FEN "8/8/7K/7n/1kp4P/8/8/3q4 b - - 0 1"]
+[Result "0-1"]
+
+1... c3
+
+[FEN "6k1/6P1/5K2/P7/1p6/P7/8/8 w - - 0 1"]
+[Result "1-0"]
+
+1. a4 Kh7 2. a6 Kh6 3. a5 Kh5 4. a7 Kg4 5. a6 Kf3 6. a8=Q+ Ke2 7. a7 Kd1 8. g8=Q Kc1 9. Qh1+ Kb2 10. a8=Q Kc2 11. Qb1+ Kd2 12. Qxb4+ Kc1 13. Qe1+ Kb2 14. Qa8a2# 1-0
+
+[FEN "6k1/6P1/5K2/P7/1p6/P7/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ke5
+
+[FEN "6k1/6P1/5K2/P7/1p6/P7/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kf5
+
+[FEN "6k1/6P1/5K2/P7/1p6/P7/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kg5
+
+[FEN "6k1/6P1/5K2/P7/1p6/P7/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ke6
+
+[FEN "6k1/6P1/5K2/P7/1p6/P7/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kg6
+
+[FEN "6k1/6P1/5K2/P7/1p6/P7/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ke7
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... h2 2. Kd5 h1=Q+ 3. Kc4 Qac1+ 4. Kb3 Qxf4 5. Ka2 Qa1+ 6. Kb3 Q4a4# 0-1
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg7
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh7
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf8
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh8
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb1
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc1
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd1
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe1
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf1
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg1
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh1
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa2
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb2
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa3
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc3
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa4
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd4
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa5
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe5
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa6
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf6
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa7
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg7
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa8
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh8
+
+[FEN "6k1/8/4K3/5p2/5P2/7p/8/q7 b - - 0 1"]
+[Result "0-1"]
+
+1... h2
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qxb5+ 2. Kd6 g3 3. Ke6 g2 4. Kd6 g1=Q 5. Ke6 f5 6. Kd6 f4 7. Ke6 f3 8. Kd6 f2 9. Ke6 f1=Q 10. Kd6 Qd1+ 11. Ke6 Q1d7# 0-1
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg6
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh6
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf7
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh7
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kf8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kg8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kh8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh2
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg3
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf4
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qxb5
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe5
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb6
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd6
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa7
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb7
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc7
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh8
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... g3
+
+[FEN "1q6/6k1/2K2p2/1P6/6p1/8/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... f5
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Ne4 2. Qe1 Nc3 3. Qe7+ Kb5 4. Qxb4+ Ka6 5. Qxd4 Nb5 6. Qb4 Nc7 7. Qb8 Nb5 8. Ka4 Nc3+ 9. Kb4 Nb1 10. Kc5 Ka5 11. Qxb1 Ka4 12. Qa2# 1-0
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Kb5
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Kd5
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Kb6
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Kc6
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Kd6
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Nb1
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Nd1
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Na2
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Ne2
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Na4
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Ne4
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Nb5
+
+[FEN "8/8/8/2k5/1p1p4/1Kn5/8/6Q1 b - - 0 1"]
+[Result "1-0"]
+
+1... Nd5
+
+[FEN "8/8/5k2/2r3pR/8/K3P3/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rh6+ Kf5 2. Rh3 Kg4 3. Rh1 Rc3+ 4. Ka2 Rxe3 5. Ka1 Kf3 6. Rf1+ Kg2 7. Kb1 Kxf1 8. Ka1 g4 9. Kb1 g3 10. Ka1 g2 11. Kb1 g1=Q 12. Ka1 Ke2+ 13. Ka2 Qa1+ 14. Kxa1 Kd1 15. Kb1 Re2 16. Ka1 Kc2 17. Ka2 Re3 18. Ka1 Ra3# 0-1
+
+[FEN "8/2R5/8/8/5KP1/8/krp5/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Kg5 Kb3 2. Rb7+ Ka4 3. Rc7 Rb5+ 4. Kf4 Rb2 5. Rc5 Ra2 6. Rc8 Kb5 7. Rb8+ Ka6 8. Rc8 Ra4+ 9. Kf5 Ra2 10. Rc6+ Ka5 11. Rc8 Kb6 12. Ke4 Ra4+ 13. Kd5 Rb4 14. Ke5 Rb5+ 15. Kd4 Rb1 16. Rxc2 Rb4+ 17. Kd3 Kb7 18. Rc5 Rxg4 19. Rb5+ Ka8 20. Rd5 Kb7 21. Rf5 Rg7 22. Rf3 Rg4 23. Kd2 Ra4 24. Rf2 Ra3 25. Ke1 Rc3 26. Rf7+ Ka8 27. Rd7 Rc1+ 28. Kf2 Kb8 29. Re7 Kc8 30. Ra7 Rb1 31. Re7 Kd8 32. Re1 Rb7 33. Rf1 Ra7 34. Kg1 Rc7 35. Rf4 Rh7 36. Re4 Re7 37. Rh4 Rg7+ 38. Kf2 Rd7 39. Rh3 Rb7 40. Rh2 Rg7 41. Rh6 Rd7 42. Rh3 Rb7 43. Rh2 Rg7 44. Rh6 Rd7 45. Rh3 Rb7 46. Rh2 Rg7 47. Rh6 Rd7 48. Rh3 Rb7 49. Rh2 Rg7 50. Rh6 Rd7 51. Rh3 Rb7 52. Rh2 Rg7 53. Rh6 Rd7 54. Rh3 Rb7 55. Rh2 Rg7 56. Rh6 Rd7 57. Rh3 Rb7 58. Rh2 Rg7 59. Rh6 Rd7 60. Rh3 Rb7 61. Rh2 Rg7 62. Rh6 Rd7 63. Rh3 Rb7 64. Rh2 Rg7 65. Rh6 Rd7 66. Rh3 Rb7 67. Rh2 Rg7 68. Rh6 Rd7 1/2-1/2
+
+[FEN "8/2R5/8/8/5KP1/8/krp5/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rc4
+
+[FEN "8/2R5/8/8/5KP1/8/krp5/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rb7
+
+[FEN "8/2R5/8/8/5KP1/8/krp5/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rd7
+
+[FEN "8/2R5/8/8/5KP1/8/krp5/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Re7
+
+[FEN "8/2R5/8/8/5KP1/8/krp5/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rf7
+
+[FEN "8/2R5/8/8/5KP1/8/krp5/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rg7
+
+[FEN "8/2R5/8/8/5KP1/8/krp5/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rh7
+
+[FEN "8/5k2/3P4/6B1/4P2P/5K2/8/8 w - - 0 1"]
+[Result "1-0"]
+
+1. e5 Ke6 2. h5 Kd5 3. e6 Kc4 4. h6 Kb3 5. d7 Ka2 6. e7 Ka1 7. h7 Kb1 8. d8=Q Ka1 9. e8=Q Kb1 10. h8=Q Ka2 11. Qb2+ Kxb2 12. Qd2+ Ka1 13. Qee1# 1-0
+
+[FEN "8/8/5k2/8/5P1N/5KPB/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke7 2. g4 Kd6 3. f5 Kc5 4. g5 Kb4 5. f6 Ka3 6. g6 Ka2 7. f7 Ka1 8. g7 Kb1 9. f8=Q Ka1 10. g8=Q Kb1 11. Qf4 Ka1 12. Qc1# 1-0
+
+[FEN "8/8/5k2/8/5P1N/5KPB/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke7
+
+[FEN "8/8/5k2/8/5P1N/5KPB/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf7
+
+[FEN "8/8/5k2/8/5P1N/5KPB/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg7
+
+[FEN "5k2/8/3NB3/5PP1/6K1/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke7 2. f6+ Kd8 3. g6 Kc7 4. f7 Kb6 5. g7 Ka5 6. f8=Q Ka4 7. g8=Q Kb4 8. Qf1 Ka3 9. Qa1+ Kb4 10. Qa3+ Kxa3 11. Qg5 Kb2 12. Qc1+ Kxc1 13. Kf3 Kd2 14. Ke4 Kc3 15. Ke3 Kb2 16. Kd2 Kb1 17. Kc3 Ka1 18. Bb3 Kb1 19. Nc4 Ka1 20. Ne3 Kb1 21. Nc2 Kc1 22. Ba2 Kd1 23. Nd4 Ke1 24. Kd3 Kf2 25. Ne2 Kg2 26. Be6 Kf3 27. Bh3 Kf2 28. Bg4 Ke1 29. Nc3 Kf1 30. Kd2 Kg2 31. Ne4 Kh2 32. Kd1 Kg1 33. Bh3 Kh1 34. Ke1 Kg1 35. Bf1 Kh1 36. Kf2 Kh2 37. Nd2 Kh1 38. Bg2+ Kh2 39. Nf1# 1-0
+
+[FEN "5k2/8/3NB3/5PP1/6K1/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke7
+
+[FEN "5k2/8/3NB3/5PP1/6K1/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg7
+
+[FEN "4k3/8/2N1BP2/5KP1/8/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf8 2. g6 Ke8 3. f7+ Kf8 4. g7+ Kxg7 5. f8=Q+ Kh7 6. Qh6+ Kxh6 7. Kf6 Kh7 8. Ba2 Kh8 9. Ne5 Kh7 10. Ng6 Kh6 11. Bg8 Kh5 12. Ne5 Kh4 13. Kf5 Kg3 14. Ng4 Kg2 15. Bc4 Kf3 16. Bf1 Kg3 17. Be2 Kh4 18. Nf2 Kg3 19. Nd1 Kh4 20. Kf4 Kh3 21. Bf3 Kh2 22. Nf2 Kg1 23. Kg3 Kf1 24. Nd3 Kg1 25. Be2 Kh1 26. Nf2+ Kg1 27. Nh3+ Kh1 28. Bf3# 1-0
+
+[FEN "4k3/8/2N1BP2/5KP1/8/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf8
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kd4 2. Rxh2 Kc4 3. g5 Kb3 4. g6 Ka2 5. g7 Ka1 6. g8=Q Kb1 7. Qa2+ Kxa2 8. Kd3 Kb2 9. Kc4 Ka2 10. Bc1+ Ka1 11. Kb3 Kb1 12. Ra2 Kxc1 13. Kc3 Kd1 14. Kd3 Ke1 15. Rb2 Kf1 16. Ke3 Kg1 17. Kf3 Kh1 18. Kg3 Kg1 19. Rb1# 1-0
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kd4
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke4
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kd5
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kd6
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke6
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh1
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rxf2
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rg2
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh3
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh4
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh5
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh6
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh7
+
+[FEN "8/8/8/4k3/6P1/8/3BKR1r/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Rh8
+
+[FEN "8/5pkp/8/7K/8/6P1/5P2/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Kh8 2. Kh4 Kg8 3. Kg4 Kg7 4. Kf5 f6 5. Kf4 Kg8 6. Kf3 Kf7 7. Kg2 Ke7 8. Kf3 Kd8 9. Kg2 Ke8 10. Kf3 Kf7 11. Kg2 Ke7 12. Kf3 Kd8 13. Kg2 Ke8 14. Kf3 Kf7 15. Kg2 Ke7 16. Kf3 Kd8 17. Kg2 Ke8 18. Kf3 Kf7 19. Kg2 Ke7 20. Kf3 Kd8 21. Kg2 Ke8 22. Kf3 Kf7 23. Kg2 Ke7 24. Kf3 Kd8 25. Kg2 Ke8 26. Kf3 Kf7 27. Kg2 Ke7 28. Kf3 Kd8 29. Kg2 Ke8 30. Kf3 Kf7 31. Kg2 Ke7 32. Kf3 Kd8 33. Kg2 Ke8 34. Kf3 Kf7 35. Kg2 Ke7 36. Kf3 Kd8 37. Kg2 Ke8 38. Kf3 Kf7 39. Kg2 Ke7 40. Kf3 Kd8 41. Kg2 Ke8 42. Kf3 Kf7 43. Kg2 Ke7 44. Kf3 Kd8 45. Kg2 Ke8 46. Kf3 Kf7 47. Kg2 Ke7 48. Kf3 Kd8 49. Kg2 Ke8 50. Kf3 Kf7 51. Kg2 Ke7 52. Kf3 Kd8 53. Kg2 Ke8 54. Kf3 Kf7 1/2-1/2
+
+[FEN "8/5pkp/8/7K/8/6P1/5P2/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf6
+
+[FEN "8/5pkp/8/7K/8/6P1/5P2/8 b - - 0 1"]
+[Result "1-0"]
+
+1... f5
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qxf3+ 2. Kh4 Qxe4+ 3. Kg3 Qf3+ 4. Kh2 Qg2+ 5. Kxg2 Rd3 6. Kf1 Kb5 7. Ke1 Kb4 8. Kf1 Kc3 9. Ke1 Rd2 10. Kf1 Kc2 11. Ke1 Kd3 12. Kf1 Ke3 13. Ke1 Rd4 14. Kf1 Rg4 15. Ke1 Rg1# 0-1
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ka5
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kb5
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc5
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ka6
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc6
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ka7
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kb7
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc7
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qa1
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qb2
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc3
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qxf3
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd4
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf4
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh4
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe5
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf5
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg5
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qc6
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qd6
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe6
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg6
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh6
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qe7
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf7
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qg7
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qf8
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Qh8
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd1
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd2
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd3
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd4
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd5
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd6
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd7
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Ra8
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rb8
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc8
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Re8
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rf8
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rg8
+
+[FEN "3r4/8/1k3q2/7K/4P3/5P2/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Rh8
+
+[FEN "8/8/3pk3/8/3p2Kp/6b1/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kf3 d3 2. Kg2 d2 3. Kf1 d1=Q+ 4. Kg2 h3+ 5. Kxg3 h2 6. Kf2 h1=Q 7. Ke3 Qh1f3# 0-1
+
+[FEN "8/8/8/3p4/7p/4k2K/5b2/3q4 w - - 0 1"]
+[Result "0-1"]
+
+1. Kg2 h3+ 2. Kh2 d4 3. Kxh3 d3 4. Kg2 d2 5. Kh3 Kd3 6. Kg2 Qh1+ 7. Kxh1 d1=Q+ 8. Kg2 Qg1+ 9. Kf3 Qg3# 0-1
+
+[FEN "8/8/8/1K3p2/1p3k2/8/6R1/1r6 w - - 0 1"]
+[Result "0-1"]
+
+1. Rf2+ Ke4 2. Re2+ Kd3 3. Ka4 Kxe2 4. Ka5 b3 5. Ka4 b2 6. Ka3 f4 7. Ka2 f3 8. Ka3 f2 9. Ka2 f1=Q 10. Ka3 Ra1+ 11. Kb3 b1=Q+ 12. Kc3 Qd3+ 13. Kb2 Q1b1# 0-1
+
+[FEN "8/8/8/8/8/8/1pKR1p2/1r2k3 w - - 0 1"]
+[Result "0-1"]
+
+1. Kb3 Kxd2 2. Ka2 f1=Q 3. Ka3 Kc3 4. Ka2 Ra1# 0-1
+
+[FEN "8/8/8/2Pkp3/7r/3KR3/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Kc2 Ke6 2. Re2 Rh6 3. Re4 Rh1 4. Kd3 Kf6 5. Ra4 Ke7 6. Rc4 Rh6 7. Rc1 Kd8 8. Ke2 Ke7 9. Kd2 Rg6 10. Kc2 Rh6 11. Kd3 Kd8 12. Ke2 Ke7 13. Kd2 Rg6 14. Kc2 Rh6 15. Kd3 Kd8 16. Ke2 Ke7 17. Kd2 Rg6 18. Kc2 Rh6 19. Kd3 Kd8 20. Ke2 Ke7 21. Kd2 Rg6 22. Kc2 Rh6 23. Kd3 Kd8 24. Ke2 Ke7 25. Kd2 Rg6 26. Kc2 Rh6 27. Kd3 Kd8 28. Ke2 Ke7 29. Kd2 Rg6 30. Kc2 Rh6 31. Kd3 Kd8 32. Ke2 Ke7 33. Kd2 Rg6 34. Kc2 Rh6 35. Kd3 Kd8 36. Ke2 Ke7 37. Kd2 Rg6 38. Kc2 Rh6 39. Kd3 Kd8 40. Ke2 Ke7 41. Kd2 Rg6 42. Kc2 Rh6 43. Kd3 Kd8 44. Ke2 Ke7 45. Kd2 Rg6 46. Kc2 Rh6 47. Kd3 Kd8 48. Ke2 Ke7 49. Kd2 Rg6 50. Kc2 Rh6 1/2-1/2
+
+[FEN "8/8/8/2Pkp3/7r/3KR3/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rf3
+
+[FEN "8/8/8/2Pkp3/7r/3KR3/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rh3
+
+[FEN "8/8/8/2Pkp3/7r/3KR3/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Re4
+
+[FEN "8/8/8/2Pkp3/7r/3KR3/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rxe5
+
+[FEN "8/5k2/5P2/3KP3/2PP4/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg6 2. c5 Kf5 3. c6 Kf4 4. e6 Ke3 5. c7 Kd2 6. e7 Kc1 7. f7 Kb1 8. c8=Q Ka1 9. e8=Q Kb1 10. f8=Q Ka1 11. Kc4 Kb1 12. d5 Ka1 13. d6 Kb1 14. d7 Ka1 15. d8=Q Kb1 16. Kb3 Ka1 17. Qc1# 1-0
+
+[FEN "8/5k2/5P2/3KP3/2PP4/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg6
+
+[FEN "8/5k2/5P2/3KP3/2PP4/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke8
+
+[FEN "8/5k2/5P2/3KP3/2PP4/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kf8
+
+[FEN "8/5k2/5P2/3KP3/2PP4/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kg8
+
+[FEN "3Q2k1/8/2PKPP2/8/8/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kh7 2. c7 Kg6 3. e7 Kf5 4. f7 Ke4 5. c8=Q Kd3 6. e8=Q Kd2 7. f8=Q Kd1 8. Qc1+ Kxc1 9. Qe2 Kb1 10. Q8f1# 1-0
+
+[FEN "3Q2k1/8/2PKPP2/8/8/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kh7
+
+[FEN "8/8/4pK2/3kP1P1/7P/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kc4 2. Kxe6 Kb3 3. h5 Ka2 4. g6 Ka1 5. h6 Kb1 6. g7 Ka1 7. h7 Kb1 8. g8=Q Ka1 9. h8=Q Kb1 10. Kd5 Ka1 11. e6+ Kb1 12. e7 Kc1 13. e8=Q Kd1 14. Qe1+ Kc2 15. Q8c3# 1-0
+
+[FEN "8/8/4pK2/3kP1P1/7P/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kc4
+
+[FEN "8/8/4pK2/3kP1P1/7P/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kd4
+
+[FEN "8/8/4pK2/3kP1P1/7P/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke4
+
+[FEN "8/8/4pK2/3kP1P1/7P/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kc5
+
+[FEN "8/8/4pK2/3kP1P1/7P/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Kc6
+
+[FEN "Q7/8/4pK2/4P3/5k1Q/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke3 2. Kxe6 Kd2 3. Kd5 Kc1 4. e6 Kb1 5. e7 Kc1 6. e8=Q Kb1 7. Qf2 Kc1 8. Qa1# 1-0
+
+[FEN "Q7/8/4pK2/4P3/5k1Q/8/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Ke3
+
+[FEN "8/1p6/3k4/p2q4/3p1K2/8/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kg3 d3 2. Kf2 d2 3. Kf1 d1=Q+ 4. Kf2 Q5f3# 0-1
+
+[FEN "6k1/6pp/5p2/8/1K6/8/p7/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ka3 a1=Q+ 2. Kb3 f5 3. Kc2 f4 4. Kd2 f3 5. Kc2 f2 6. Kd2 f1=Q 7. Kc2 Qf1d1# 0-1
+
+[FEN "8/7p/1k3p2/5K2/8/6P1/7P/8 w - - 0 1"]
+[Result "1-0"]
+
+1. Kxf6 Ka5 2. h3 Ka4 3. g4 Ka3 4. h4 Ka2 5. g5 Ka1 6. h5 Kb1 7. g6 Ka1 8. h6 Kb1 9. g7 Ka1 10. g8=Q Kb1 11. Qxh7+ Ka2 12. Qb1+ Ka3 13. h7 Ka4 14. h8=Q Ka3 15. Qa8# 1-0
+
+[FEN "8/7k/8/1r5P/5PK1/8/8/6q1 w - - 0 1"]
+[Result "0-1"]
+
+1. Kf3 Rxh5 2. Ke2 Qc1 3. Kf2 Qxf4+ 4. Ke1 Qd2+ 5. Kf1 Rh1# 0-1
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Nxe3 2. Ke5 a4 3. Ke4 a3 4. Kd3 a2 5. Kd2 a1=Q 6. Ke2 c4 7. Kd2 c3+ 8. Ke2 c2 9. Kd2 c1=Q+ 10. Ke2 Qe5 11. Kf2 Qf1# 0-1
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "0-1"]
+
+1... Nxe3
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Kg7
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Ke8
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Kg8
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Nb2
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Nd2
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Na3
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Ne5
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Nb6
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Nd6
+
+[FEN "5k2/8/4K3/p1p5/2n5/4N3/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... a4
+
+[FEN "3n4/3k4/2p5/2K1P3/3P4/8/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Kc4 Kc7 2. d5 Nb7 3. dxc6 Na5+ 4. Kd5 Kc8 5. c7 Kd7 6. c8=B+ Ke8 7. e6 Kf8 8. Bb7 Nxb7 9. Ke4 Nd6+ 10. Ke5 Nc8 11. e7+ Ke8 12. Kf6 Na7 13. Kg5 Nc6 14. Kh5 Nd8 15. Kg5 Nb7 16. Kh5 Nd8 17. Kg5 Nb7 18. Kh5 Nd8 19. Kg5 Nb7 20. Kh5 Nd8 21. Kg5 Nb7 22. Kh5 Nd8 23. Kg5 Nb7 24. Kh5 Nd8 25. Kg5 Nb7 26. Kh5 Nd8 27. Kg5 Nb7 28. Kh5 Nd8 29. Kg5 Nb7 30. Kh5 Nd8 31. Kg5 Nb7 32. Kh5 Nd8 33. Kg5 Nb7 34. Kh5 Nd8 35. Kg5 Nb7 36. Kh5 Nd8 37. Kg5 Nb7 38. Kh5 Nd8 39. Kg5 Nb7 40. Kh5 Nd8 41. Kg5 Nb7 42. Kh5 Nd8 43. Kg5 Nb7 44. Kh5 Nd8 45. Kg5 Nb7 46. Kh5 Nd8 47. Kg5 Nb7 48. Kh5 Nd8 49. Kg5 Nb7 50. Kh5 Nd8 51. Kg5 Nb7 52. Kh5 Nd8 53. Kg5 Nb7 54. Kh5 Nd8 55. Kg5 Nb7 56. Kh5 Nd8 57. Kg5 Nb7 58. Kh5 Nd8 59. Kg5 Nb7 60. Kh5 Nd8 61. Kg5 1/2-1/2
+
+[FEN "3n4/3k4/2p5/2K1P3/3P4/8/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kb4
+
+[FEN "3n4/3k4/2p5/2K1P3/3P4/8/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kb6
+
+[FEN "3n4/3k4/2p5/2K1P3/3P4/8/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. e6
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... a2 2. Kd1 a1=Q+ 3. Kc2 Rb2# 0-1
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc3
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd3
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Kb5
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Kc5
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Kd5
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Rb1
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Rb2
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Rc3
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Rd3
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Re3
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Rf3
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Rg3
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... Rh3
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... a2
+
+[FEN "8/8/8/8/1pkp4/pr6/8/2K5 b - - 0 1"]
+[Result "0-1"]
+
+1... d3
+
+[FEN "8/7p/6p1/2K3P1/8/3q4/4k3/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kb4 h5 2. Ka4 h4 3. Kb4 h3 4. Ka4 h2 5. Kb4 h1=Q 6. Ka4 Qa1+ 7. Kb4 Q1a3# 0-1
+
+[FEN "8/7p/K2k2p1/6P1/1q6/8/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ka7 h5 2. Ka6 h4 3. Ka7 h3 4. Ka6 h2 5. Ka7 h1=Q 6. Ka6 Qa1# 0-1
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "1-0"]
+
+1. h7 Kb1 2. a3 Ka1 3. g3 Kb1 4. a4 Ka1 5. g4 Kb1 6. a5 Ka1 7. g5 Kb1 8. a6 Ka1 9. g6 Kb1 10. a7 Ka1 11. g7 Kb1 12. a8=Q Kc1 13. g8=Q Kb1 14. h8=Q Kc1 15. Ke1 Kb1 16. Kd1 d2 17. Qaa1# 1-0
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Ke3
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Kg3
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. a3
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. a4
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. g3
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. g4
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ke1
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kf1
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kg1
+
+[FEN "8/8/7P/8/8/3p4/P1k2KP1/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kf3
+
+[FEN "8/8/5n1k/8/4r1p1/3K4/8/6R1 w - - 0 1"]
+[Result "0-1"]
+
+1. Rf1 Kg5 2. Rg1 Rf4 3. Kc2 Rf3 4. Kb1 g3 5. Ka1 Kf4 6. Kb1 Rf2 7. Ka1 g2 8. Kb1 Rf1+ 9. Ka2 Rxg1 10. Kb2 Ra1 11. Kc2 g1=Q 12. Kb2 Qc1+ 13. Kb3 Qc3+ 14. Kxc3 Ke3 15. Kb2 Rd1 16. Ka2 Kd3 17. Kb2 Rd2+ 18. Kb1 Ke2 19. Ka1 Ne4 20. Kb1 Nc3+ 21. Ka1 Ra2# 0-1
+
+[FEN "8/8/8/7p/pk5P/1p6/1K6/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Ka1 a3 2. Kb1 a2+ 3. Ka1 Ka4 4. Kb2 a1=Q+ 5. Kxa1 Ka3 6. Kb1 b2 7. Kc2 Ka2 8. Kd1 b1=Q+ 9. Kd2 Qh1 10. Kc2 Qxh4 11. Kc1 Qe1+ 12. Kc2 h4 13. Kd3 h3 14. Kc2 h2 15. Kd3 h1=Q 16. Kc2 Qh1e4# 0-1
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1-0"]
+
+1. e7 Re1 2. Rf7+ Kg8 3. Rf8+ Kg7 4. e8=Q Kh7 5. Qxe1 Kg7 6. Qe7# 1-0
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rf2
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rf3
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rf4
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Ra5
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rb5
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rc5
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rd5
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg5
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rf8
+
+[FEN "8/7k/4P3/5R1K/7P/8/8/6r1 w - - 0 1"]
+[Result "0-1"]
+
+1. Rf1
+
+[FEN "8/8/6P1/4K3/8/kbpB4/8/8 b - - 0 1"]
+[Result "1/2-1/2"]
+
+1... Bg8 2. g7 Kb3 3. Bf5 Ka2 4. Kd4 Kb2 5. Bb1 Bf7 6. g8=R Kxb1 7. Rg2 Bd5 8. Kd3 Bf3 9. Rf2 Bc6 10. Rf1+ Kb2 11. Rg1 Bd7 12. Kd4 Ba4 13. Ke4 Bc2+ 14. Ke5 Bb3 15. Rh1 Be6 16. Kd6 Bb3 17. Kc7 Be6 18. Rg1 Bb3 19. Kb7 Be6 20. Re1 Bb3 21. Rf1 Be6 22. Ka7 Bb3 23. Ka8 Be6 24. Rd1 Bb3 25. Rd3 Ka3 26. Rg3 Ba2 27. Rg7 Bb3 28. Kb8 Ba2 29. Ka8 Bb3 30. Kb8 Ba2 31. Ka8 Bb3 32. Kb8 Ba2 33. Ka8 Bb3 34. Kb8 Ba2 35. Ka8 Bb3 36. Kb8 Ba2 37. Ka8 Bb3 38. Kb8 Ba2 39. Ka8 Bb3 40. Kb8 Ba2 41. Ka8 Bb3 42. Kb8 Ba2 43. Ka8 Bb3 44. Kb8 Ba2 45. Ka8 Bb3 46. Kb8 Ba2 47. Ka8 Bb3 48. Kb8 Ba2 49. Ka8 Bb3 50. Kb8 Ba2 51. Ka8 Bb3 52. Kb8 Ba2 53. Ka8 Bb3 54. Kb8 Ba2 55. Ka8 Bb3 56. Kb8 Ba2 1/2-1/2
+
+[FEN "8/8/6P1/4K3/8/kbpB4/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Bc2
+
+[FEN "8/8/6P1/4K3/8/kbpB4/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Bd5
+
+[FEN "8/8/6P1/4K3/8/kbpB4/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Be6
+
+[FEN "8/8/6P1/4K3/8/kbpB4/8/8 b - - 0 1"]
+[Result "1-0"]
+
+1... Bf7
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1-0"]
+
+1. g4 Rf7+ 2. Ka6 Kc4 3. g5 Rc7 4. Rh6 Rc6+ 5. Kb7 Kb3 6. Kxc6 Ka2 7. g6 Ka1 8. f7 Kb1 9. g7 Ka1 10. f8=Q Kb1 11. g8=Q Kc1 12. Qf2 Kb1 13. Q8g1# 1-0
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Ka6
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Kb6
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Ka7
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Kc7
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg4
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg5
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rh6
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg7
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. f7
+
+[FEN "5r2/1K6/5PR1/3k4/8/6P1/8/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Rg8
+
+[FEN "8/8/P2R4/8/3p4/3k1K2/8/r7 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg6 Rd1 2. Rg8 Ra1 3. Rg6 Rd1 4. Rg8 Ra1 5. Rg6 Rd1 6. Rg8 Ra1 7. Rg6 Rd1 8. Rg8 Ra1 9. Rg6 Rd1 10. Rg8 Ra1 11. Rg6 Rd1 12. Rg8 Ra1 13. Rg6 Rd1 14. Rg8 Ra1 15. Rg6 Rd1 16. Rg8 Ra1 17. Rg6 Rd1 18. Rg8 Ra1 19. Rg6 Rd1 20. Rg8 Ra1 21. Rg6 Rd1 22. Rg8 Ra1 23. Rg6 Rd1 24. Rg8 Ra1 25. Rg6 Rd1 26. Rg8 Ra1 27. Rg6 Rd1 28. Rg8 Ra1 29. Rg6 Rd1 30. Rg8 Ra1 31. Rg6 Rd1 32. Rg8 Ra1 33. Rg6 Rd1 34. Rg8 Ra1 35. Rg6 Rd1 36. Rg8 Ra1 37. Rg6 Rd1 38. Rg8 Ra1 39. Rg6 Rd1 40. Rg8 Ra1 41. Rg6 Rd1 42. Rg8 Ra1 43. Rg6 Rd1 44. Rg8 Ra1 45. Rg6 Rd1 46. Rg8 Ra1 47. Rg6 Rd1 48. Rg8 Ra1 49. Rg6 Rd1 50. Rg8 Ra1 1/2-1/2
+
+[FEN "8/8/P2R4/8/3p4/3k1K2/8/r7 w - - 0 1"]
+[Result "0-1"]
+
+1. Rxd4
+
+[FEN "8/8/P2R4/8/3p4/3k1K2/8/r7 w - - 0 1"]
+[Result "0-1"]
+
+1. Rd5
+
+[FEN "8/8/P2R4/8/3p4/3k1K2/8/r7 w - - 0 1"]
+[Result "0-1"]
+
+1. Rf6
+
+[FEN "8/8/P2R4/8/3p4/3k1K2/8/r7 w - - 0 1"]
+[Result "0-1"]
+
+1. Rd7
+
+[FEN "8/8/P2R4/8/3p4/3k1K2/8/r7 w - - 0 1"]
+[Result "0-1"]
+
+1. Rd8
+
+[FEN "8/8/P2R4/8/3p4/3k1K2/8/r7 w - - 0 1"]
+[Result "0-1"]
+
+1. a7
+
+[FEN "r7/P2R4/8/4K3/8/4k3/3p4/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Kd5 Rxa7 2. Kc4 Rxd7 3. Kb3 d1=Q+ 4. Ka2 Qb1+ 5. Ka3 Ra7# 0-1
+
+[FEN "8/8/6p1/5kB1/7P/5p2/5K2/8 w - - 0 1"]
+[Result "1-0"]
+
+1. Kxf3 Ke5 2. Kg4 Ke6 3. Bc1 Kf6 4. Bb2+ Ke6 5. Kg5 Kf7 6. Kh6 Ke6 7. Kxg6 Kd5 8. h5 Kc4 9. h6 Kb3 10. h7 Ka2 11. h8=Q Kb3 12. Qd4 Kc2 13. Qd5 Kb1 14. Qc4 Kxb2 15. Kf5 Ka1 16. Ke4 Kb1 17. Kd3 Ka1 18. Kc3 Kb1 19. Kb3 Ka1 20. Qc1# 1-0
+
+[FEN "8/8/6p1/5kB1/7P/5p2/5K2/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Bf6
+
+[FEN "8/8/6p1/5kB1/7P/5p2/5K2/8 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. h5
+
+[FEN "8/8/6p1/5kB1/7P/5p2/5K2/8 w - - 0 1"]
+[Result "0-1"]
+
+1. Bf4
+
+[FEN "8/3r4/8/8/8/8/pk6/R1R1K3 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Kf2 Kb3 2. Re1 Rd2+ 3. Ke3 Rc2 4. Rh1 Kc3 5. Rhd1 Rg2 6. Kf4 Rf2+ 7. Ke4 Rc2 8. Kf5 Rf2+ 9. Ke5 Rg2 10. Ke6 Rc2 11. Kd7 Kb3 12. Ke7 Ka3 13. Kf8 Rf2+ 14. Ke8 Rc2 15. Kf7 Rf2+ 16. Ke7 Rc2 17. Kf8 Rf2+ 18. Ke8 Rc2 19. Kf7 Rf2+ 20. Ke7 Rc2 21. Kf8 Rf2+ 22. Ke8 Rc2 23. Kf7 Rf2+ 24. Ke7 Rc2 25. Kf8 Rf2+ 26. Ke8 Rc2 27. Kf7 Rf2+ 28. Ke7 Rc2 29. Kf8 Rf2+ 30. Ke8 Rc2 31. Kf7 Rf2+ 32. Ke7 Rc2 33. Kf8 Rf2+ 34. Ke8 Rc2 35. Kf7 Rf2+ 36. Ke7 Rc2 37. Kf8 Rf2+ 38. Ke8 Rc2 39. Kf7 Rf2+ 40. Ke7 Rc2 41. Kf8 Rf2+ 42. Ke8 Rc2 43. Kf7 Rf2+ 44. Ke7 Rc2 45. Kf8 Rf2+ 46. Ke8 Rc2 47. Kf7 Rf2+ 48. Ke7 Rc2 49. Kf8 Rf2+ 50. Ke8 Rc2 1/2-1/2
+
+[FEN "8/3r4/8/8/8/8/pk6/R1R1K3 w - - 0 1"]
+[Result "0-1"]
+
+1. Ra1b1
+
+[FEN "8/3r4/8/8/8/8/pk6/R1R1K3 w - - 0 1"]
+[Result "0-1"]
+
+1. Rc1b1
+
+[FEN "8/3r4/8/8/8/8/pk6/R1R1K3 w - - 0 1"]
+[Result "0-1"]
+
+1. Rc2
+
+[FEN "8/3r4/8/8/8/8/pk6/R1R1K3 w - - 0 1"]
+[Result "0-1"]
+
+1. Rc7
+
+[FEN "3r4/8/8/8/8/4K3/pk6/R4R2 w - - 0 1"]
+[Result "1/2-1/2"]
+
+1. Rg1 Rb8 2. Kf2 Rf8+ 3. Ke3 Rb8 4. Kf2 Rf8+ 5. Ke3 Rb8 6. Kf2 Rf8+ 7. Ke3 Rb8 8. Kf2 Rf8+ 9. Ke3 Rb8 10. Kf2 Rf8+ 11. Ke3 Rb8 12. Kf2 Rf8+ 13. Ke3 Rb8 14. Kf2 Rf8+ 15. Ke3 Rb8 16. Kf2 Rf8+ 17. Ke3 Rb8 18. Kf2 Rf8+ 19. Ke3 Rb8 20. Kf2 Rf8+ 21. Ke3 Rb8 22. Kf2 Rf8+ 23. Ke3 Rb8 24. Kf2 Rf8+ 25. Ke3 Rb8 26. Kf2 Rf8+ 27. Ke3 Rb8 28. Kf2 Rf8+ 29. Ke3 Rb8 30. Kf2 Rf8+ 31. Ke3 Rb8 32. Kf2 Rf8+ 33. Ke3 Rb8 34. Kf2 Rf8+ 35. Ke3 Rb8 36. Kf2 Rf8+ 37. Ke3 Rb8 38. Kf2 Rf8+ 39. Ke3 Rb8 40. Kf2 Rf8+ 41. Ke3 Rb8 42. Kf2 Rf8+ 43. Ke3 Rb8 44. Kf2 Rf8+ 45. Ke3 Rb8 46. Kf2 Rf8+ 47. Ke3 Rb8 48. Kf2 Rf8+ 49. Ke3 Rb8 50. Kf2 Rf8+ 1/2-1/2
+
