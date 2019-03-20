@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Installing GCC
-          command: 'sudo apt-get update && apt-get install -y gcc g++'
+          command: 'sudo apt-get update && sudo apt-get install -y gcc g++'
       - run:
           name: Install CMAKE
           command: 'sudo apt-get update && sudo apt-get install -y cmake'
