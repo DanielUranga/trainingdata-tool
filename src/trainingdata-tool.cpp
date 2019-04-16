@@ -12,10 +12,12 @@
 #include "square.h"
 #include "util.h"
 
+#include <cmath>
 #include <cstring>
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <regex>
 
 inline bool file_exists(const std::string& name) {
   std::ifstream f(name.c_str());
@@ -27,6 +29,21 @@ uint64_t resever_bits_in_bytes(uint64_t v) {
   v = ((v >> 2) & 0x3333333333333333ull) | ((v & 0x3333333333333333ull) << 2);
   v = ((v >> 4) & 0x0F0F0F0F0F0F0F0Full) | ((v & 0x0F0F0F0F0F0F0F0Full) << 4);
   return v;
+}
+
+bool extract_lichess_comment_score(const char* comment, float& Q) {
+  std::string s(comment);
+  std::regex rgx("\\[%eval (-?\\d+\\.\\d+)\\]");
+  std::smatch matches;
+  if (std::regex_search(s, matches, rgx)) {
+    Q = std::stof(matches[1].str());
+    return true;
+  }
+  return false;
+}
+
+float convert_sf_score_to_win_probability(float score) {
+  return 2 / (1 + exp(-0.4 * score)) - 1;
 }
 
 lczero::Move poly_move_to_lc0_move(move_t move, board_t* board) {
@@ -61,7 +78,7 @@ lczero::Move poly_move_to_lc0_move(move_t move, board_t* board) {
 
 lczero::V4TrainingData get_v4_training_data(
     lczero::GameResult game_result, const lczero::PositionHistory& history,
-    lczero::Move played_move, lczero::MoveList legal_moves) {
+    lczero::Move played_move, lczero::MoveList legal_moves, float Q) {
   lczero::V4TrainingData result;
 
   // Set version.
@@ -111,6 +128,9 @@ lczero::V4TrainingData get_v4_training_data(
     result.result = 0;
   }
 
+  // Q for Q+Z training
+  result.best_q = position.IsBlackToMove() ? -Q : Q;
+
   return result;
 }
 
@@ -146,7 +166,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
   board_t board[1];
   board_from_fen(board, starting_fen.c_str());
   char str[256];
-  lczero::TrainingDataWriter writer(game_id);
+  lczero::TrainingDataWriter* writer = nullptr;
 
   lczero::GameResult game_result;
   if (verbose) {
@@ -181,11 +201,32 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
     bool bad_move = false;
     if (pgn->last_read_nag[0]) {
       // If the move is bad or dubious, skip it.
-      // See https://en.wikipedia.org/wiki/Numeric_Annotation_Glyphs for PGN NAGs
+      // See https://en.wikipedia.org/wiki/Numeric_Annotation_Glyphs for PGN
+      // NAGs
       if (pgn->last_read_nag[0] == '2' || pgn->last_read_nag[0] == '4' ||
           pgn->last_read_nag[0] == '5' || pgn->last_read_nag[0] == '6') {
         bad_move = true;
       }
+    }
+
+    // Extract SF scores and convert to win probability
+    float Q = 0.0f;
+    if (pgn->last_read_comment[0]) {
+      float lichess_score;
+      bool success =
+          extract_lichess_comment_score(pgn->last_read_comment, lichess_score);
+      if (!success) {
+        break; // Comment contained no "%eval"
+      }
+      Q = convert_sf_score_to_win_probability(lichess_score);
+
+      // Since there is at least one move to write, initialize the writer
+      if (!writer) {
+        writer = new lczero::TrainingDataWriter(game_id++);
+      }
+    } else {
+      // This game has no comments, skip it.
+      break;
     }
 
     // Convert move to lc0 format
@@ -207,8 +248,8 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
     if (!bad_move) {
       // Generate training data
       lczero::V4TrainingData chunk = get_v4_training_data(
-          game_result, position_history, lc0_move, legal_moves);
-      writer.WriteChunk(chunk);
+          game_result, position_history, lc0_move, legal_moves, Q);
+      writer->WriteChunk(chunk);
     }
 
     // Execute move
@@ -220,7 +261,13 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
     std::cout << "Game end." << std::endl;
   }
 
-  writer.Finalize();
+  // Fast-forward any remaining move
+  while (pgn_next_move(pgn, str, 256));
+
+  if (writer) {
+    writer->Finalize();
+    delete writer;
+  }
 }
 
 int main(int argc, char* argv[]) {

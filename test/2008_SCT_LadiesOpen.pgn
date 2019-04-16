@@ -5535,6 +5535,26 @@ Re8 59. b5 Kf3 60. b6 Ra8 61. Kb2 g2 62. Rxg2 Kxg2 63. b7 Rxa7 64. b8=Q Re7 65.
 Qg8+ Kf2 66. Qg4 Ke3 67. Qf5 Rb7+ 68. Ka3 Ra7+ 69. Kb4 Ra6 70. Qc5+ Kf3 71. Kb5
 Re6 72. Qf5+ 1-0
 
+[Event "Rated Blitz game"]
+[Site "https://lichess.org/35abKFMe"]
+[Date "2018.08.31"]
+[Round "-"]
+[White "BuddyRole"]
+[Black "hansi44"]
+[Result "1-0"]
+[UTCDate "2018.08.31"]
+[UTCTime "22:02:34"]
+[WhiteElo "1541"]
+[BlackElo "1544"]
+[WhiteRatingDiff "+10"]
+[BlackRatingDiff "-11"]
+[ECO "A40"]
+[Opening "Modern Defense"]
+[TimeControl "300+1"]
+[Termination "Normal"]
+
+1. d4 { [%eval 0.08] [%clk 0:05:00] } 1... g6 { [%eval 0.37] [%clk 0:05:00] } 2. c4 { [%eval 0.2] [%clk 0:05:01] } 2... b6?! { [%eval 0.86] [%clk 0:05:00] } 3. e4 { [%eval 0.74] [%clk 0:05:00] } 3... Bb7 { [%eval 0.75] [%clk 0:05:01] } 4. Nc3 { [%eval 0.59] [%clk 0:04:58] } 4... Bg7 { [%eval 0.83] [%clk 0:05:01] } 5. Nf3 { [%eval 0.56] [%clk 0:04:56] } 5... d6 { [%eval 0.56] [%clk 0:05:02] } 6. d5 { [%eval 0.2] [%clk 0:04:53] } 6... Nd7 { [%eval 0.65] [%clk 0:04:59] } 7. Bg5?! { [%eval 0.0] [%clk 0:04:49] } 7... Ngf6?! { [%eval 0.76] [%clk 0:04:55] } 8. Bd3 { [%eval 0.55] [%clk 0:04:44] } 8... O-O { [%eval 0.77] [%clk 0:04:55] } 9. h4? { [%eval -0.48] [%clk 0:04:39] } 9... a6?! { [%eval 0.1] [%clk 0:04:54] } 10. Qd2 { [%eval -0.02] [%clk 0:04:30] } 10... Qe8?! { [%eval 0.76] [%clk 0:04:49] } 11. O-O-O?! { [%eval 0.0] [%clk 0:04:08] } 11... Bc8?! { [%eval 0.8] [%clk 0:04:49] } 12. Rdg1? { [%eval -0.35] [%clk 0:04:05] } 12... Nc5 { [%eval -0.23] [%clk 0:04:46] } 13. Bc2 { [%eval -0.34] [%clk 0:04:01] } 13... Bg4? { [%eval 1.58] [%clk 0:04:45] } 14. Nd4?! { [%eval 0.92] [%clk 0:03:47] } 14... Bd7 { [%eval 1.18] [%clk 0:04:35] } 15. f3 { [%eval 0.84] [%clk 0:03:45] } 15... Bc8? { [%eval 2.72] [%clk 0:04:25] } 16. g4 { [%eval 2.3] [%clk 0:03:44] } 16... Ncd7? { [%eval 3.72] [%clk 0:04:10] } 17. h5 { [%eval 3.49] [%clk 0:03:24] } 17... Ne5 { [%eval 2.86] [%clk 0:04:04] } 18. Bxf6?! { [%eval 2.1] [%clk 0:03:07] } 18... exf6 { [%eval 2.37] [%clk 0:03:59] } 19. f4?! { [%eval 1.85] [%clk 0:03:06] } 19... Nf3?? { [%eval 7.0] [%clk 0:03:57] } 1-0
+
 [Event "SCT Ladies Open"]
 [Site "Stockholm SWE"]
 [Date "2008.03.25"]
@@ -5585,6 +5605,26 @@ Qxd7 22. Rb1 Rd8 23. Nd5 {a comment} Bg7 24. Rc1! Nf5 25. g4 hxg4 26. hxg4 Nh6 2
 28. Rxc8 Rbxc8 29. Ne7+ Qxe7 30. Bxe7 Rxd1 31. Rxd1 f5 32. gxf5 Nxf5 33. Rd8+
 Rxd8 34. Bxd8 Bc3 35. Be2 Kf7 36. Bc4 Ke8 37. Bc7 Kd7 38. Bb8 a5 39. Kg2 Nd6
 40. Bd3 Bd4 41. Bxg6 Bc5 42. Bxd6 1/2-1/2
+
+[Event "Rated Bullet game"]
+[Site "https://lichess.org/UW8H7aDi"]
+[Date "2018.08.31"]
+[Round "-"]
+[White "markesa"]
+[Black "Mrcoquito"]
+[Result "0-1"]
+[UTCDate "2018.08.31"]
+[UTCTime "22:02:33"]
+[WhiteElo "1699"]
+[BlackElo "1912"]
+[WhiteRatingDiff "-5"]
+[BlackRatingDiff "+4"]
+[ECO "A43"]
+[Opening "Benoni Defense: Benoni Gambit Accepted"]
+[TimeControl "60+0"]
+[Termination "Normal"]
+
+1. d4 { [%eval 0.08] [%clk 0:01:00] } 1... c5 { [%eval 0.38] [%clk 0:01:00] } 2. dxc5 { [%eval 0.02] [%clk 0:00:59] } 2... Nc6?! { [%eval 0.65] [%clk 0:00:59] } 3. g3?! { [%eval -0.21] [%clk 0:00:58] } 3... e5 { [%eval 0.26] [%clk 0:00:59] } 4. Bg2?! { [%eval -0.62] [%clk 0:00:57] } 4... Bxc5 { [%eval -0.2] [%clk 0:00:57] } 5. Nf3 { [%eval -0.45] [%clk 0:00:56] } 5... d5 { [%eval -0.1] [%clk 0:00:56] } 6. Bg5? { [%eval -1.46] [%clk 0:00:54] } 6... f6 { [%eval -1.3] [%clk 0:00:55] } 7. Bd2?! { [%eval -1.94] [%clk 0:00:53] } 7... Nge7 { [%eval -1.62] [%clk 0:00:54] } 8. a3?! { [%eval -2.22] [%clk 0:00:53] } 8... O-O?! { [%eval -1.52] [%clk 0:00:53] } 9. b4 { [%eval -1.52] [%clk 0:00:51] } 9... Bb6 { [%eval -1.32] [%clk 0:00:52] } 10. O-O?! { [%eval -1.92] [%clk 0:00:50] } 10... Be6?! { [%eval -1.4] [%clk 0:00:51] } 11. Qc1? { [%eval -2.46] [%clk 0:00:47] } 11... e4 { [%eval -2.47] [%clk 0:00:49] } 12. Ne1 { [%eval -2.55] [%clk 0:00:43] } 12... Nd4 { [%eval -2.21] [%clk 0:00:48] } 13. c3?? { [%eval -10.47] [%clk 0:00:41] } 13... Nxe2+ { [%eval -10.48] [%clk 0:00:46] } 14. Kh1 { [%eval -10.52] [%clk 0:00:40] } 14... Nxc1 { [%eval -10.13] [%clk 0:00:46] } 15. Bxc1 { [%eval -10.17] [%clk 0:00:40] } 15... d4 { [%eval -10.22] [%clk 0:00:45] } 16. c4 { [%eval -12.78] [%clk 0:00:38] } 16... f5 { [%eval -10.37] [%clk 0:00:43] } 17. c5 { [%eval -10.32] [%clk 0:00:37] } 17... Bc7 { [%eval -9.93] [%clk 0:00:42] } 18. Nc2 { [%eval -13.87] [%clk 0:00:36] } 18... Bc4 { [%eval -10.37] [%clk 0:00:40] } 19. Bg5 { [%eval -12.6] [%clk 0:00:33] } 19... Bxf1 { [%eval -12.19] [%clk 0:00:38] } 0-1
 
 [Event "SCT Ladies Open"]
 [Site "Stockholm SWE"]
