@@ -175,7 +175,16 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
     }
 
     if (pgn->last_read_comment[0]) {
-      std::cout << "pgn comment: " << pgn->last_read_comment << std::endl;
+      std::cout << str << " pgn comment: " << pgn->last_read_comment << std::endl;
+    }
+
+    if (pgn->last_read_nag[0]) {
+      // If the move is bad or dubious, skip it.
+      // See https://en.wikipedia.org/wiki/Numeric_Annotation_Glyphs for PGN NAGs
+      if (pgn->last_read_nag[0] == '2' || pgn->last_read_nag[0] == '4' ||
+          pgn->last_read_nag[0] == '5' || pgn->last_read_nag[0] == '6') {
+        break;
+      }
     }
 
     // Convert move to lc0 format

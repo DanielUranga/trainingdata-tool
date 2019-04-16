@@ -5578,10 +5578,10 @@ Bc1 a3 47. h5 Be8 48. Ke2 Bf7 49. Bc6 Bc5 0-1
 [EventCountry "SWE"]
 [SourceDate "2008.01.01"]
 
-1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 d5 5. cxd5 Nxd5 6. e4 Nb6 7. Ne2 Nc6 8. d5
+1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 d5 5. cxd5 Nxd5 6. e4? Nb6 7. Ne2 Nc6 8. d5
 Na5 9. Nbc3 c6 10. O-O cxd5 11. exd5 Nac4 12. b3 Nd6 13. a4 O-O 14. h3 Bd7 15.
 Ba3 Re8 16. Re1 h5 17. Rc1 Nbc8 18. Nd4 Rb8 19. Nc6 bxc6 20. dxc6 Bh6 21. cxd7
-Qxd7 22. Rb1 Rd8 23. Nd5 {a comment} Bg7 24. Rc1 Nf5 25. g4 hxg4 26. hxg4 Nh6 27. Bf3 e6
+Qxd7 22. Rb1 Rd8 23. Nd5 {a comment} Bg7 24. Rc1! Nf5 25. g4 hxg4 26. hxg4 Nh6 27. Bf3 e6
 28. Rxc8 Rbxc8 29. Ne7+ Qxe7 30. Bxe7 Rxd1 31. Rxd1 f5 32. gxf5 Nxf5 33. Rd8+
 Rxd8 34. Bxd8 Bc3 35. Be2 Kf7 36. Bc4 Ke8 37. Bc7 Kd7 38. Bb8 a5 39. Kg2 Nd6
 40. Bd3 Bd4 41. Bxg6 Bc5 42. Bxd6 1/2-1/2
@@ -5605,12 +5605,12 @@ Rxd8 34. Bxd8 Bc3 35. Be2 Kf7 36. Bc4 Ke8 37. Bc7 Kd7 38. Bb8 a5 39. Kg2 Nd6
 
 1. d4 f5 2. g3 Nf6 3. Bg2 g6 4. Nf3 Bg7 5. c4 O-O 6. O-O e6 7. Nc3 d6 8. b3 Ne4
 9. Qd3 d5 10. Ba3 Re8 11. Rac1 c6 12. Rfd1 Na6 13. b4 Bf8 14. c5 Nc7 15. Bb2 a5
-16. a3 axb4 17. axb4 Na6 18. b5 Nb4 19. Qe3 Nxc3 20. Bxc3 Na2 21. Ra1 Nxc3 22.
+16. a3 axb4 17. axb4 Na6 18. b5 Nb4 19. Qe3 Nxc3!? 20. Bxc3 Na2 21. Ra1 Nxc3 22.
 Qxc3 Rxa1 23. Rxa1 cxb5 24. e3 b6 25. Bf1 bxc5 26. dxc5 Bd7 27. Rb1 Qc7 28. c6
 Qxc6 29. Qxc6 Bxc6 30. Nd4 Bd7 31. Nxb5 Rb8 32. f4 Kg7 33. Bd3 Bxb5 34. Rxb5
 Ra8 35. Rb7+ Kf6 36. Kf2 Ra3 37. Bb5 Bc5 38. Be8 e5 39. fxe5+ Kxe5 40. Rxh7
 Bxe3+ 41. Ke2 g5 42. Re7+ Kd4 43. h4 Ra2+ 44. Kf1 gxh4 45. gxh4 Rf2+ 46. Ke1
-Rh2 47. Bf7 f4 48. Rd7 f3 49. Bxd5 Rh1# 0-1
+Rh2 47. Bf7 f4 48. Rd7 f3 49. Bxd5 Rh1!!# 0-1
 
 [Event "SCT Ladies Open"]
 [Site "Stockholm SWE"]
