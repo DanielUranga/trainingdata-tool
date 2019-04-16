@@ -222,7 +222,12 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
 
       // Since there is at least one move to write, initialize the writer
       if (!writer) {
-        writer = new lczero::TrainingDataWriter(game_id++);
+        std::cout << game_id << " " << game_id / max_games_per_directory
+                  << std::endl;
+        writer = new lczero::TrainingDataWriter(
+            game_id,
+            "supervised-" + std::to_string(game_id / max_games_per_directory));
+        game_id++;
       }
     } else {
       // This game has no comments, skip it.
