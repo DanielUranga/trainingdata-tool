@@ -174,6 +174,10 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
       std::cout << "Read move: " << str << std::endl;
     }
 
+    if (pgn->last_read_comment[0]) {
+      std::cout << "pgn comment: " << pgn->last_read_comment << std::endl;
+    }
+
     // Convert move to lc0 format
     lczero::Move lc0_move = poly_move_to_lc0_move(move, board);
 
