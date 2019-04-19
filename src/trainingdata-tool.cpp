@@ -21,6 +21,11 @@
 
 const size_t max_games_per_directory = 10000;
 
+struct Options {
+    bool verbose = false;
+    bool lichess_mode = false;
+};
+
 inline bool file_exists(const std::string& name) {
   std::ifstream f(name.c_str());
   return f.good();
@@ -141,7 +146,7 @@ lczero::V4TrainingData get_v4_training_data(
   return result;
 }
 
-void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
+void write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
   std::vector<lczero::V4TrainingData> training_data;
   lczero::ChessBoard starting_board;
   std::string starting_fen =
@@ -161,7 +166,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
     }
   }
 
-  if (verbose) {
+  if (options.verbose) {
     std::cout << "Started new game, starting FEN: \'" << starting_fen << "\'"
               << std::endl;
   }
@@ -176,7 +181,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
   lczero::TrainingDataWriter* writer = nullptr;
 
   lczero::GameResult game_result;
-  if (verbose) {
+  if (options.verbose) {
     std::cout << "Game result: " << pgn->result << std::endl;
   }
   if (my_string_equal(pgn->result, "1-0")) {
@@ -196,7 +201,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
       break;
     }
 
-    if (verbose) {
+    if (options.verbose) {
       move_to_san(move, board, str, 256);
       std::cout << "Read move: " << str << std::endl;
     }
@@ -238,7 +243,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
             "supervised-" + std::to_string(game_id / max_games_per_directory));
         game_id++;
       }
-    } else {
+    } else if (options.lichess_mode) {
       // This game has no comments, skip it.
       break;
     }
@@ -271,7 +276,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, bool verbose) {
     move_do(board, move);
   }
 
-  if (verbose) {
+  if (options.verbose) {
     std::cout << "Game end." << std::endl;
   }
 
@@ -288,22 +293,25 @@ int main(int argc, char* argv[]) {
   lczero::InitializeMagicBitboards();
   polyglot_init();
   int game_id = 0;
-  bool verbose = false;
+  Options options;
   for (size_t idx = 0; idx < argc; ++idx) {
     if (0 == static_cast<std::string>("-v").compare(argv[idx])) {
       std::cout << "Verbose mode ON" << std::endl;
-      verbose = true;
+      options.verbose = true;
+    } else if (0 == static_cast<std::string>("-lichess-mode").compare(argv[idx])) {
+      std::cout << "Lichess mode ON" << std::endl;
+      options.lichess_mode = true;
     }
   }
   for (size_t idx = 1; idx < argc; ++idx) {
     if (!file_exists(argv[idx])) continue;
     pgn_t pgn[1];
-    if (verbose) {
+    if (options.verbose) {
       std::cout << "Opening \'" << argv[idx] << "\'" << std::endl;
     }
     pgn_open(pgn, argv[idx]);
     while (pgn_next_game(pgn)) {
-      write_one_game_training_data(pgn, game_id++, verbose);
+      write_one_game_training_data(pgn, game_id++, options);
     }
     pgn_close(pgn);
   }
