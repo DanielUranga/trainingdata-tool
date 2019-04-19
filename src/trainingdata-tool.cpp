@@ -19,6 +19,8 @@
 #include <sstream>
 #include <regex>
 
+const size_t max_games_per_directory = 10000;
+
 inline bool file_exists(const std::string& name) {
   std::ifstream f(name.c_str());
   return f.good();
@@ -133,7 +135,8 @@ lczero::V4TrainingData get_v4_training_data(
   }
 
   // Q for Q+Z training
-  result.best_q = position.IsBlackToMove() ? -Q : Q;
+  result.root_q = result.best_q = position.IsBlackToMove() ? -Q : Q;
+
 
   return result;
 }
