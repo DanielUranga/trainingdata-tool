@@ -204,10 +204,9 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
     if (options.verbose) {
       move_to_san(move, board, str, 256);
       std::cout << "Read move: " << str << std::endl;
-    }
-
-    if (pgn->last_read_comment[0]) {
-      std::cout << str << " pgn comment: " << pgn->last_read_comment << std::endl;
+      if (pgn->last_read_comment[0]) {
+        std::cout << str << " pgn comment: " << pgn->last_read_comment << std::endl;
+      }
     }
 
     bool bad_move = false;
