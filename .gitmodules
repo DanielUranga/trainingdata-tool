@@ -1,6 +1,6 @@
 [submodule "lc0"]
 	path = lc0
-	url = https://github.com/LeelaChessZero/lc0.git
+	url = https://github.com/DanielUranga/lc0.git
 [submodule "zlib"]
 	path = zlib
 	url = https://github.com/madler/zlib.git
