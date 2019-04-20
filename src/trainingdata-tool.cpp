@@ -19,7 +19,7 @@
 #include <sstream>
 #include <regex>
 
-const size_t max_games_per_directory = 10000;
+size_t max_games_per_directory = 10000;
 
 struct Options {
     bool verbose = false;
@@ -300,6 +300,10 @@ int main(int argc, char* argv[]) {
     } else if (0 == static_cast<std::string>("-lichess-mode").compare(argv[idx])) {
       std::cout << "Lichess mode ON" << std::endl;
       options.lichess_mode = true;
+    } else if (0 == static_cast<std::string>("-games-per-dir").compare(argv[idx])) {
+      max_games_per_directory = std::atoi(argv[idx+1]);
+      std::cout << "Max games per directory set to: "
+        << max_games_per_directory << std::endl;
     }
   }
   for (size_t idx = 1; idx < argc; ++idx) {
