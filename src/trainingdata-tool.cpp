@@ -142,11 +142,10 @@ lczero::V4TrainingData get_v4_training_data(
   // Q for Q+Z training
   result.root_q = result.best_q = position.IsBlackToMove() ? -Q : Q;
 
-
   return result;
 }
 
-void write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
+bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
   std::vector<lczero::V4TrainingData> training_data;
   lczero::ChessBoard starting_board;
   std::string starting_fen =
@@ -286,6 +285,7 @@ void write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
     writer->Finalize();
     delete writer;
   }
+  return writer;
 }
 
 int main(int argc, char* argv[]) {
@@ -310,7 +310,8 @@ int main(int argc, char* argv[]) {
     }
     pgn_open(pgn, argv[idx]);
     while (pgn_next_game(pgn)) {
-      write_one_game_training_data(pgn, game_id++, options);
+      bool game_written = write_one_game_training_data(pgn, game_id, options);
+      if (game_written) game_id++;
     }
     pgn_close(pgn);
   }
