@@ -48,7 +48,7 @@ bool extract_lichess_comment_score(const char* comment, float& Q) {
     Q = std::stof(matches[1].str());
     return true;
   } else if (std::regex_search(s, matches, rgx2)) {
-    Q = matches[1].str().at(0) == '-' ? -1.0f : 1.0f;
+    Q = matches[1].str().at(0) == '-' ? -128.0f : 128.0f;
     return true;
   }
   return false;
