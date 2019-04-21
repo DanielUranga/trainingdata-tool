@@ -20,6 +20,7 @@
 #include <sstream>
 
 size_t max_games_per_directory = 10000;
+size_t max_games_to_convert = 10000000;
 
 struct Options {
   bool verbose = false;
@@ -311,6 +312,11 @@ int main(int argc, char* argv[]) {
       max_games_per_directory = std::atoi(argv[idx + 1]);
       std::cout << "Max games per directory set to: " << max_games_per_directory
                 << std::endl;
+    } else if (0 == static_cast<std::string>("-max-games-to-convert")
+                        .compare(argv[idx])) {
+      max_games_to_convert = std::atoi(argv[idx + 1]);
+      std::cout << "Max games to convert set to: " << max_games_to_convert
+                << std::endl;
     }
   }
   for (size_t idx = 1; idx < argc; ++idx) {
@@ -320,7 +326,7 @@ int main(int argc, char* argv[]) {
       std::cout << "Opening \'" << argv[idx] << "\'" << std::endl;
     }
     pgn_open(pgn, argv[idx]);
-    while (pgn_next_game(pgn)) {
+    while (pgn_next_game(pgn) && game_id < max_games_to_convert) {
       bool game_written = write_one_game_training_data(pgn, game_id, options);
       if (game_written) game_id++;
     }
