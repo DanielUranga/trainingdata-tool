@@ -16,14 +16,14 @@
 #include <cstring>
 #include <fstream>
 #include <iostream>
-#include <sstream>
 #include <regex>
+#include <sstream>
 
 size_t max_games_per_directory = 10000;
 
 struct Options {
-    bool verbose = false;
-    bool lichess_mode = false;
+  bool verbose = false;
+  bool lichess_mode = false;
 };
 
 inline bool file_exists(const std::string& name) {
@@ -204,7 +204,8 @@ bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
       move_to_san(move, board, str, 256);
       std::cout << "Read move: " << str << std::endl;
       if (pgn->last_read_comment[0]) {
-        std::cout << str << " pgn comment: " << pgn->last_read_comment << std::endl;
+        std::cout << str << " pgn comment: " << pgn->last_read_comment
+                  << std::endl;
       }
     }
 
@@ -279,7 +280,8 @@ bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
   }
 
   // Fast-forward any remaining move
-  while (pgn_next_move(pgn, str, 256));
+  while (pgn_next_move(pgn, str, 256))
+    ;
 
   if (writer) {
     writer->Finalize();
@@ -297,13 +299,15 @@ int main(int argc, char* argv[]) {
     if (0 == static_cast<std::string>("-v").compare(argv[idx])) {
       std::cout << "Verbose mode ON" << std::endl;
       options.verbose = true;
-    } else if (0 == static_cast<std::string>("-lichess-mode").compare(argv[idx])) {
+    } else if (0 ==
+               static_cast<std::string>("-lichess-mode").compare(argv[idx])) {
       std::cout << "Lichess mode ON" << std::endl;
       options.lichess_mode = true;
-    } else if (0 == static_cast<std::string>("-games-per-dir").compare(argv[idx])) {
-      max_games_per_directory = std::atoi(argv[idx+1]);
-      std::cout << "Max games per directory set to: "
-        << max_games_per_directory << std::endl;
+    } else if (0 ==
+               static_cast<std::string>("-games-per-dir").compare(argv[idx])) {
+      max_games_per_directory = std::atoi(argv[idx + 1]);
+      std::cout << "Max games per directory set to: " << max_games_per_directory
+                << std::endl;
     }
   }
   for (size_t idx = 1; idx < argc; ++idx) {
