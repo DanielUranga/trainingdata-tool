@@ -18,9 +18,10 @@
 #include <iostream>
 #include <regex>
 #include <sstream>
+#include <thread>
 
 size_t max_games_per_directory = 10000;
-size_t max_games_to_convert = 10000000;
+int64_t max_games_to_convert = 10000000;
 
 struct Options {
   bool verbose = false;
@@ -149,12 +150,44 @@ lczero::V4TrainingData get_v4_training_data(
   return result;
 }
 
-std::vector<lczero::V4TrainingData> get_game_chunks(pgn_t* pgn,
+struct PGNMoveInfo {
+  char move[PGN_STRING_SIZE];
+  char comment[PGN_STRING_SIZE];
+  char nag[PGN_STRING_SIZE];
+
+  PGNMoveInfo(char* in_move, char* in_comment, char* in_nag) {
+    strncpy(move, in_move, PGN_STRING_SIZE);
+    strncpy(comment, in_comment, PGN_STRING_SIZE);
+    strncpy(nag, in_nag, PGN_STRING_SIZE);
+  }
+};
+
+struct PGNGame {
+  char result[PGN_STRING_SIZE];
+  char fen[PGN_STRING_SIZE];
+  std::vector<PGNMoveInfo> moves;
+};
+
+PGNGame get_pgn_game(pgn_t* pgn) {
+  PGNGame pgn_game;
+  strncpy(pgn_game.result, pgn->result, PGN_STRING_SIZE);
+  strncpy(pgn_game.fen, pgn->fen, PGN_STRING_SIZE);
+
+  char str[256];
+  while (pgn_next_move(pgn, str, 256)) {
+    pgn_game.moves.emplace_back(str, pgn->last_read_comment,
+                                pgn->last_read_nag);
+  }
+
+  return pgn_game;
+}
+
+std::vector<lczero::V4TrainingData> get_game_chunks(PGNGame pgn,
                                                     Options options) {
   std::vector<lczero::V4TrainingData> chunks(256);
   lczero::ChessBoard starting_board;
   std::string starting_fen =
-      std::strlen(pgn->fen) > 0 ? pgn->fen : lczero::ChessBoard::kStartposFen;
+      std::strlen(pgn.fen) > 0 ? pgn.fen : lczero::ChessBoard::kStartposFen;
 
   {
     std::istringstream fen_str(starting_fen);
@@ -162,8 +195,6 @@ std::vector<lczero::V4TrainingData> get_game_chunks(pgn_t* pgn,
     std::string who_to_move;
     std::string castlings;
     std::string en_passant;
-    int no_capture_halfmoves;
-    int total_moves;
     fen_str >> board >> who_to_move >> castlings >> en_passant;
     if (fen_str.eof()) {
       starting_fen.append(" 0 0");
@@ -181,57 +212,55 @@ std::vector<lczero::V4TrainingData> get_game_chunks(pgn_t* pgn,
   position_history.Reset(starting_board, 0, 0);
   board_t board[1];
   board_from_fen(board, starting_fen.c_str());
-  char str[256];
 
   lczero::GameResult game_result;
   if (options.verbose) {
-    std::cout << "Game result: " << pgn->result << std::endl;
+    std::cout << "Game result: " << pgn.result << std::endl;
   }
-  if (my_string_equal(pgn->result, "1-0")) {
+  if (my_string_equal(pgn.result, "1-0")) {
     game_result = lczero::GameResult::WHITE_WON;
-  } else if (my_string_equal(pgn->result, "0-1")) {
+  } else if (my_string_equal(pgn.result, "0-1")) {
     game_result = lczero::GameResult::BLACK_WON;
   } else {
     game_result = lczero::GameResult::DRAW;
   }
 
-  while (pgn_next_move(pgn, str, 256)) {
+  char str[256];
+  for (auto pgn_move : pgn.moves) {
     // Extract move from pgn
-    int move = move_from_san(str, board);
+    int move = move_from_san(pgn_move.move, board);
     if (move == MoveNone || !move_is_legal(move, board)) {
-      std::cout << "illegal move \"" << str << "\" at line " << pgn->move_line
-                << ", column " << pgn->move_column << std::endl;
+      std::cout << "illegal move \"" << pgn_move.move << std::endl;
       break;
     }
 
     if (options.verbose) {
       move_to_san(move, board, str, 256);
       std::cout << "Read move: " << str << std::endl;
-      if (pgn->last_read_comment[0]) {
-        std::cout << str << " pgn comment: " << pgn->last_read_comment
-                  << std::endl;
+      if (pgn_move.comment[0]) {
+        std::cout << str << " pgn comment: " << pgn_move.comment << std::endl;
       }
     }
 
     bool bad_move = false;
-    if (pgn->last_read_nag[0]) {
+    if (pgn_move.nag[0]) {
       // If the move is bad or dubious, skip it.
       // See https://en.wikipedia.org/wiki/Numeric_Annotation_Glyphs for PGN
       // NAGs
-      if (pgn->last_read_nag[0] == '2' || pgn->last_read_nag[0] == '4' ||
-          pgn->last_read_nag[0] == '5' || pgn->last_read_nag[0] == '6') {
+      if (pgn_move.nag[0] == '2' || pgn_move.nag[0] == '4' ||
+          pgn_move.nag[0] == '5' || pgn_move.nag[0] == '6') {
         bad_move = true;
       }
     }
 
     // Extract SF scores and convert to win probability
     float Q = 0.0f;
-    if (pgn->last_read_comment[0]) {
+    if (pgn_move.comment[0]) {
       float lichess_score;
       if (move_is_mate(move, board)) {
         lichess_score = position_history.Last().IsBlackToMove() ? -1.0f : 1.0f;
       } else {
-        bool success = extract_lichess_comment_score(pgn->last_read_comment,
+        bool success = extract_lichess_comment_score(pgn_move.comment,
                                                      lichess_score);
         if (!success) {
           break;  // Comment contained no "%eval"
@@ -255,7 +284,7 @@ std::vector<lczero::V4TrainingData> get_game_chunks(pgn_t* pgn,
       }
     }
     if (!found) {
-      std::cout << "Move not found: " << str << " "
+      std::cout << "Move not found: " << pgn_move.move << " "
                 << square_file(move_to(move)) << std::endl;
     }
 
@@ -275,17 +304,33 @@ std::vector<lczero::V4TrainingData> get_game_chunks(pgn_t* pgn,
     std::cout << "Game end." << std::endl;
   }
 
-  // Fast-forward any remaining move
-  while (pgn_next_move(pgn, str, 256))
-    ;
-
   return chunks;
+}
+
+void convert_games(std::string pgn_file_name, Options options) {
+  int game_id = -1;
+  pgn_t pgn[1];
+  pgn_open(pgn, pgn_file_name.c_str());
+  while (pgn_next_game(pgn) && game_id < max_games_to_convert) {
+    game_id++;
+    auto game = get_pgn_game(pgn);
+    auto chunks = get_game_chunks(game, options);
+    if (chunks.size() > 0) {
+      lczero::TrainingDataWriter writer = lczero::TrainingDataWriter(
+          game_id,
+          "supervised-" + std::to_string(game_id / max_games_per_directory));
+      for (auto chunk : chunks) {
+        writer.WriteChunk(chunk);
+      }
+      writer.Finalize();
+    }
+  }
+  pgn_close(pgn);
 }
 
 int main(int argc, char* argv[]) {
   lczero::InitializeMagicBitboards();
   polyglot_init();
-  int game_id = 0;
   Options options;
   for (size_t idx = 0; idx < argc; ++idx) {
     if (0 == static_cast<std::string>("-v").compare(argv[idx])) {
@@ -307,27 +352,13 @@ int main(int argc, char* argv[]) {
                 << std::endl;
     }
   }
+
   for (size_t idx = 1; idx < argc; ++idx) {
     if (!file_exists(argv[idx])) continue;
-    pgn_t pgn[1];
     if (options.verbose) {
       std::cout << "Opening \'" << argv[idx] << "\'" << std::endl;
     }
-    pgn_open(pgn, argv[idx]);
-    while (pgn_next_game(pgn) && game_id < max_games_to_convert) {
-      auto chunks = get_game_chunks(pgn, options);
-      std::cout << "Chunks: " << chunks.size() << std::endl;
-      if (chunks.size() > 0) {
-        lczero::TrainingDataWriter writer = lczero::TrainingDataWriter(
-            game_id,
-            "supervised-" + std::to_string(game_id / max_games_per_directory));
-        for (auto chunk : chunks) {
-          writer.WriteChunk(chunk);
-        }
-        writer.Finalize();
-        game_id++;
-      }
-    }
-    pgn_close(pgn);
+
+    convert_games(argv[idx], options);
   }
 }

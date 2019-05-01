@@ -29,6 +29,10 @@ AUX_SOURCE_DIRECTORY(zlib zlib)
 # Add source to this project's executable.
 add_executable(trainingdata-tool ${sources} ${lc0} ${lc0_filesystem} ${polyglot} ${zlib})
 
+if (UNIX)
+    target_link_libraries(trainingdata-tool -lpthread)
+endif(UNIX)
+
 include_directories(
     "lc0/src"
     "lc0/src/chess"
