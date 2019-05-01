@@ -149,8 +149,9 @@ lczero::V4TrainingData get_v4_training_data(
   return result;
 }
 
-bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
-  std::vector<lczero::V4TrainingData> training_data;
+std::vector<lczero::V4TrainingData> get_game_chunks(pgn_t* pgn,
+                                                    Options options) {
+  std::vector<lczero::V4TrainingData> chunks(256);
   lczero::ChessBoard starting_board;
   std::string starting_fen =
       std::strlen(pgn->fen) > 0 ? pgn->fen : lczero::ChessBoard::kStartposFen;
@@ -181,7 +182,6 @@ bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
   board_t board[1];
   board_from_fen(board, starting_fen.c_str());
   char str[256];
-  lczero::TrainingDataWriter* writer = nullptr;
 
   lczero::GameResult game_result;
   if (options.verbose) {
@@ -238,14 +238,6 @@ bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
         }
       }
       Q = convert_sf_score_to_win_probability(lichess_score);
-
-      // Since there is at least one move to write, initialize the writer
-      if (!writer) {
-        writer = new lczero::TrainingDataWriter(
-            game_id,
-            "supervised-" + std::to_string(game_id / max_games_per_directory));
-        game_id++;
-      }
     } else if (options.lichess_mode) {
       // This game has no comments, skip it.
       break;
@@ -263,7 +255,7 @@ bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
       }
     }
     if (!found) {
-      std::cout << "Move not found: " << str << " " << game_id << " "
+      std::cout << "Move not found: " << str << " "
                 << square_file(move_to(move)) << std::endl;
     }
 
@@ -271,7 +263,7 @@ bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
       // Generate training data
       lczero::V4TrainingData chunk = get_v4_training_data(
           game_result, position_history, lc0_move, legal_moves, Q);
-      writer->WriteChunk(chunk);
+      chunks.push_back(chunk);
     }
 
     // Execute move
@@ -287,11 +279,7 @@ bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
   while (pgn_next_move(pgn, str, 256))
     ;
 
-  if (writer) {
-    writer->Finalize();
-    delete writer;
-  }
-  return writer;
+  return chunks;
 }
 
 int main(int argc, char* argv[]) {
@@ -327,8 +315,18 @@ int main(int argc, char* argv[]) {
     }
     pgn_open(pgn, argv[idx]);
     while (pgn_next_game(pgn) && game_id < max_games_to_convert) {
-      bool game_written = write_one_game_training_data(pgn, game_id, options);
-      if (game_written) game_id++;
+      auto chunks = get_game_chunks(pgn, options);
+      std::cout << "Chunks: " << chunks.size() << std::endl;
+      if (chunks.size() > 0) {
+        lczero::TrainingDataWriter writer = lczero::TrainingDataWriter(
+            game_id,
+            "supervised-" + std::to_string(game_id / max_games_per_directory));
+        for (auto chunk : chunks) {
+          writer.WriteChunk(chunk);
+        }
+        writer.Finalize();
+        game_id++;
+      }
     }
     pgn_close(pgn);
   }
