@@ -229,7 +229,7 @@ bool write_one_game_training_data(pgn_t* pgn, int game_id, Options options) {
     if (pgn->last_read_comment[0]) {
       float lichess_score;
       if (move_is_mate(move, board)) {
-        lichess_score = position_history.Last().IsBlackToMove() ? -1.0f : 1.0f;
+        lichess_score = position_history.Last().IsBlackToMove() ? -128.0f : 128.0f;
       } else {
         bool success = extract_lichess_comment_score(pgn->last_read_comment,
                                                      lichess_score);
