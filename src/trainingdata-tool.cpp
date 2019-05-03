@@ -258,7 +258,7 @@ std::vector<lczero::V4TrainingData> get_game_chunks(PGNGame pgn,
     if (pgn_move.comment[0]) {
       float lichess_score;
       if (move_is_mate(move, board)) {
-        lichess_score = position_history.Last().IsBlackToMove() ? -1.0f : 1.0f;
+        lichess_score = position_history.Last().IsBlackToMove() ? -128.0f : 128.0f;
       } else {
         bool success = extract_lichess_comment_score(pgn_move.comment,
                                                      lichess_score);
