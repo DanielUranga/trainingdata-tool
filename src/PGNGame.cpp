@@ -159,24 +159,26 @@ std::vector<lczero::V4TrainingData> PGNGame::getChunks(Options options) const {
 
     // Extract SF scores and convert to win probability
     float Q = 0.0f;
-    if (pgn_move.comment[0]) {
-      float lichess_score;
-      if (board_is_mate(board)) {
-        lichess_score = position_history.Last().IsBlackToMove() ? -128.0f : 128.0f;
-      } else {
-        bool success = extract_lichess_comment_score(pgn_move.comment,
-                                                     lichess_score);
-        if (!success) {
-          break;  // Comment contained no "%eval"
+    if (options.lichess_mode) {
+      if (pgn_move.comment[0]) {
+        float lichess_score;
+        if (board_is_mate(board)) {
+          lichess_score = position_history.Last().IsBlackToMove() ? -128.0f : 128.0f;
+        } else {
+          bool success = extract_lichess_comment_score(pgn_move.comment,
+                                                       lichess_score);
+          if (!success) {
+            break;  // Comment contained no "%eval"
+          }
         }
+        Q = convert_sf_score_to_win_probability(lichess_score);
+      } else {
+        // This game has no comments, skip it.
+        break;
       }
-      Q = convert_sf_score_to_win_probability(lichess_score);
-    } else if (options.lichess_mode) {
-      // This game has no comments, skip it.
-      break;
     }
 
-    if (!bad_move) {
+    if (!(bad_move && options.lichess_mode)) {
       // Generate training data
       lczero::V4TrainingData chunk = get_v4_training_data(
               game_result, position_history, lc0_move, legal_moves, Q);
@@ -189,7 +191,7 @@ std::vector<lczero::V4TrainingData> PGNGame::getChunks(Options options) const {
           case lczero::GameResult::DRAW:      result = "1/2-1/2"; break;
           default:                            result = "???"; break;
         }
-        std::cout << "Write chunk: [" << lc0_move << ", " << result << ", " << Q << "]\n";
+        std::cout << "Write chunk: [" << lc0_move.as_string() << ", " << result << ", " << Q << "]\n";
       }
     }
 
