@@ -179,8 +179,18 @@ std::vector<lczero::V4TrainingData> PGNGame::getChunks(Options options) const {
     if (!bad_move) {
       // Generate training data
       lczero::V4TrainingData chunk = get_v4_training_data(
-          game_result, position_history, lc0_move, legal_moves, Q);
+              game_result, position_history, lc0_move, legal_moves, Q);
       chunks.push_back(chunk);
+      if (options.verbose) {
+        std::string result;
+        switch (game_result) {
+          case lczero::GameResult::WHITE_WON: result = "1-0"; break;
+          case lczero::GameResult::BLACK_WON: result = "0-1"; break;
+          case lczero::GameResult::DRAW:      result = "1/2-1/2"; break;
+          default:                            result = "???"; break;
+        }
+        std::cout << "Write chunk: [" << lc0_move << ", " << result << ", " << Q << "]\n";
+      }
     }
 
   }
