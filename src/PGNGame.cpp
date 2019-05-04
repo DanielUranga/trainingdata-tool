@@ -68,7 +68,7 @@ PGNGame::PGNGame(pgn_t* pgn) {
 }
 
 std::vector<lczero::V4TrainingData> PGNGame::getChunks(Options options) const {
-  std::vector<lczero::V4TrainingData> chunks(256);
+  std::vector<lczero::V4TrainingData> chunks;
   lczero::ChessBoard starting_board;
   std::string starting_fen =
       std::strlen(this->fen) > 0 ? this->fen : lczero::ChessBoard::kStartposFen;

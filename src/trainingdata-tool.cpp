@@ -28,11 +28,10 @@ inline bool file_exists(const std::string& name) {
 }
 
 void convert_games(std::string pgn_file_name, Options options) {
-  int game_id = -1;
+  int game_id = 0;
   pgn_t pgn[1];
   pgn_open(pgn, pgn_file_name.c_str());
   while (pgn_next_game(pgn) && game_id < max_games_to_convert) {
-    game_id++;
     PGNGame game(pgn);
     auto chunks = game.getChunks(options);
     if (chunks.size() > 0) {
@@ -43,6 +42,7 @@ void convert_games(std::string pgn_file_name, Options options) {
         writer.WriteChunk(chunk);
       }
       writer.Finalize();
+      game_id++;
     }
   }
   pgn_close(pgn);
