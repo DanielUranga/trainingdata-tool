@@ -41,7 +41,7 @@ uint64_t resever_bits_in_bytes(uint64_t v) {
 
 bool extract_lichess_comment_score(const char* comment, float& Q) {
   std::string s(comment);
-  static std::regex rgx("\\[%eval (-?\\d+\\.\\d+)\\]");
+  static std::regex rgx("\\[%eval (-?\\d+(\\.\\d+)?)\\]");
   static std::regex rgx2("\\[%eval #(-?\\d+)\\]");
   std::smatch matches;
   if (std::regex_search(s, matches, rgx)) {
