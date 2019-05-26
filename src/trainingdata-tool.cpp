@@ -37,8 +37,12 @@ void convert_games(const std::string& pgn_file_name, Options options) {
     PGNGame game(pgn);
     writer.EnqueueChunks(game.getChunks(options));
     game_id++;
+    if (game_id % 1000 == 0) {
+      std::cout << game_id << " games written." << std::endl;
+    }
   }
   writer.Finalize();
+  std::cout << "Finished writing " << game_id << " games." << std::endl;
   pgn_close(pgn);
 }
 
@@ -57,7 +61,7 @@ int main(int argc, char *argv[]) {
     } else if (0 ==
                static_cast<std::string>("-files-per-dir").compare(argv[idx])) {
       max_files_per_directory = std::atoi(argv[idx + 1]);
-      std::cout << "Max games per directory set to: " << max_files_per_directory
+      std::cout << "Max files per directory set to: " << max_files_per_directory
                 << std::endl;
     } else if (0 == static_cast<std::string>("-max-games-to-convert")
             .compare(argv[idx])) {
