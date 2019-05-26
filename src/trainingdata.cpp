@@ -55,17 +55,16 @@ lczero::V4TrainingData get_v4_training_data(
   // Game result.
   if (game_result == lczero::GameResult::WHITE_WON) {
     result.result = position.IsBlackToMove() ? -1 : 1;
-    result.root_d = result.best_d = 0.0f;
   } else if (game_result == lczero::GameResult::BLACK_WON) {
     result.result = position.IsBlackToMove() ? 1 : -1;
-    result.root_d = result.best_d = 0.0f;
   } else {
     result.result = 0;
-    result.root_d = result.best_d = 1.0f;
   }
 
   // Q for Q+Z training
   result.root_q = result.best_q = position.IsBlackToMove() ? -Q : Q;
+  // We have no D information
+  result.root_d = result.best_d = 0.0f;
 
   return result;
 }

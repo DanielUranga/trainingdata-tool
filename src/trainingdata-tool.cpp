@@ -18,37 +18,31 @@
 #include <thread>
 
 #include "PGNGame.h"
+#include "TrainingDataWriter.h"
 
-size_t max_games_per_directory = 10000;
+size_t max_files_per_directory = 10000;
 int64_t max_games_to_convert = 10000000;
 
-inline bool file_exists(const std::string& name) {
+inline bool file_exists(const std::string &name) {
   std::ifstream f(name.c_str());
   return f.good();
 }
 
-void convert_games(std::string pgn_file_name, Options options) {
+void convert_games(const std::string& pgn_file_name, Options options) {
   int game_id = 0;
   pgn_t pgn[1];
   pgn_open(pgn, pgn_file_name.c_str());
+  TrainingDataWriter writer(max_files_per_directory);
   while (pgn_next_game(pgn) && game_id < max_games_to_convert) {
     PGNGame game(pgn);
-    auto chunks = game.getChunks(options);
-    if (chunks.size() > 0) {
-      lczero::TrainingDataWriter writer = lczero::TrainingDataWriter(
-          game_id,
-          "supervised-" + std::to_string(game_id / max_games_per_directory));
-      for (auto chunk : chunks) {
-        writer.WriteChunk(chunk);
-      }
-      writer.Finalize();
-      game_id++;
-    }
+    writer.EnqueueChunks(game.getChunks(options));
+    game_id++;
   }
+  writer.Finalize();
   pgn_close(pgn);
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
   lczero::InitializeMagicBitboards();
   polyglot_init();
   Options options;
@@ -61,12 +55,12 @@ int main(int argc, char* argv[]) {
       std::cout << "Lichess mode ON" << std::endl;
       options.lichess_mode = true;
     } else if (0 ==
-               static_cast<std::string>("-games-per-dir").compare(argv[idx])) {
-      max_games_per_directory = std::atoi(argv[idx + 1]);
-      std::cout << "Max games per directory set to: " << max_games_per_directory
+               static_cast<std::string>("-files-per-dir").compare(argv[idx])) {
+      max_files_per_directory = std::atoi(argv[idx + 1]);
+      std::cout << "Max games per directory set to: " << max_files_per_directory
                 << std::endl;
     } else if (0 == static_cast<std::string>("-max-games-to-convert")
-                        .compare(argv[idx])) {
+            .compare(argv[idx])) {
       max_games_to_convert = std::atoi(argv[idx + 1]);
       std::cout << "Max games to convert set to: " << max_games_to_convert
                 << std::endl;

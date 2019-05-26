@@ -4,9 +4,9 @@
 #include <cmath>
 #include <cstring>
 #include <iostream>
-#include <vector>
-#include <sstream>
 #include <regex>
+#include <sstream>
+#include <vector>
 
 float convert_sf_score_to_win_probability(float score) {
   return 2 / (1 + exp(-0.4 * score)) - 1;
@@ -36,15 +36,15 @@ lczero::Move poly_move_to_lc0_move(move_t move, board_t* board) {
 
   if (move_is_promote(move)) {
     lczero::Move::Promotion lookup[5] = {
-            lczero::Move::Promotion::None,   lczero::Move::Promotion::Knight,
-            lczero::Move::Promotion::Bishop, lczero::Move::Promotion::Rook,
-            lczero::Move::Promotion::Queen,
+        lczero::Move::Promotion::None,   lczero::Move::Promotion::Knight,
+        lczero::Move::Promotion::Bishop, lczero::Move::Promotion::Rook,
+        lczero::Move::Promotion::Queen,
     };
     auto prom = lookup[move >> 12];
     m.SetPromotion(prom);
   } else if (move_is_castle(move, board)) {
     bool is_short_castle =
-            square_file(move_from(move)) < square_file(move_to(move));
+        square_file(move_from(move)) < square_file(move_to(move));
     int file_to = is_short_castle ? 6 : 2;
     m.SetTo(lczero::BoardSquare(square_rank(move_to(move)), file_to));
     m.SetCastling();
@@ -153,23 +153,15 @@ std::vector<lczero::V4TrainingData> PGNGame::getChunks(Options options) const {
                 << square_file(move_to(move)) << std::endl;
     }
 
-    // Execute move
-    position_history.Append(lc0_move);
-    move_do(board, move);
-
     // Extract SF scores and convert to win probability
     float Q = 0.0f;
     if (options.lichess_mode) {
       if (pgn_move.comment[0]) {
         float lichess_score;
-        if (board_is_mate(board)) {
-          lichess_score = position_history.Last().IsBlackToMove() ? -128.0f : 128.0f;
-        } else {
-          bool success = extract_lichess_comment_score(pgn_move.comment,
-                                                       lichess_score);
-          if (!success) {
-            break;  // Comment contained no "%eval"
-          }
+        bool success =
+            extract_lichess_comment_score(pgn_move.comment, lichess_score);
+        if (!success) {
+          break;  // Comment contained no "%eval"
         }
         Q = convert_sf_score_to_win_probability(lichess_score);
       } else {
@@ -181,20 +173,32 @@ std::vector<lczero::V4TrainingData> PGNGame::getChunks(Options options) const {
     if (!(bad_move && options.lichess_mode)) {
       // Generate training data
       lczero::V4TrainingData chunk = get_v4_training_data(
-              game_result, position_history, lc0_move, legal_moves, Q);
+          game_result, position_history, lc0_move, legal_moves, Q);
       chunks.push_back(chunk);
       if (options.verbose) {
         std::string result;
         switch (game_result) {
-          case lczero::GameResult::WHITE_WON: result = "1-0"; break;
-          case lczero::GameResult::BLACK_WON: result = "0-1"; break;
-          case lczero::GameResult::DRAW:      result = "1/2-1/2"; break;
-          default:                            result = "???"; break;
+          case lczero::GameResult::WHITE_WON:
+            result = "1-0";
+            break;
+          case lczero::GameResult::BLACK_WON:
+            result = "0-1";
+            break;
+          case lczero::GameResult::DRAW:
+            result = "1/2-1/2";
+            break;
+          default:
+            result = "???";
+            break;
         }
-        std::cout << "Write chunk: [" << lc0_move.as_string() << ", " << result << ", " << Q << "]\n";
+        std::cout << "Write chunk: [" << lc0_move.as_string() << ", " << result
+                  << ", " << Q << "]\n";
       }
     }
 
+    // Execute move
+    position_history.Append(lc0_move);
+    move_do(board, move);
   }
 
   if (options.verbose) {
