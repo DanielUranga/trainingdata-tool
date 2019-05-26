@@ -10,7 +10,7 @@
 #include "neural/network.h"
 #include "neural/writer.h"
 
-#define CHUNKS_PER_FILE 1024
+#define CHUNKS_PER_FILE 4096
 
 class TrainingDataWriter {
 public:
