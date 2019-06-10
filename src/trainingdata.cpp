@@ -18,7 +18,9 @@ lczero::V4TrainingData get_v4_training_data(
   result.version = 4;
 
   // Illegal moves will have "-1" probability
-  std::memset(result.probabilities, -1.0f, sizeof(result.probabilities));
+  for (auto& probability : result.probabilities) {
+    probability = -1;
+  }
 
   // Populate legal moves with probability "0"
   for (lczero::Move move : legal_moves) {
