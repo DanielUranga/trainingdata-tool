@@ -11,7 +11,8 @@ There are 4 options suported so far:
  - `-v`: Verbose mode
  - `-lichess-mode`: Lichess mode. Will extract SF evaluation score from Lichess commented games. Non-commented games will be filtered out.
  - `-files-per-dir <integer number>`: Max games to store in a single directory, when that number is reached a new directory is created to store the new games to avoid stressing the file system too much.
- - `-max-files-to-convert <integer number>`: Stop after this many ga
+ - `-max-files-to-convert <integer number>`: Stop after this many files have been written.
+ - `-chunks-per-file`: How many training data chunks to write in each file.
 
  Example:
  ```

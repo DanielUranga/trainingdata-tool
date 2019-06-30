@@ -10,22 +10,21 @@
 #include "neural/network.h"
 #include "neural/writer.h"
 
-#define CHUNKS_PER_FILE 4096
-
 class TrainingDataWriter {
 public:
-    TrainingDataWriter(size_t max_files_per_directory);
+    TrainingDataWriter(size_t max_files_per_directory, size_t chunks_per_file);
 
     void EnqueueChunks(const std::vector<lczero::V4TrainingData> &chunks);
 
     void Finalize();
 
 private:
-    void WriteQueuedChunks(size_t min_chunks = CHUNKS_PER_FILE);
+    void WriteQueuedChunks(size_t min_chunks);
 
     std::queue<lczero::V4TrainingData> chunks_queue;
     size_t files_written;
-    size_t  max_files_per_directory;
+    size_t max_files_per_directory;
+    size_t chunks_per_file;
 };
 
 

@@ -22,6 +22,7 @@
 
 size_t max_files_per_directory = 10000;
 int64_t max_games_to_convert = 10000000;
+size_t chunks_per_file = 4096;
 
 inline bool file_exists(const std::string &name) {
   std::ifstream f(name.c_str());
@@ -32,7 +33,7 @@ void convert_games(const std::string& pgn_file_name, Options options) {
   int game_id = 0;
   pgn_t pgn[1];
   pgn_open(pgn, pgn_file_name.c_str());
-  TrainingDataWriter writer(max_files_per_directory);
+  TrainingDataWriter writer(max_files_per_directory, chunks_per_file);
   while (pgn_next_game(pgn) && game_id < max_games_to_convert) {
     PGNGame game(pgn);
     writer.EnqueueChunks(game.getChunks(options));
@@ -68,6 +69,10 @@ int main(int argc, char *argv[]) {
       max_games_to_convert = std::atoi(argv[idx + 1]);
       std::cout << "Max games to convert set to: " << max_games_to_convert
                 << std::endl;
+    } else if (0 == static_cast<std::string>("-chunks-per-file")
+            .compare(argv[idx])) {
+      chunks_per_file = std::atoi(argv[idx + 1]);
+      std::cout << "Chunks per file set to: " << chunks_per_file << std::endl;
     }
   }
 
