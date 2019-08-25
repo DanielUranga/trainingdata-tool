@@ -4,6 +4,7 @@
 
 #include <cstring>
 #include <iostream>
+#include <filesystem>
 
 #include "PGNGame.h"
 #include "TrainingDataReader.h"
@@ -14,8 +15,13 @@ int64_t max_games_to_convert = 10000000;
 size_t chunks_per_file = 4096;
 
 inline bool file_exists(const std::string &name) {
-  std::ifstream f(name.c_str());
-  return f.good();
+  auto s = std::filesystem::status(name);
+  return std::filesystem::is_regular_file(s);
+}
+
+inline bool directory_exists(const std::string &name) {
+  auto s = std::filesystem::status(name);
+  return std::filesystem::is_directory(s);
 }
 
 void convert_games(const std::string &pgn_file_name, Options options) {
@@ -70,14 +76,15 @@ int main(int argc, char *argv[]) {
     }
   }
 
-  if (deduplication_mode) {
-  } else {
-    for (size_t idx = 1; idx < argc; ++idx) {
+  for (size_t idx = 1; idx < argc; ++idx) {
+    if (deduplication_mode) {
+      if (!directory_exists(argv[idx])) continue;
+      TrainingDataReader reader(argv[idx]);
+    } else {
       if (!file_exists(argv[idx])) continue;
       if (options.verbose) {
         std::cout << "Opening \'" << argv[idx] << "\'" << std::endl;
       }
-
       convert_games(argv[idx], options);
     }
   }
