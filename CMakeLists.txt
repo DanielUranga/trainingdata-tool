@@ -3,6 +3,8 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
+set(CMAKE_REQUIRED_FLAGS -std=c++17)
+
 file(GLOB_RECURSE sources src/*.cpp src/*.h)
 
 set (
@@ -29,8 +31,14 @@ AUX_SOURCE_DIRECTORY(zlib zlib)
 # Add source to this project's executable.
 add_executable(trainingdata-tool ${sources} ${lc0} ${lc0_filesystem} ${polyglot} ${zlib})
 
+set_target_properties(trainingdata-tool PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+    CXX_EXTENSIONS ON
+)
+
 if (UNIX)
-    target_link_libraries(trainingdata-tool -lpthread)
+    target_link_libraries(trainingdata-tool -lpthread -lstdc++fs)
 endif(UNIX)
 
 include_directories(
