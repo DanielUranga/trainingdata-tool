@@ -1,7 +1,7 @@
 #ifndef TRAININGDATA_TOOL_TRAININGDATAREADER_H
 #define TRAININGDATA_TOOL_TRAININGDATAREADER_H
 
-#include <vector>;
+#include <vector>
 #include <zlib.h>
 
 #include "neural/writer.h"
@@ -14,7 +14,7 @@ public:
 private:
   std::vector<std::string> in_files;
   std::vector<std::string>::iterator in_files_it;
-  gzFile* file;
+  gzFile file;
 };
 
 #endif

@@ -1,25 +1,13 @@
 #include "chess/position.h"
-#include "move.h"
-#include "move_do.h"
-#include "move_gen.h"
-#include "move_legal.h"
-#include "neural/encoder.h"
-#include "neural/network.h"
-#include "neural/writer.h"
 #include "pgn.h"
 #include "polyglot_lib.h"
-#include "san.h"
-#include "square.h"
-#include "util.h"
 
 #include <cstring>
-#include <fstream>
 #include <iostream>
-#include <thread>
 
 #include "PGNGame.h"
-#include "TrainingDataWriter.h"
 #include "TrainingDataReader.h"
+#include "TrainingDataWriter.h"
 
 size_t max_files_per_directory = 10000;
 int64_t max_games_to_convert = 10000000;
@@ -30,7 +18,7 @@ inline bool file_exists(const std::string &name) {
   return f.good();
 }
 
-void convert_games(const std::string& pgn_file_name, Options options) {
+void convert_games(const std::string &pgn_file_name, Options options) {
   int game_id = 0;
   pgn_t pgn[1];
   pgn_open(pgn, pgn_file_name.c_str());
@@ -52,6 +40,7 @@ int main(int argc, char *argv[]) {
   lczero::InitializeMagicBitboards();
   polyglot_init();
   Options options;
+  bool deduplication_mode = false;
   for (size_t idx = 0; idx < argc; ++idx) {
     if (0 == static_cast<std::string>("-v").compare(argv[idx])) {
       std::cout << "Verbose mode ON" << std::endl;
@@ -66,23 +55,30 @@ int main(int argc, char *argv[]) {
       std::cout << "Max files per directory set to: " << max_files_per_directory
                 << std::endl;
     } else if (0 == static_cast<std::string>("-max-games-to-convert")
-            .compare(argv[idx])) {
+                        .compare(argv[idx])) {
       max_games_to_convert = std::atoi(argv[idx + 1]);
       std::cout << "Max games to convert set to: " << max_games_to_convert
                 << std::endl;
     } else if (0 == static_cast<std::string>("-chunks-per-file")
-            .compare(argv[idx])) {
+                        .compare(argv[idx])) {
       chunks_per_file = std::atoi(argv[idx + 1]);
       std::cout << "Chunks per file set to: " << chunks_per_file << std::endl;
+    } else if (0 == static_cast<std::string>("-deduplication-mode")
+                        .compare(argv[idx])) {
+      deduplication_mode = true;
+      std::cout << "Position de-duplication mode ON" << std::endl;
     }
   }
 
-  for (size_t idx = 1; idx < argc; ++idx) {
-    if (!file_exists(argv[idx])) continue;
-    if (options.verbose) {
-      std::cout << "Opening \'" << argv[idx] << "\'" << std::endl;
-    }
+  if (deduplication_mode) {
+  } else {
+    for (size_t idx = 1; idx < argc; ++idx) {
+      if (!file_exists(argv[idx])) continue;
+      if (options.verbose) {
+        std::cout << "Opening \'" << argv[idx] << "\'" << std::endl;
+      }
 
-    convert_games(argv[idx], options);
+      convert_games(argv[idx], options);
+    }
   }
 }
