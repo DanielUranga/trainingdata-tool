@@ -19,6 +19,7 @@
 
 #include "PGNGame.h"
 #include "TrainingDataWriter.h"
+#include "TrainingDataReader.h"
 
 size_t max_files_per_directory = 10000;
 int64_t max_games_to_convert = 10000000;
