@@ -1,6 +1,7 @@
 #ifndef TRAININGDATA_TOOL_TRAININGDATAREADER_H
 #define TRAININGDATA_TOOL_TRAININGDATAREADER_H
 
+#include <optional>
 #include <vector>
 #include <zlib.h>
 
@@ -9,7 +10,7 @@
 class TrainingDataReader {
 public:
   TrainingDataReader(const std::string &in_directory);
-  lczero::V4TrainingData ReadChunk();
+  std::optional<lczero::V4TrainingData> ReadChunk();
 
 private:
   std::vector<std::string> in_files;

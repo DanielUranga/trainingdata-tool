@@ -12,9 +12,21 @@ TrainingDataReader::TrainingDataReader(const std::string& in_directory)
   in_files_it = in_files.begin();
 }
 
-lczero::V4TrainingData TrainingDataReader::ReadChunk() {
-  if (nullptr == file) {
+std::optional<lczero::V4TrainingData> TrainingDataReader::ReadChunk() {
+  while (nullptr == file) {
+    if (in_files_it == in_files.end()) {
+      return std::nullopt;
+    }
     file = gzopen(in_files_it->c_str(), "r");
     in_files_it++;
+  }
+  const size_t length = sizeof(lczero::V4TrainingData);
+  lczero::V4TrainingData buffer{};
+  int bytes_read = gzread(file, &buffer, length);
+  if (length == bytes_read) {
+    return std::optional<lczero::V4TrainingData>{buffer};
+  } else {
+    std::cout << "Not enough bytes " << bytes_read << std::endl;
+    return std::nullopt;
   }
 }
