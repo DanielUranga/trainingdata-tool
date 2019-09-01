@@ -10,9 +10,11 @@
 class TrainingDataReader {
 public:
   TrainingDataReader(const std::string &in_directory);
+  virtual ~TrainingDataReader();
   std::optional<lczero::V4TrainingData> ReadChunk();
 
 private:
+  gzFile getCurrentFile();
   std::vector<std::string> in_files;
   std::vector<std::string>::iterator in_files_it;
   gzFile file;

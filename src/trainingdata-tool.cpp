@@ -80,11 +80,14 @@ int main(int argc, char *argv[]) {
     if (deduplication_mode) {
       if (!directory_exists(argv[idx])) continue;
       TrainingDataReader reader(argv[idx]);
-      for (size_t i = 0; i < 200; ++i) {
-        if (auto chunk = reader.ReadChunk()) {
-          std::cout << "RootQ " << chunk->root_q << std::endl;
+      size_t count = 0;
+      while (auto chunk = reader.ReadChunk()) {
+        count++;
+        if (count % 10000 == 0) {
+          std::cout << "Chunks: " << count << std::endl;
         }
       }
+      std::cout << "Chunks: " << count << std::endl;
     } else {
       if (!file_exists(argv[idx])) continue;
       if (options.verbose) {
