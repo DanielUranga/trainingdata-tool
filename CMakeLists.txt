@@ -41,12 +41,15 @@ if (UNIX)
     target_link_libraries(trainingdata-tool -lpthread -lstdc++fs)
 endif(UNIX)
 
+find_package(Boost 1.65.0)
+
 include_directories(
     "lc0/src"
     "lc0/src/chess"
     "lc0/src/neural"
     "polyglot/src"
     "zlib"
+    ${Boost_INCLUDE_DIRS}
 )
 
 add_compile_definitions(NO_PEXT)
