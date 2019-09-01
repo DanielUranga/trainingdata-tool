@@ -3,10 +3,11 @@
 #include "polyglot_lib.h"
 
 #include <cstring>
-#include <iostream>
 #include <filesystem>
+#include <iostream>
 
 #include "PGNGame.h"
+#include "TrainingDataDedup.h"
 #include "TrainingDataReader.h"
 #include "TrainingDataWriter.h"
 
@@ -80,14 +81,8 @@ int main(int argc, char *argv[]) {
     if (deduplication_mode) {
       if (!directory_exists(argv[idx])) continue;
       TrainingDataReader reader(argv[idx]);
-      size_t count = 0;
-      while (auto chunk = reader.ReadChunk()) {
-        count++;
-        if (count % 10000 == 0) {
-          std::cout << "Chunks: " << count << std::endl;
-        }
-      }
-      std::cout << "Chunks: " << count << std::endl;
+      TrainingDataWriter writer(max_files_per_directory, chunks_per_file);
+      training_data_dedup(reader, writer);
     } else {
       if (!file_exists(argv[idx])) continue;
       if (options.verbose) {
