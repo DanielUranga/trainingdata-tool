@@ -4,7 +4,7 @@
 #include "TrainingDataReader.h"
 #include "TrainingDataWriter.h"
 
-void training_data_dedup(TrainingDataReader& reader,
-                         TrainingDataWriter& writer);
+void training_data_dedup(TrainingDataReader& reader, TrainingDataWriter& writer,
+                         size_t dedup_uniq_buffersize);
 
 #endif

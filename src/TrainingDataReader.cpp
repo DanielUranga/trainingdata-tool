@@ -41,7 +41,6 @@ gzFile TrainingDataReader::getCurrentFile() {
     if (in_files_it == in_files.end()) {
       return nullptr;
     }
-    std::cout << "file: " << in_files_it->c_str() << std::endl;
     file = gzopen(in_files_it->c_str(), "r");
     in_files_it++;
   }
