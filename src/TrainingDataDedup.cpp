@@ -29,11 +29,11 @@ void flush(TrainingDataWriter& writer,
   chunk_map.clear();
   writer.Finalize();
   std::cout << "Total positions: " << total_count
-            << ", unique positions: " << unique_count << ", repeated %: "
+            << ", unique positions: " << unique_count << ", repeated: "
             << (1.0f - static_cast<float>(unique_count) /
                            static_cast<float>(total_count)) *
                    100.0f
-            << std::endl;
+            << "%" << std::endl;
   unique_count = 0;
   total_count = 0;
 }
@@ -57,7 +57,7 @@ void training_data_dedup(TrainingDataReader& reader, TrainingDataWriter& writer,
       chunk_map.erase(elem);
       chunk_map.emplace(merged, old_count + 1);
     }
-    if (unique_count >= 10000) {
+    if (unique_count >= dedup_uniq_buffersize) {
       flush(writer, chunk_map, unique_count, total_count);
     }
   }
