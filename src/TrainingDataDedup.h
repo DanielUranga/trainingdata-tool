@@ -5,6 +5,7 @@
 #include "TrainingDataWriter.h"
 
 void training_data_dedup(TrainingDataReader& reader, TrainingDataWriter& writer,
-                         size_t dedup_uniq_buffersize);
+                         const size_t dedup_uniq_buffersize,
+                         const float q_ratio);
 
 #endif

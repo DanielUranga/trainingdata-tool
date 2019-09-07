@@ -15,6 +15,7 @@ size_t max_files_per_directory = 10000;
 int64_t max_games_to_convert = 10000000;
 size_t chunks_per_file = 4096;
 size_t dedup_uniq_buffersize = 50000;
+float dedup_q_ratio = 1.0f;
 
 inline bool file_exists(const std::string &name) {
   auto s = std::filesystem::status(name);
@@ -80,6 +81,11 @@ int main(int argc, char *argv[]) {
       dedup_uniq_buffersize = std::atoi(argv[idx + 1]);
       std::cout << "Deduplication buffersize set to: " << dedup_uniq_buffersize
                 << std::endl;
+    } else if (0 ==
+               static_cast<std::string>("-dedup-q-ratio").compare(argv[idx])) {
+      dedup_q_ratio = std::stof(argv[idx + 1]);
+      std::cout << "Deduplication Q ratio set to: " << dedup_q_ratio
+                << std::endl;
     }
   }
 
@@ -89,7 +95,7 @@ int main(int argc, char *argv[]) {
       TrainingDataReader reader(argv[idx]);
       TrainingDataWriter writer(max_files_per_directory, chunks_per_file,
                                 "deduped-");
-      training_data_dedup(reader, writer, dedup_uniq_buffersize);
+      training_data_dedup(reader, writer, dedup_uniq_buffersize, dedup_q_ratio);
     } else {
       if (!file_exists(argv[idx])) continue;
       if (options.verbose) {

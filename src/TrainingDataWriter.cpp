@@ -18,20 +18,19 @@ void TrainingDataWriter::EnqueueChunks(
   WriteQueuedChunks(chunks_per_file);
 }
 
-// FIXME: The required RAM memory will be 2*sizeof(chunks) here...
 void TrainingDataWriter::EnqueueChunks(
     const std::unordered_map<lczero::V4TrainingData, size_t> &chunks) {
   for (auto chunk : chunks) {
     chunks_queue.push(chunk.first);
+    WriteQueuedChunks(chunks_per_file);
   }
-  WriteQueuedChunks(chunks_per_file);
 }
 
 void TrainingDataWriter::WriteQueuedChunks(size_t min_chunks) {
   while (chunks_queue.size() > min_chunks) {
     lczero::TrainingDataWriter writer(
-        files_written, dir_prefix + std::to_string(files_written /
-                                                      max_files_per_directory));
+        files_written,
+        dir_prefix + std::to_string(files_written / max_files_per_directory));
     for (size_t i = 0; i < chunks_per_file && !chunks_queue.empty(); ++i) {
       writer.WriteChunk(chunks_queue.front());
       chunks_queue.pop();
