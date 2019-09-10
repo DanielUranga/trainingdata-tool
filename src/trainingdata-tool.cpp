@@ -89,12 +89,11 @@ int main(int argc, char *argv[]) {
     }
   }
 
+  TrainingDataWriter writer(max_files_per_directory, chunks_per_file, "deduped-");
   for (size_t idx = 1; idx < argc; ++idx) {
     if (deduplication_mode) {
       if (!directory_exists(argv[idx])) continue;
       TrainingDataReader reader(argv[idx]);
-      TrainingDataWriter writer(max_files_per_directory, chunks_per_file,
-                                "deduped-");
       training_data_dedup(reader, writer, dedup_uniq_buffersize, dedup_q_ratio);
     } else {
       if (!file_exists(argv[idx])) continue;
