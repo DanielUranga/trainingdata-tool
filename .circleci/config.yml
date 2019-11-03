@@ -13,6 +13,9 @@ jobs:
           name: Install CMAKE
           command: 'sudo apt-get update && sudo apt-get install -y cmake'
       - run:
+          name: Install Boost
+          command: 'sudo apt-get update && sudo apt-get install -y libboost-all-dev'
+      - run:
           name: "Pull Submodules"
           command: |
             git submodule sync --recursive
