@@ -40,8 +40,7 @@ void flush(TrainingDataWriter& writer,
 }
 
 void training_data_dedup(TrainingDataReader& reader, TrainingDataWriter& writer,
-                         const size_t dedup_uniq_buffersize,
-                         const float q_ratio) {
+                         const size_t dedup_uniq_buffersize) {
   size_t unique_count = 0;
   size_t total_count = 0;
   std::unordered_map<lczero::V4TrainingData, size_t> chunk_map;
@@ -49,10 +48,22 @@ void training_data_dedup(TrainingDataReader& reader, TrainingDataWriter& writer,
   while (auto new_chunk = reader.ReadChunk()) {
     total_count++;
 
-    // Average Z and Q depending on q_ratio
-    auto Z = static_cast<float>(new_chunk->result);
-    new_chunk->best_q = new_chunk->best_q * q_ratio + Z * (1.0f - q_ratio);
-    new_chunk->root_q = new_chunk->root_q * q_ratio + Z * (1.0f - q_ratio);
+    // Store Z in root_q/root_d
+    switch (new_chunk->result) {
+      case 1:
+        new_chunk->root_d = 0.0f;
+        new_chunk->root_q = 1.0f;
+        break;
+      case -1:
+        new_chunk->root_d = 0.0f;
+        new_chunk->root_q = -1.0f;
+        break;
+      case 0:
+        new_chunk->root_d = 1.0f;
+        new_chunk->root_q = 0.0f;
+        break;
+    }
+
 
     auto elem = chunk_map.find(*new_chunk);
     if (elem == chunk_map.end()) {
